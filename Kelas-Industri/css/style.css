@@ -64,7 +64,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #eae6f5;
+  background-color: #e5f5f8;
 }
 
 .sub_page .hero_area {
@@ -74,7 +74,7 @@ body {
 /* sahrul - header fix  */
 .header_section {
   display: flex;
-  background-color: #0093ae;
+  background-color: #ccecf1;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -98,11 +98,12 @@ body {
   border-radius: 35px;
   text-transform: uppercase;
   font-size: 15px;
+  font-weight: 530;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link,
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  background-color: #4b208c;
+  background-color: #19abc0;
   color: #ffffff;
 }
 
@@ -146,13 +147,16 @@ a:focus {
 
 .navbar-brand img {
   margin-right: 5px;
-  width: 35px;
+  width: 130px;
+  padding-top: 10px;
+  margin-right: 410px;
 }
 
 .navbar-brand span {
   font-size: 22px;
   font-weight: 700;
-  color: #4b208c;
+  color: #000000;
+  padding-left: 10px;
 }
 
 .custom_nav-container {
@@ -225,7 +229,7 @@ a:focus {
   position: relative;
   z-index: 2;
   color: #3b3a3a;
-  padding-bottom: 90px;
+  padding-bottom: 10px;
 }
 
 .slider_section .row {
@@ -250,18 +254,20 @@ a:focus {
 .slider_section .detail_box a {
   display: inline-block;
   padding: 10px 40px;
-  background-color: #4b208c;
-  color: #ffffff;
+  background-color: #66c7d5;
+  color: #000000;
   border-radius: 35px;
   margin-top: 35px;
+  font-weight: 503;
 }
 
 .slider_section .detail_box a:hover {
-  background-color: #5625a1;
+  background-color: #19abc0;
+  color: #f3f0f6;
 }
 
 .slider_section .img_container {
-  border: 7px solid #7b57b2;
+  border: 7px solid #66c7d5;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -293,14 +299,14 @@ a:focus {
 
 .slider_section .carousel-control-prev {
   background-image: url(../images/prev.png);
-  background-color: #ffffff;
+  background-color: #ccecf1;
   -webkit-transform: translate(-85px, 30px);
   transform: translate(-85px, 30px);
 }
 
 .slider_section .carousel-control-next {
   background-image: url(../images/next.png);
-  background-color: #4b208c;
+  background-color: #4cbdce;
   -webkit-transform: translate(-45px, 0);
   transform: translate(-45px, 0);
 }
