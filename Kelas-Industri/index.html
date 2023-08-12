@@ -54,10 +54,10 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about"> About</a>
+                  <a class="nav-link" href="#service"> Service</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#service"> Service </a>
+                  <a class="nav-link" href="#about"> About </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#blog"> Blog </a>
@@ -154,7 +154,7 @@
             </p>
           </div>
         </div>
-        <div class="box active">
+        <div class="box">
           <div class="img-box">
             <img src="images/s2.png" class="img1" alt="">
           </div>
@@ -446,8 +446,22 @@
     </div>
   </footer>
   <!-- footer section -->
+  <script src="//code.jquery.com/jquery-3.7.0.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
+
+ 
+  <script>
+      $(window) .scroll(function(){
+        if($(window).scrollTop()){
+          $("header").addClass("black");
+        }
+        else{
+          $("header").removeClass("black");
+        }
+      });
+
+  </script>
 
 
 </body>

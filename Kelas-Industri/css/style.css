@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 .layout_padding {
@@ -55,7 +56,7 @@ body {
 
 /*header section*/
 .hero_area {
-  height: 98vh;
+  height: 100vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,21 +74,30 @@ body {
 
 /* sahrul - header fix  */
 .header_section {
-  display: flex;
-  background-color: #ccecf1;
+  width: 100%;
+  transition: 1s;
+  background: #e5f5f8 no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
   right: 0;
 }
+.header_section.black{
+  background: #ccecf1;
+}
 
 .header_section .container {
   padding: 0;
+
 }
+
 
 .header_section .nav_container {
   margin: 0 auto;
+  transition: 1ms;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
@@ -159,9 +169,9 @@ a:focus {
   padding-left: 10px;
 }
 
-.custom_nav-container {
+/* .custom_nav-container {
   z-index: 99999;
-}
+} */
 
 .navbar-expand-lg .navbar-collapse {
   -webkit-box-align: end;
@@ -230,6 +240,7 @@ a:focus {
   z-index: 2;
   color: #3b3a3a;
   padding-bottom: 10px;
+  /* background: #000000; */
 }
 
 .slider_section .row {
@@ -311,6 +322,7 @@ a:focus {
   transform: translate(-45px, 0);
 }
 
+/* service section */
 .service_section {
   text-align: center;
 }
@@ -335,13 +347,13 @@ a:focus {
 
 .service_section .service_container .box {
   margin: 25px 1%;
-  -ms-flex-preferred-size: 31%;
+  -ms-flex-preferred-size: 10%;
   flex-basis: 31%;
   padding: 35px 25px 25px;
-  border-radius: 15px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-  border-top: 15px solid transparent;
+  border-top: 50px solid transparent;
   overflow: hidden;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
@@ -357,7 +369,7 @@ a:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 125px;
+  height: 115px;
 }
 
 .service_section .service_container .box .img-box img {
@@ -376,7 +388,7 @@ a:focus {
 
 .service_section .service_container .box:hover,
 .service_section .service_container .box.active {
-  border-top: 15px solid #512a97;
+  border-top: 15px solid #19abc0;
 }
 
 .service_section .btn-box {
