@@ -100,10 +100,10 @@ body {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 7px 20px;
-  margin: 10px 15px;
+  margin: 10px 12px;
   color: #000000;
   text-align: center;
-  border-radius: 35px;
+  border-radius: 20px;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 530;
@@ -258,10 +258,20 @@ a:focus {
 }
 .slider_section .detail_box h2 {
   color: #66c7d5;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.slider_section .detail_box h2::after{
+  content: "";
+  border-bottom: 5px solid;
+  width: 12rem;
+  display: block;
+  margin-top: 20px;
+
 }
 
 .slider_section .detail_box p {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .slider_section .detail_box a {
