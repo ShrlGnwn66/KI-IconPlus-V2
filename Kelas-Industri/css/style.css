@@ -48,10 +48,12 @@ body {
   position: relative;
   font-weight: bold;
   margin-right: 10px;
+  /* font-size: 20px; */
 }
 
 .heading_container img {
   width: 30px;
+  padding-bottom: 8px;
 }
 
 /*header section*/
@@ -301,7 +303,7 @@ a:focus {
 }
 
 .slider_section .img_container .img-box img {
-  width: 100%;
+  width: 110%;
   /* display: flex;
   flex-direction: column; */
 }
@@ -334,10 +336,10 @@ a:focus {
   -ms-flex-preferred-size: 10%;
   flex-basis: 31%;
   padding: 35px 25px 25px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-  border-top: 50px solid transparent;
+  /* border-radius: 10px; */
+  /* -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15); */
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15); */
+  /* border-top: 50px solid transparent; */
   overflow: hidden;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
@@ -370,10 +372,10 @@ a:focus {
   position: relative;
 }
 
-.service_section .service_container .box:hover,
+/* .service_section .service_container .box:hover,
 .service_section .service_container .box.active {
   border-top: 15px solid #19abc0;
-}
+} */
 
 .service_section .btn-box {
   display: -webkit-box;
@@ -396,6 +398,34 @@ a:focus {
 .service_section .btn-box a:hover {
   background-color: #5625a1;
 }
+
+/* nyobaa
+
+.layar-dalam{
+  background: url("bg.jpg") no-repeat;
+  padding: 150px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.layar-dalam .quote{
+  width: 110rem;
+  margin: auto;
+}
+
+.layar-dalam .quote p {
+  font-size: 5rem;
+  display: inline;
+  position: fixed;
+  padding: 5rem;
+  color: orange;
+}
+end nyobaa */
 
 .about_section {
   background-color: #f3f0f6;
