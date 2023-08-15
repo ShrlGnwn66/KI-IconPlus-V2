@@ -6,10 +6,10 @@
 /* Custom Nav Section */
 .custom_nav-container {
   background-color: #e5f5f8;
-  transition: 2s;
+  transition: 1.5s;
 }
 /* sticky top */
-.white{
+.white {
   background: #ccecf1;
 }
 .custom_nav-container .navbar-nav .nav-item .nav-link {
@@ -39,7 +39,7 @@
 /* Custom Hero Section */
 .custom_hero-section {
   background-color: #e5f5f8;
-  height: 1020vh;
+  height: 100vh;
   overflow: hidden;
 }
 
