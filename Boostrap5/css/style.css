@@ -1,5 +1,6 @@
 * {
   font-family: "Poppins", sans-serif;
+  /* background-color: #e5f5f8; */
 }
 
 /* Custom Nav Section */
@@ -46,11 +47,23 @@
 
 .custom_hero-section .custom_hero-text h1 {
   color: #0093ae;
-  font-size: 40px;
+  font-size: 60px;
+}
+
+.custom_hero-section .custom_hero-text h2 {
+  color: #0093ae;
+}
+
+.custom_hero-section .custom_hero-text h2::after {
+  content: "";
+  border-bottom: 3.5px solid black;
+  width: 10rem;
+  display: block;
+  margin-top: 20px;
 }
 
 .custom_hero-section a {
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 10px 30px;
   font-weight: 503;
   background-color: #66c7d5;
@@ -58,4 +71,14 @@
 .custom_hero-section a:hover {
   background-color: #19abc0;
   color: #f3f0f6;
+}
+
+/* Custom About Section */
+.about_area-section img {
+  width: 650px;
+  margin-left: 50px;
+}
+
+.about_area-section .custom_about-text {
+  padding-top: 100px;
 }
