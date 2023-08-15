@@ -104,6 +104,11 @@ body {
   font-weight: 530;
 }
 
+.custom_nav-container .navbar-nav .nav-item .nav-link .nav-login {
+  cursor: pointer;
+  transition: 3s;
+}
+
 .custom_nav-container .navbar-nav .nav-item.active .nav-link,
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
   background-color: #19abc0;
@@ -263,7 +268,6 @@ a:focus {
 
 .slider_section .detail_box p {
   margin-top: 5px;
-  
 }
 .slider_section .detail_box h5 {
   font-weight: 600;
@@ -308,8 +312,6 @@ a:focus {
   color: #008194;
   font-weight: 600;
   font-size: 30px;
-
- 
 }
 
 .service_section .service_container {
