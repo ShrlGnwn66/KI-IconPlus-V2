@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boostrap Demo</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -18,11 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body>
     <!-- Navbar -->
-    <header class="header_section">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
+    <header class="header_section sticky-top"  >
+      <nav class="navbar navbar-expand-lg custom_nav-container  ">
         <div class="container-lg">
           <a class="navbar-brand pt-3" href="#">
             <img src="assets/images/icon_logo.png" alt="" width="120" />
@@ -102,11 +104,22 @@
     <!-- Hero area -->
 
     <!-- About Area -->
-    
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(window) .scroll(function(){
+        if($(window).scrollTop()){
+          $("nav").addClass("white");
+        }
+        else{
+          $("nav").removeClass("white");
+        }
+      });
+    </script>
+
   </body>
 </html>
