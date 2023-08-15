@@ -6,6 +6,11 @@
 /* Custom Nav Section */
 .custom_nav-container {
   background-color: #e5f5f8;
+  transition: 2s;
+}
+/* sticky top */
+.white{
+  background: #ccecf1;
 }
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 7px 18px;
@@ -34,7 +39,7 @@
 /* Custom Hero Section */
 .custom_hero-section {
   background-color: #e5f5f8;
-  height: 89vh;
+  height: 1020vh;
   overflow: hidden;
 }
 
