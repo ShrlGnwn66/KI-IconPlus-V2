@@ -281,6 +281,7 @@ a:focus {
 
 .slider_section .detail_box p {
   margin-top: 5px;
+  
 }
 .slider_section .detail_box h5 {
   font-weight: 600;
@@ -313,10 +314,20 @@ a:focus {
   text-align: center;
 }
 
-.service_section .heading_container {
+/* .service_section .heading_container {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+} */
+.service_section .container h2 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #008194;
+  font-weight: 600;
+  font-size: 30px;
+
+ 
 }
 
 .service_section .service_container {
