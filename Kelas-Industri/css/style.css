@@ -78,14 +78,8 @@ body {
 .header_section {
   width: 100%;
   transition: 1.5s;
-  /* background: #e5f5f8 no-repeat 50% 50%; */
-  /* background-size: cover; */
-  /* background-attachment: fixed; */
   position: fixed;
   z-index: 9999;
-  /* top: 0;
-  left: 0;
-  right: 0; */
 }
 .header_section.black {
   background: #ccecf1;
@@ -101,11 +95,10 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 7px 20px;
-  margin: 10px 12px;
+  padding: 7px 18px;
+  margin: 10px 5px;
   color: #000000;
   text-align: center;
-  border-radius: 20px;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 530;
@@ -159,20 +152,9 @@ a:focus {
   margin-right: 5px;
   width: 130px;
   padding-top: 10px;
-  margin-right: 530px;
-  margin-left: -25px;
+  margin-right: 430px;
+  margin-left: -20px;
 }
-
-/* .navbar-brand span {
-  font-size: 22px;
-  font-weight: 700;
-  color: #000000;
-  padding-left: 10px;
-} */
-
-/* .custom_nav-container {
-  z-index: 99999;
-} */
 
 .navbar-expand-lg .navbar-collapse {
   -webkit-box-align: end;
@@ -372,11 +354,6 @@ a:focus {
   position: relative;
 }
 
-/* .service_section .service_container .box:hover,
-.service_section .service_container .box.active {
-  border-top: 15px solid #19abc0;
-} */
-
 .service_section .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,34 +375,6 @@ a:focus {
 .service_section .btn-box a:hover {
   background-color: #5625a1;
 }
-
-/* nyobaa
-
-.layar-dalam{
-  background: url("bg.jpg") no-repeat;
-  padding: 150px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-  font-size: 30px;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.layar-dalam .quote{
-  width: 110rem;
-  margin: auto;
-}
-
-.layar-dalam .quote p {
-  font-size: 5rem;
-  display: inline;
-  position: fixed;
-  padding: 5rem;
-  color: orange;
-}
-end nyobaa */
 
 .about_section {
   background-color: #f3f0f6;
