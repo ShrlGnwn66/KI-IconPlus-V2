@@ -105,6 +105,26 @@
   color: #000000;
 }
 
+/* Custom services Section */
+.services_area-section {
+  background-color: #e5f5f8;
+}
+
+.services_area-section .custom_card-section {
+  background-color: #e5f5f8;
+  width: 350px;
+}
+.services_area-section img {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services_area-section h2, .services_area-section h5{
+  color: #0093ae;
+}
+
 /* Animation Counter Section */
 .counter_area-section{
   /* background: #0093ae;
