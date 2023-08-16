@@ -9,7 +9,7 @@
   transition: 1.5s;
 }
 /* sticky top */
-.white{
+.white {
   background: #ccecf1;
 }
 .custom_nav-container .navbar-nav .nav-item .nav-link {
@@ -39,7 +39,11 @@
 /* Custom Hero Section */
 .custom_hero-section {
   background-color: #e5f5f8;
+<<<<<<< HEAD
   height: 89vh;
+=======
+  height: 100vh;
+>>>>>>> cbc31f8a192726f7f0abdbe6aa76621d01e1c282
   overflow: hidden;
 }
 
