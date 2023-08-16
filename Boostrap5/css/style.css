@@ -155,18 +155,8 @@
 }
 
 /* Animation Counter Section */
-.counter_area-section{
-  /* background: #0093ae;
-  text-align: center;
-  transition: all 0.7s linear;
-  -webkit-transition: all 0.7s linear;
-  -moz-transition: all 0.7s linear;
-  -ms-transition: all 0.7s linear;
-  -o-transition: all 0.7s linear;
-  color: white; */
-}
 
-.counter-wrapper{
+.counter-wrapper {
   background: url(/Boostrap5/assets/images/bgcounter.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,9 +169,9 @@
   position: relative;
 }
 
-.counter-wrapper::before{
+.counter-wrapper::before {
   position: absolute;
-  content: '';
+  content: "";
   content: 0;
   top: 0;
   left: 0;
@@ -191,26 +181,26 @@
   z-index: 1;
 }
 
-.counter{
-  text-align: center  ;
+.counter {
+  text-align: center;
   color: #ddd;
   z-index: 2;
   position: relative;
 }
 
-.counter::before{
+.counter::before {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -2rem;
   left: 50%;
   width: 20%;
-  height: .2rem;
-  background: #4D87FE;
-  border-radius: .5rem;
-  -webkit-border-radius: .5rem;
-  -moz-border-radius: .5rem;
-  -ms-border-radius: .5rem;
-  -o-border-radius: .5rem;
+  height: 0.2rem;
+  background: #4d87fe;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -218,14 +208,14 @@
   -o-transform: translateX(-50%);
 }
 
-.counter .count{
+.counter .count {
   font-size: 5rem;
   margin-bottom: 1rem;
 }
 
-.counter p{
+.counter p {
   font-size: 1.4rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 /* Animation Counter Section */
