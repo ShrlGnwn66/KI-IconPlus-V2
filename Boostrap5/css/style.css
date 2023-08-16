@@ -79,7 +79,19 @@
   height: 100vh;
   overflow: hidden;
 }
-
+.custom_hero-section::before{
+  content: 'PLN ICON PLUS';
+  position: absolute;
+  font-size: 70px;
+  font-weight: 600;
+  color: #9b9a9a;
+  z-index: 100;
+  opacity: .1;
+  margin-top: 490px;
+  margin-left: 50px;
+  transform: rotate(-90deg);
+  transform-origin: top left; 
+}
 .custom_hero-section .custom_hero-text {
   margin-left: 120px;
 }
