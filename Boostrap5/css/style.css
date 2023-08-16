@@ -155,8 +155,18 @@
 }
 
 /* Animation Counter Section */
+.counter_area-section{
+  /* background: #0093ae;
+  text-align: center;
+  transition: all 0.7s linear;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -ms-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  color: white; */
+}
 
-.counter-wrapper {
+.counter-wrapper{
   background: url(/Boostrap5/assets/images/bgcounter.png);
   background-repeat: no-repeat;
   background-size: cover;
