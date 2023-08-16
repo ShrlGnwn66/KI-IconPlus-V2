@@ -3,6 +3,34 @@
   /* background-color: #e5f5f8; */
 }
 
+/* Login Page CSS */
+
+.container {
+  margin-top: 100px;
+  background-color: #000000;
+}
+
+.container h2 {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.container img {
+  width: 500px;
+}
+
+.container .no-focus {
+  box-shadow: none !important;
+}
+
+.container .custom_submit-login {
+  background-color: #0093ae;
+  margin-top: 30px;
+  margin-left: 120px;
+  padding: 7px 20px;
+  font-weight: 500;
+}
+
 /* Custom Nav Section */
 .custom_nav-container {
   background-color: #e5f5f8;
@@ -121,6 +149,7 @@
   margin-right: auto;
 }
 
-.services_area-section h2, .services_area-section h5{
+.services_area-section h2,
+.services_area-section h5 {
   color: #0093ae;
 }
