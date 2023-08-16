@@ -39,14 +39,22 @@
 /* Custom Hero Section */
 .custom_hero-section {
   background-color: #e5f5f8;
-<<<<<<< HEAD
-  height: 89vh;
-=======
   height: 100vh;
->>>>>>> cbc31f8a192726f7f0abdbe6aa76621d01e1c282
   overflow: hidden;
 }
-
+.custom_hero-section::before{
+  content: 'PLN ICON PLUS';
+  position: absolute;
+  font-size: 70px;
+  font-weight: 600;
+  color: #9b9a9a;
+  z-index: 100;
+  opacity: .1;
+  margin-top: 490px;
+  margin-left: 50px;
+  transform: rotate(-90deg);
+  transform-origin: top left; 
+}
 .custom_hero-section .custom_hero-text {
   margin-left: 120px;
 }
