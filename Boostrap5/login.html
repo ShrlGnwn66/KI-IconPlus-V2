@@ -23,29 +23,29 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="custom_login-page">
     <div class="container custom_container-login">
       <div class="row">
         <div class="col-5 offset-md-2 pt-5">
           <img src="assets/images/login.png" alt="" />
         </div>
         <div class="col-4 pt-5 pb-5">
-          <h2 class="fw-bold fs-2">LOGIN BROO</h2>
-          <form>
-            <div class="row g-3 align-items-center pb-4">
+          <h2 class="fw-bold fs-2">LOGIN</h2>
+          <form action="">
+            <div class="row g-3 align-items-center pb-4 ms-1">
               <div class="col-auto fs-2">
                 <i class="bi bi-envelope"></i>
               </div>
               <div class="col-auto">
                 <input
                   type="email"
-                  class="form-control rounded-0 border border-top-0 border-start-0 border-end-0 border-2 border-black no-focus"
+                  class="form-control no-focus"
                   id="exampleInputEmail1"
                   placeholder="E-mail"
                 />
               </div>
             </div>
-            <div class="row g-3 align-items-center pb-4">
+            <div class="row g-3 align-items-center pb-4 ms-1">
               <div class="col-auto fs-2">
                 <i class="bi bi-person-fill-lock"></i>
               </div>
@@ -53,22 +53,22 @@
                 <input
                   type="password"
                   id="inputPassword6"
-                  class="form-control rounded-0 border border-top-0 border-start-0 border-end-0 border-2 border-black no-focus"
+                  class="form-control no-focus"
                   placeholder="Password"
                 />
               </div>
             </div>
-            <div class="mb-3 form-check ms-2">
+            <div class="mb-3 form-check ms-4">
               <input
                 type="checkbox"
-                class="form-check-input border border-1 border-black"
+                class="form-check-input border-black"
                 id="exampleCheck1"
               />
               <label class="form-check-label ps-3" for="exampleCheck1"
                 >Remember Me</label
               >
             </div>
-            <button type="submit" class="btn custom_submit-login fw-medium">
+            <button type="submit" class="btn fw-medium custom_submit-login">
               Log in
             </button>
           </form>
