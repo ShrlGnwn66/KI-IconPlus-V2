@@ -126,6 +126,72 @@
 .custom_hero-section a:hover {
   background-color: #19abc0;
 }
+/* custom social media */
+.custom_social-media{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  writing-mode: vertical-rl;
+  /* margin-bottom: 200px;  */
+  margin-left: 1290px;
+}
+.custom_social-media h2{
+ color: #00A2B9;
+ font-size: 20px;
+ font-weight: 600;
+ cursor: pointer;
+ padding-top: 70px;
+ 
+}
+.border{
+  border-left: 6px solid rgba(0, 0, 0, 10);
+  width: 4px;
+  height: 90px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: 240px;
+  background-color: #000000;
+  
+}
+
+.custom_social-media .social_media-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custom_social-media .social_media-button a {
+  display: block;
+  margin-bottom: 10px;
+  background-color: transparent; /* Menghapus latar belakang */
+  position: absolute;
+  left: 50%; /* Menyusun ikon ke tengah secara horizontal */
+  transform: translateX(-50%); /* Menggeser ikon ke kiri sejajar dengan border */
+  top: 220px; /* Menyesuaikan jarak vertikal antara ikon dan border */
+}
+
+.custom_social-media .social_media-button a i {
+  font-size: 24px;
+  color: #000;
+}
+.custom_social-media .social_media-button a:first-child {
+  margin-top: 120px; /* Memberikan jarak di atas ikon pertama */
+  margin-left: 5px;
+}
+.custom_social-media .social_media-button a:not(:first-child) {
+  margin-left: 5px; /* Memberikan jarak di atas ikon kedua dan seterusnya */
+  margin-top: 170px;
+}
+.custom_social-media .social_media-button a i.bi-whatsapp {
+  color: #25d366; /* Memberikan warna biru pada ikon WhatsApp */
+}
+
+.custom_social-media .social_media-button a i.bi-instagram {
+  color: #ed088e; /* Memberikan warna merah pada ikon Instagram */
+}
+/* custom social media end */
 
 /* Custom About Section */
 .about_area-section img {
