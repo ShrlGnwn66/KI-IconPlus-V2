@@ -3,6 +3,43 @@
   /* background-color: #e5f5f8; */
 }
 
+/* Login Page CSS */
+
+.custom_container-login {
+  border-radius: 10px;
+  margin-top: 100px;
+  background-color: #5b5b5b;
+  width: 1400px;
+  height: 480px;
+}
+
+.custom_container-login h2 {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.custom_container-login img {
+  width: 500px;
+}
+
+.custom_container-login .no-focus {
+  box-shadow: none !important;
+}
+
+.custom_container-login .custom_submit-login {
+  background-color: #007181;
+  color: #fff;
+  margin-top: 30px;
+  margin-left: 120px;
+  padding: 7px 20px;
+  font-weight: 500;
+}
+
+.custom_container-login .custom_submit-login:hover {
+  background-color: #66c7d5;
+  color: #2b2a2a;
+}
+
 /* Custom Nav Section */
 .custom_nav-container {
   background-color: #e5f5f8;
@@ -44,7 +81,19 @@
   height: 100vh;
   overflow: hidden;
 }
-
+.custom_hero-section::before{
+  content: 'PLN ICON PLUS';
+  position: absolute;
+  font-size: 70px;
+  font-weight: 600;
+  color: #9b9a9a;
+  z-index: 100;
+  opacity: .1;
+  margin-top: 490px;
+  margin-left: 50px;
+  transform: rotate(-90deg);
+  transform-origin: top left; 
+}
 .custom_hero-section .custom_hero-text {
   margin-left: 120px;
 }
@@ -81,6 +130,72 @@
 .custom_hero-section a:hover {
   background-color: #19abc0;
 }
+/* custom social media */
+.custom_social-media{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  writing-mode: vertical-rl;
+  /* margin-bottom: 200px;  */
+  margin-left: 1290px;
+}
+.custom_social-media h2{
+ color: #00A2B9;
+ font-size: 20px;
+ font-weight: 600;
+ cursor: pointer;
+ padding-top: 70px;
+ 
+}
+.border{
+  border-left: 6px solid rgba(0, 0, 0, 10);
+  width: 4px;
+  height: 90px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  top: 240px;
+  background-color: #000000;
+  
+}
+
+.custom_social-media .social_media-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.custom_social-media .social_media-button a {
+  display: block;
+  margin-bottom: 10px;
+  background-color: transparent; /* Menghapus latar belakang */
+  position: absolute;
+  left: 50%; /* Menyusun ikon ke tengah secara horizontal */
+  transform: translateX(-50%); /* Menggeser ikon ke kiri sejajar dengan border */
+  top: 220px; /* Menyesuaikan jarak vertikal antara ikon dan border */
+}
+
+.custom_social-media .social_media-button a i {
+  font-size: 24px;
+  color: #000;
+}
+.custom_social-media .social_media-button a:first-child {
+  margin-top: 120px; /* Memberikan jarak di atas ikon pertama */
+  margin-left: 5px;
+}
+.custom_social-media .social_media-button a:not(:first-child) {
+  margin-left: 5px; /* Memberikan jarak di atas ikon kedua dan seterusnya */
+  margin-top: 170px;
+}
+.custom_social-media .social_media-button a i.bi-whatsapp {
+  color: #25d366; /* Memberikan warna biru pada ikon WhatsApp */
+}
+
+.custom_social-media .social_media-button a i.bi-instagram {
+  color: #ed088e; /* Memberikan warna merah pada ikon Instagram */
+}
+/* custom social media end */
 
 /* Custom About Section */
 .about_area-section img {
@@ -109,6 +224,7 @@
   color: #000000;
 }
 
+/* <<<<<<< HEAD */
 /* whay choose us */
 .wcu_area-section{
   background-color: #E5F5F8;
@@ -159,3 +275,90 @@
   font-weight: 500;
   
 }
+/* Custom services Section */
+.services_area-section {
+  background-color: #e5f5f8;
+}
+
+.services_area-section .custom_card-section {
+  background-color: #e5f5f8;
+  width: 350px;
+}
+.services_area-section img {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services_area-section h2,
+.services_area-section h5 {
+  color: #0093ae;
+}
+
+/* Animation Counter Section */
+
+.counter-wrapper {
+  background: url(/Boostrap5/assets/images/bgcounter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1.5rem;
+  padding: 10rem 9%;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.counter-wrapper::before {
+  position: absolute;
+  content: "";
+  content: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 113, 129, 0.8);
+  z-index: 1;
+}
+
+.counter {
+  text-align: center;
+  color: #ddd;
+  z-index: 2;
+  position: relative;
+}
+
+.counter::before {
+  position: absolute;
+  content: "";
+  bottom: -2rem;
+  left: 50%;
+  width: 20%;
+  height: 0.2rem;
+  background: #4d87fe;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.counter .count {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.counter p {
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+/* Animation Counter Section */
+/* >>>>>>> 39990d5d1835c1fafe05933fdbb1814b05330989 */
