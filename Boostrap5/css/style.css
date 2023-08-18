@@ -8,10 +8,12 @@
   background-color: #e5f5f8;
   transition: 1.5s;
 }
+
 /* sticky top */
 .white {
   background: #ccecf1;
 }
+
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 7px 18px;
   font-size: 15px;
@@ -46,6 +48,7 @@
 .custom_hero-section .custom_hero-text {
   margin-left: 120px;
 }
+
 .custom_hero-section .custom_hero-image {
   padding-right: 100px;
 }
@@ -74,6 +77,7 @@
   background-color: #007181;
   color: #f3f0f6;
 }
+
 .custom_hero-section a:hover {
   background-color: #19abc0;
 }
@@ -103,4 +107,55 @@
 .about_area-section .custom_about-text a:hover {
   background-color: #19abc0;
   color: #000000;
+}
+
+/* whay choose us */
+.wcu_area-section{
+  background-color: #E5F5F8;
+}
+
+.wcu_area-section .container {
+  margin-right: 70px;
+}
+.why {
+  font-size: 14px;
+}
+
+.wcu{
+  margin-left: 120px;
+}
+
+.wcu_img{
+  width: 35px;
+  float: left;
+  margin-right:16px ;
+  
+}
+.text-wcu{
+  font-family: poppins;
+  font-weight: 500;
+  overflow: hidden;
+}
+.text-wcu h2{
+  font-size: 16px;
+  color: #00A2B9;
+  line-height: 28px;
+}
+
+.text-wcu p{
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.wcu_area-section span{
+  color: #0093ae;
+}
+.wcu_area-section .custom_wcu-text a{
+  background-color: #007181;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-weight: 500;
+  
 }
