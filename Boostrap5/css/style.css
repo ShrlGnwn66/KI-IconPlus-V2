@@ -39,16 +39,19 @@
   background-color: #66c7d5;
   color: #2b2a2a;
 }
+/* Custom Login page end */
 
 /* Custom Nav Section */ 
 .custom_nav-container {
   background-color: #e5f5f8;
   transition: 1.5s;
 }
+
 /* sticky top */
 .white {
   background: #ccecf1;
 }
+
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 7px 18px;
   font-size: 15px;
@@ -72,6 +75,7 @@
   background-color: #66c7d5;
   color: #2b2a2a;
 }
+/* Custom Nav section end */
 
 /* Custom Hero Section */
 .custom_hero-section {
@@ -79,22 +83,23 @@
   height: 100vh;
   overflow: hidden;
 }
-.custom_hero-section::before{
-  content: 'PLN ICON PLUS';
+.custom_hero-section::before {
+  content: "PLN ICON PLUS";
   position: absolute;
   font-size: 70px;
   font-weight: 600;
   color: #9b9a9a;
   z-index: 100;
-  opacity: .1;
+  opacity: 0.1;
   margin-top: 490px;
   margin-left: 50px;
   transform: rotate(-90deg);
-  transform-origin: top left; 
+  transform-origin: top left;
 }
 .custom_hero-section .custom_hero-text {
   margin-left: 120px;
 }
+
 .custom_hero-section .custom_hero-image {
   padding-right: 100px;
 }
@@ -123,27 +128,28 @@
   background-color: #007181;
   color: #f3f0f6;
 }
+
 .custom_hero-section a:hover {
   background-color: #19abc0;
 }
+/* Custom hero section end */
+
 /* custom social media */
-.custom_social-media{
+.custom_social-media {
   display: flex;
   align-items: center;
   position: absolute;
   writing-mode: vertical-rl;
-  /* margin-bottom: 200px;  */
-  margin-left: 1290px;
+  margin-left: 1320px;
 }
-.custom_social-media h2{
- color: #00A2B9;
- font-size: 20px;
- font-weight: 600;
- cursor: pointer;
- padding-top: 70px;
- 
+.custom_social-media h2 {
+  color: #00a2b9;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-top: 70px;
 }
-.border{
+.border {
   border-left: 6px solid rgba(0, 0, 0, 10);
   width: 4px;
   height: 90px;
@@ -152,7 +158,6 @@
   margin-left: -1px;
   top: 240px;
   background-color: #000000;
-  
 }
 
 .custom_social-media .social_media-button {
@@ -168,7 +173,9 @@
   background-color: transparent; /* Menghapus latar belakang */
   position: absolute;
   left: 50%; /* Menyusun ikon ke tengah secara horizontal */
-  transform: translateX(-50%); /* Menggeser ikon ke kiri sejajar dengan border */
+  transform: translateX(
+    -50%
+  ); /* Menggeser ikon ke kiri sejajar dengan border */
   top: 220px; /* Menyesuaikan jarak vertikal antara ikon dan border */
 }
 
@@ -219,6 +226,7 @@
   background-color: #19abc0;
   color: #000000;
 }
+/* Custom about section */
 
 /* Custom services Section */
 .services_area-section {
@@ -240,69 +248,56 @@
 .services_area-section h5 {
   color: #0093ae;
 }
+/* Custom services Section End*/
 
-/* Animation Counter Section */
-
-.counter-wrapper {
-  background: url(/Boostrap5/assets/images/bgcounter.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 1.5rem;
-  padding: 10rem 9%;
-  margin-top: 5rem;
-  position: relative;
+/* Why choose us */
+.wcu_area-section {
+  background-color: #e5f5f8;
+  padding-top: 100px;
+  height: 100vh;
+}
+.wcu_area-section .container {
+  margin-right: 60px;
 }
 
-.counter-wrapper::before {
-  position: absolute;
-  content: "";
-  content: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 113, 129, 0.8);
-  z-index: 1;
+.wcu_area-section .custom_wcu-text span {
+  color: #0093ae;
+}
+.wcu_area-section .custom_wcu-text span h1 {
+  font-size: 50px;
 }
 
-.counter {
-  text-align: center;
-  color: #ddd;
-  z-index: 2;
-  position: relative;
+.wcu_area-section .custom_wcu-text img {
+  width: 35px;
+  float: left;
+  margin-right: 16px;
+}
+.wcu_area-section .custom_wcu-text .text-wcu {
+  font-weight: 500;
+  overflow: hidden;
+}
+.wcu_area-section .custom_wcu-text .text-wcu h2 {
+  font-size: 16px;
+  color: #00a2b9;
+  line-height: 28px;
 }
 
-.counter::before {
-  position: absolute;
-  content: "";
-  bottom: -2rem;
-  left: 50%;
-  width: 20%;
-  height: 0.2rem;
-  background: #4d87fe;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+.wcu_area-section .custom_wcu-text .text-wcu p {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
 }
 
-.counter .count {
-  font-size: 5rem;
-  margin-bottom: 1rem;
+.wcu_area-section .custom_wcu-text a {
+  background-color: #007181;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-weight: 500;
 }
 
-.counter p {
-  font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+.wcu_area-section .custom_wcu-image img {
+  width: 600px;
+  height: 480px;
 }
-/* Animation Counter Section */
+/* Why choose us End*/
