@@ -1,3 +1,4 @@
+// scroll navbar
 $(window).scroll(function () {
   if ($(window).scrollTop()) {
     $("nav").addClass("white");
@@ -6,20 +7,38 @@ $(window).scroll(function () {
   }
 });
 
-const counts = document.querySelectorAll(".counter-numbers");
-const speed = 97;
-
-counts.forEach((counter) => {
-  function upDate() {
-    const target = Number(counter.getAttribute("data-count-target"));
-    const count = Number(counter.innerText);
-    const inc = target / speed;
-    if (count < target) {
-      counter.innerText = Math.floor(inc + count);
-      setTimeout(upDate, 15);
-    } else {
-      counter.innerText = target;
+//count
+const counters = document.querySelectorAll('.count');
+const options = {
+  root: null, // Default: viewport
+  rootMargin: '0px',
+  threshold: 0.5 // Jika setengah atau lebih elemen masuk ke dalam viewport, observer akan dimulai
+};
+const counter = document.querySelectorAll('.count');
+const speed = 55;
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const target = entry.target;
+      const targetCount = Number(target.getAttribute('data-target'));
+ 
+      let currentCount = 0;
+      const updateCounter = () => {
+        if (currentCount < targetCount) {
+          const increment = Math.ceil(targetCount / speed);
+          currentCount += increment;
+          target.innerText = currentCount;
+          setTimeout(updateCounter, 70);
+        } else {
+          target.innerText = targetCount;
+        }
+      };
+      updateCounter();
+      observer.unobserve(target);
     }
-  }
-  upDate();
+  });
+}, options);
+counters.forEach(counter => {
+  observer.observe(counter);
 });
+//end count

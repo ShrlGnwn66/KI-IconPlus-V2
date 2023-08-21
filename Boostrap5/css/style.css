@@ -51,7 +51,7 @@
 }
 /* Login page end */
 
-/* Custom Nav Section */
+/* Custom Nav Section */ 
 .custom_nav-container {
   background-color: #e5f5f8;
   transition: 1.5s;
@@ -261,9 +261,45 @@
 }
 /* Custom services Section End*/
 
+/* anime counter */
+.custom_section-counter{
+  background: url("/Boostrap5/assets/images/bgcounter.png") no-repeat;
+  padding: 90px; 
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.custom_section-counter::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 113, 129, 0.8);
+  z-index: 1;
+}
+.custom_section-counter .custom_counter{
+  position: relative;
+  z-index: 2;
+  margin-left: 70px;
+  
+}
+.custom_section-counter .count {
+  font-size: 45px;
+  font-weight: 600;
+  color:#FFFF00; 
+}
+.custom_section-counter .plus,
+.custom_section-counter p {
+  color: white;
+}
+/* anime counter end*/
+
+
 /* Why choose us */
 .wcu_area-section {
-  background-color: #e5f5f8;
+  background-color: #ffff;
   padding-top: 100px;
   height: 100vh;
 }
@@ -312,3 +348,6 @@
   height: 480px;
 }
 /* Why choose us End*/
+
+
+
