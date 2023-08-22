@@ -349,5 +349,44 @@
 }
 /* Why choose us End*/
 
+/*custom news */
+.custom_news-section{
+  background-color:#e5f5f8;
+}
+.custom_news-section .container{
+  margin-left: 100px;
+  height: 87vh;
+}
+.custom_news-section h4{
+  color: #000000;
+}
+.custom_news-section h2{
+  color: #0093ae;
+}
+.custom_news-section img{
+  /* width: 100px; */
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+}
+.custom_news-section h5 {
+  color: #ffff;
+}
+.custom_news-section p {
+  color:#D9D9D9;
+  
+}
+.custom_news-section a {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  background-color:#D9D9D9;
+  padding: 7px 50px;
+}
+.custom_news-section .custom_news-card {
+  background-color: #007181;
+}
 
+/*custom news end*/
+
+/* footer */
 
