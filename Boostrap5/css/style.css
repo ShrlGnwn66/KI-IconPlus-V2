@@ -51,7 +51,7 @@
 }
 /* Login page end */
 
-/* Custom Nav Section */ 
+/* Custom Nav Section */
 .custom_nav-container {
   background-color: #e5f5f8;
   transition: 1.5s;
@@ -262,16 +262,16 @@
 /* Custom services Section End*/
 
 /* anime counter */
-.custom_section-counter{
+.custom_section-counter {
   background: url("/Boostrap5/assets/images/bgcounter.png") no-repeat;
-  padding: 90px; 
+  padding: 90px;
   background-position: center;
   background-size: cover;
   position: relative;
 }
-.custom_section-counter::before{
+.custom_section-counter::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 100%;
@@ -279,16 +279,15 @@
   background: rgba(0, 113, 129, 0.8);
   z-index: 1;
 }
-.custom_section-counter .custom_counter{
+.custom_section-counter .custom_counter {
   position: relative;
   z-index: 2;
   margin-left: 70px;
-  
 }
 .custom_section-counter .count {
   font-size: 45px;
   font-weight: 600;
-  color:#FFFF00; 
+  color: #ffff00;
 }
 .custom_section-counter .plus,
 .custom_section-counter p {
@@ -296,12 +295,11 @@
 }
 /* anime counter end*/
 
-
 /* Why choose us */
 .wcu_area-section {
   background-color: #ffff;
   padding-top: 100px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .wcu_area-section .container {
   margin-right: 60px;
@@ -349,5 +347,61 @@
 }
 /* Why choose us End*/
 
+/* Gallery Custom */
+.custom_galery-section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 100px 7px;
+  margin-top: 100px;
+}
 
+.custom_galery-section .custom_galery-container {
+  max-width: 1140px;
+  /* margin: auto; */
+}
 
+.custom_galery-section .section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.custom_galery-section .section-title h1 {
+  font-size: 45px;
+  color: #008194;
+  margin: 0 0 5px;
+}
+.custom_galery-section .galery-button {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.custom_galery-section .galery-button ul li {
+  display: inline-block;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.custom_galery-section .galery-button ul li.active {
+  color: #fff;
+  padding: 7px 25px;
+  background-color: #19abc0;
+}
+
+.custom_galery-section .galeri-image {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.custom_galery-section .galeri-image .item {
+  flex: 0 0 calc(25% - 16px);
+  max-width: calc(25% - 16px);
+  margin-left: 15px;
+  padding: 7px;
+}
+
+.custom_galery-section .galeri-image .item img {
+  width: 100%;
+  display: block;
+}
+
+/* Gallery Custom End */
