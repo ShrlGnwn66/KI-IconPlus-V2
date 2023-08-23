@@ -1,7 +1,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 /* CSS FOR FORM AND LOGIN PAGE */
 /* 01 Login Page CSS */
 
@@ -55,8 +57,7 @@
 .custom_nav-container {
   background-color: #e5f5f8;
   transition: 1.5s;
-}
-
+} 
 /* sticky top */
 .white {
   background: #ccecf1;
@@ -92,6 +93,7 @@
   background-color: #e5f5f8;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 .custom_hero-section::before {
   content: "PLN ICON PLUS";
@@ -138,9 +140,26 @@
   background-color: #007181;
   color: #f3f0f6;
 }
-
 .custom_hero-section a:hover {
   background-color: #19abc0;
+}
+.custom_scroll-top {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  /* color: #008194; */
+  color: red;
+  z-index: 3;
+  font-size: 35px;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0; /* Sembunyikan elemen secara awal */
+}
+.bi:hover {
+  color: #19abc0;
+}
+.custom_scroll-top.show {
+  opacity: 1; /* Tampilkan elemen ketika kelas .show diterapkan */
 }
 /* Custom hero section end */
 

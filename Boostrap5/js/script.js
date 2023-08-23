@@ -97,3 +97,21 @@ for (let i = 0; i < filterButtons.length; i++) {
     }
   });
 }
+
+//scroll top
+let custom_scroll_top = document.querySelector(".custom_scroll-top");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY >= 200) {
+    custom_scroll_top.classList.add('show');
+  } else {
+    custom_scroll_top.classList.remove('show');
+  }
+});
+
+custom_scroll_top.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
