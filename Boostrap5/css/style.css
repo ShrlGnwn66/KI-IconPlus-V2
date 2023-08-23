@@ -54,11 +54,20 @@ html{
 /* Login page end */
 
 /* Custom Nav Section */
+/* Custom Nav Section */
 .custom_nav-container {
   background-color: #e5f5f8;
   transition: 1.5s;
 } 
-/* sticky top */
+
+/* Sticky top */
+/* Custom Nav Section */
+.custom_nav-container {
+  background-color: #e5f5f8;
+  transition: 1.5s;
+}
+
+/* Sticky top */
 .white {
   background: #ccecf1;
 }
@@ -69,10 +78,13 @@ html{
   color: #000000;
 }
 
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link {
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
   background-color: #19abc0;
-  color: #ffff;
+  color: #fff;
 }
+
+
 
 .custom_nav-container .navbar-nav .nav-item-active .custom_button-login {
   font-size: 15px;

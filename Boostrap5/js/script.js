@@ -7,6 +7,41 @@ $(window).scroll(function () {
   }
 });
 
+//active nav link
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('.nav-link');
+
+let currentSection = 'home';
+
+// Function to update active link and handle hover effect
+function updateActiveLink() {
+  sections.forEach(section => {
+    if (window.scrollY >= (section.offsetTop - 200)) {
+      currentSection = section.id;
+    }
+  });
+
+  navLinks.forEach(navLink => {
+    if (navLink.getAttribute('href').includes(currentSection)) {
+      navLink.parentElement.classList.add('active');
+    } else {
+      navLink.parentElement.classList.remove('active');
+    }
+  });
+}
+
+// Set initial active section on page load
+window.addEventListener('load', () => {
+  updateActiveLink(); // Call the function to set active link on page load
+});
+
+// Attach event listener to scroll and update active link
+window.addEventListener('scroll', () => {
+  updateActiveLink(); // Call the function to update active link during scroll
+});
+
+
+
 //count
 const counters = document.querySelectorAll(".count");
 const options = {
@@ -42,32 +77,6 @@ counters.forEach((counter) => {
   observer.observe(counter);
 });
 //end count
-
-// Gallery Items Filter
-
-// const filterButtons = document.querySelector("#galery-btns").children;
-// const items = document.querySelector(".galeri-image").children;
-
-// for (let i = 0; i < filterButtons.length; i++) {
-//   filterButtons[i].addEventListener("click", function () {
-//     for (let j = 0; j < filterButtons.length; j++) {
-//       filterButtons[j].classList.remove("active");
-//     }
-//     this.classList.add("active");
-//     const target = this.getAttribute("data-target");
-
-//     for (let k = 0; k < items.length; k++) {
-//       items[k].style.display = "none";
-//       if (target == items[k].getAttribute("data-id")) {
-//         items[k].style.display = "block";
-//       }
-
-//       if (target === "All") {
-//         items[k].style.display = "block";
-//       }
-//     }
-//   });
-// }
 
 // Gallery Items Filter
 const filterButtons = document.querySelector("#galery-btns").children;
