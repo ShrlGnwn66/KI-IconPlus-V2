@@ -473,4 +473,12 @@ html {
   .services_area-section .custom_card-section {
     width: auto;
   }
+
+  .custom_section-counter .custom_counter {
+    margin-left: 0;
+  }
+
+  .custom_section-counter {
+    padding: 40px;
+  }
 }
