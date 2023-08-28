@@ -353,6 +353,7 @@ html {
 .wcu_area-section .custom_wcu-image img {
   width: 600px;
   height: 480px;
+  object-fit: cover;
 }
 /* Why choose us End*/
 
@@ -480,5 +481,10 @@ html {
 
   .custom_section-counter {
     padding: 40px;
+  }
+
+  .wcu_area-section .custom_wcu-image img {
+    max-width: 100%;
+    height: 480px;
   }
 }
