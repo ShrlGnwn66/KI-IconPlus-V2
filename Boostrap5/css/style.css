@@ -107,20 +107,6 @@ html {
   padding-right: 100px;
 }
 
-@media (max-width: 600px) {
-  .custom_hero-section .custom_hero-text {
-    margin-left: 0;
-  }
-
-  .custom_hero-section .custom_hero-image {
-    padding-right: 0;
-  }
-
-  .custom_hero-section .custom_hero-image img {
-    display: none;
-  }
-}
-
 .custom_hero-section .custom_hero-text h1 {
   color: #0093ae;
   font-size: 60px;
@@ -270,6 +256,7 @@ html {
 .services_area-section .custom_card-section {
   background-color: #e5f5f8;
   width: 350px;
+  padding-top: 30px;
 }
 .services_area-section img {
   width: 100px;
@@ -465,3 +452,25 @@ html {
 }
 
 /*custom news end*/
+
+@media (max-width: 600px) {
+  .custom_hero-section .custom_hero-text {
+    margin-left: 0;
+  }
+
+  .custom_hero-section .custom_hero-image {
+    padding-right: 0;
+  }
+
+  .custom_hero-section .custom_hero-image img {
+    display: none;
+  }
+
+  .about_area-section img {
+    display: none;
+  }
+
+  .services_area-section .custom_card-section {
+    width: auto;
+  }
+}
