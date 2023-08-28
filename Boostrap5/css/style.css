@@ -494,4 +494,9 @@ html {
     margin-left: 15px;
     padding: 7px;
   }
+
+  .custom_news-section .container {
+    margin-left: 0;
+    height: auto;
+  }
 }
