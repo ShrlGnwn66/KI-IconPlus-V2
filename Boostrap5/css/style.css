@@ -454,7 +454,7 @@ html {
 
 /*custom news end*/
 
-@media (max-width: 600px) {
+@media (max-width: 991px) {
   .custom_hero-section .custom_hero-text {
     margin-left: 0;
   }
@@ -484,7 +484,7 @@ html {
   }
 
   .wcu_area-section .custom_wcu-image img {
-    max-width: 100%;
+    width: 100%;
     height: 480px;
   }
 
@@ -498,5 +498,6 @@ html {
   .custom_news-section .container {
     margin-left: 0;
     height: auto;
+    margin: 0 auto;
   }
 }
