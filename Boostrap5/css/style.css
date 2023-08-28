@@ -98,12 +98,27 @@ html {
   transform: rotate(-90deg);
   transform-origin: top left;
 }
+
 .custom_hero-section .custom_hero-text {
   margin-left: 120px;
 }
 
 .custom_hero-section .custom_hero-image {
   padding-right: 100px;
+}
+
+@media (max-width: 600px) {
+  .custom_hero-section .custom_hero-text {
+    margin-left: 0;
+  }
+
+  .custom_hero-section .custom_hero-image {
+    padding-right: 0;
+  }
+
+  .custom_hero-section .custom_hero-image img {
+    display: none;
+  }
 }
 
 .custom_hero-section .custom_hero-text h1 {
