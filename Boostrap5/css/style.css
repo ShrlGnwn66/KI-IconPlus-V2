@@ -98,6 +98,7 @@ html {
   transform: rotate(-90deg);
   transform-origin: top left;
 }
+
 .custom_hero-section .custom_hero-text {
   margin-left: 120px;
 }
@@ -255,6 +256,7 @@ html {
 .services_area-section .custom_card-section {
   background-color: #e5f5f8;
   width: 350px;
+  padding-top: 30px;
 }
 .services_area-section img {
   width: 100px;
@@ -351,6 +353,7 @@ html {
 .wcu_area-section .custom_wcu-image img {
   width: 600px;
   height: 480px;
+  object-fit: cover;
 }
 /* Why choose us End*/
 
@@ -450,3 +453,51 @@ html {
 }
 
 /*custom news end*/
+
+@media (max-width: 991px) {
+  .custom_hero-section .custom_hero-text {
+    margin-left: 0;
+  }
+
+  .custom_hero-section .custom_hero-image {
+    padding-right: 0;
+  }
+
+  .custom_hero-section .custom_hero-image img {
+    display: none;
+  }
+
+  .about_area-section img {
+    display: none;
+  }
+
+  .services_area-section .custom_card-section {
+    width: auto;
+  }
+
+  .custom_section-counter .custom_counter {
+    margin-left: 0;
+  }
+
+  .custom_section-counter {
+    padding: 40px;
+  }
+
+  .wcu_area-section .custom_wcu-image img {
+    width: 100%;
+    height: 480px;
+  }
+
+  .custom_galery-section .galeri-image .item {
+    flex: 0 0 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+    margin-left: 15px;
+    padding: 7px;
+  }
+
+  .custom_news-section .container {
+    margin-left: 0;
+    height: auto;
+    margin: 0 auto;
+  }
+}
