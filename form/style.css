@@ -38,7 +38,8 @@ header h1 {
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background-color: #007181; */
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
