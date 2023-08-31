@@ -1,0 +1,36 @@
+    <!-- <section id="studyOption" class="study-option bg-study-option">
+      <div id="majorKi" class="container major">
+        <div class="header-major text-sm-center text-center">
+          <h1 class="header-major-title mt-3 pt-3 fw-bold">Pilihan Bidang Jurusan</h1>
+          <p class="mb-0 px-3 px-sm-0">Kelas Industri PLN Icon Plus memiliki 3 bidang jurusan</p>
+        </div>
+        <div>
+          <div class="card border-0 shadow-sm card-kelas-industri mb-4 mb-md-5">
+            <div class="card-body">
+              <div class="row align-items-center title-card-ki">
+                <div class="col12 col-md-7 order-2 order-md-1">
+                  <p class="mb-3 fw-bold h4 text-dark">Desain Komunikasi Visual</p>
+                </div>
+                <img src="assets/img/tjkt.jpg" alt="" class="col-12 order-1 order-md-3 col-md-5 mb-4 mb-md-0">
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm card-kelas-industri mb-4 mb-md-5">
+            <div class="card-body">
+              
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm card-kelas-industri mb-4 mb-md-5">
+            <div class="card-body">
+              
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm card-kelas-industri mb-4 mb-md-5">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- main content section end -->
