@@ -48,7 +48,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    margin: auto;
+}
+
 /* top navbar */
+.header{
+    margin: auto;
+}
+
 .custom_nav-one {
     background-color: var(--ki-main-color);
     position: fixed;
@@ -129,5 +137,8 @@ font-weight: 400;
 /* Navbar Menu Two End */
 
 /* Main Section Start */
-
+.page-header {
+    background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../../assets/img/guru-tamu.jpg) center center no-repeat;
+    background-size: cover;
+}
 /* Main Section End */
