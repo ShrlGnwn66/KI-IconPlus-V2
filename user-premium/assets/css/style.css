@@ -48,6 +48,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Header Section Start */
+
 /* top navbar */
 .custom_nav-one {
   background-color: var(--ki-main-color);
@@ -58,10 +60,6 @@
   padding: 10px 0;
   z-index: 1000;
 }
-
-/* .navbar {
-
-} */
 
 .navbar .navbar-nav-right span {
   vertical-align: middle;
@@ -128,6 +126,8 @@
 
 /* Navbar Menu Two End */
 
+/* Header Section End */
+
 /* Main Section Start */
 .title-hero {
   padding: 46px 32px;
@@ -159,6 +159,6 @@ study-option{
 
 .bg-study-option {
   background: linear-gradient(249.11deg, #2DAAE1 23.74%, #2D7FC1 74.11%);
-  /* background-image: linear-gradient(249.11deg, rgb(45, 170, 225) 23.74%, rgb(45, 127, 193) 74.11%); */
 }
 /* Main Section End */
+
