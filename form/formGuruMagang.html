@@ -14,121 +14,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!-- <header class="custom_form-header">
-      <h1 class="text-center text-uppercase">Pendaftaran Guru Magang</h1>
-    </header> -->
     <div class="container">
       <div class="title text-center mb-4">Data diri Peserta Guru Magang</div>
       <div class="content">
         <form action="#">
           <div class="user-details">
-            <div class="input-box">
-              <span class="details">Nama Instansi</span>
-              <div
-                id="nama-instansi-error"
-                class="error-message"
-                style="color: red"
-              ></div>
-              <input
-                type="text"
-                id="nama-instansi"
-                name="nama-instansi"
-                placeholder="Masukkan Nama Instansi"
-                required
-                maxlength="75"
-                autofocus
-                autocapitalize=""
-              />
-            </div>
-            <div class="input-box">
-              <span class="details">Periode Magang</span>
-              <div class="custom-periode">
+            <!-- Column Kiri -->
+            <div class="left-column">
+              <div class="input-box">
+                <span class="details">Nama Instansi</span>
+                <div
+                  id="nama-instansi-error"
+                  class="error-message"
+                  style="color: red"
+                ></div>
                 <input
-                  type="date"
-                  id="tanggal-mulai"
-                  name="tanggal-mulai"
+                  type="text"
+                  id="nama-instansi"
+                  name="nama-instansi"
+                  placeholder="Masukkan Nama Instansi"
                   required
+                  maxlength="75"
+                  autofocus
                 />
-                <span class="ms-2 me-2">s/d</span>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Nama Peserta</span>
+                <input type="text" placeholder="Masukkan Nama" required />
+              </div>
+
+              <div class="input-box">
+                <span class="details">NIP</span>
                 <input
-                  type="date"
-                  id="tanggal-selesai"
-                  name="tanggal-selesai"
+                  type="text"
+                  id="nip"
+                  name="nip"
+                  pattern="[0-9]{18}"
+                  inputmode="numeric"
+                  placeholder="Masukkan NIP"
+                  title="NIP harus terdiri dari 18 angka"
                   required
                 />
               </div>
-              <div
-                id="tanggal-error"
-                class="error-message"
-                style="color: red"
-              ></div>
+
+              <span class="details">Jenis Kelamin</span>
+              <div class="select-box">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Laki-Laki
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Perempuan
+                  </label>
+                </div>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Jurusan</span>
+                <select
+                  class="form-select form-select-lg mb-3"
+                  aria-label="Large select example"
+                  required
+                >
+                  <option selected disabled>Pilih Jurusan</option>
+                  <option value="1">DKV</option>
+                  <option value="2">RPL</option>
+                  <option value="3">TITL</option>
+                  <option value="4">TJKT</option>
+                </select>
+              </div>
             </div>
 
-            <div class="input-box">
-              <span class="details">NIP</span>
-              <input
-                type="text"
-                id="nip"
-                name="nip"
-                pattern="[0-9]{18}"
-                inputmode="numeric"
-                placeholder="Masukkan NIP"
-                title="NIP harus terdiri dari 18 angka"
-                required
-              />
-            </div>
-            <div class="input-box">
-              <span class="details">Guru Penanggung Jawab</span>
-              <input type="text" placeholder="Masukkan Nama Guru" required />
-            </div>
-            <div class="input-box">
-              <span class="details">Nama</span>
-              <input type="text" placeholder="Masukkan Nama" required />
-            </div>
-            <div class="input-box">
-              <span class="details">Kontak Penanggung Jawab</span>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                pattern="08[0-9]{10}"
-                placeholder="Masukkan Nomor Telepon"
-                title="Telp dimulai dengan 08 dan terdiri dari 12 digit"
-                required
-              />
-            </div>
+            <!-- Column Kanan -->
+            <div class="right-column">
+              <div class="input-box">
+                <span class="details">Periode Magang</span>
+                <div class="custom-periode">
+                  <input
+                    type="date"
+                    id="tanggal-mulai"
+                    name="tanggal-mulai"
+                    required
+                  />
+                  <span class="ms-2 me-2">s/d</span>
+                  <input
+                    type="date"
+                    id="tanggal-selesai"
+                    name="tanggal-selesai"
+                    required
+                  />
+                </div>
+                <div
+                  id="tanggal-error"
+                  class="error-message"
+                  style="color: red"
+                ></div>
+              </div>
 
-            <div class="input-box">
-              <span class="details">Jurusan</span>
-              <select
-                class="form-select form-select-lg mb-3"
-                aria-label="Large select example"
-                required
-              >
-                <option selected disabled>Pilih Jurusan</option>
-                <option value="1">DKV</option>
-                <option value="2">RPL</option>
-                <option value="3">TITL</option>
-                <option value="4">TJKT</option>
-              </select>
-            </div>
-            <div class="input-box">
-              <span class="details">Surat Permohonan</span>
-              <input class="custom-file" type="file" id="myfile" required />
-            </div>
-            <div class="gender-details">
-              <input type="radio" name="gender" id="dot-1" required />
-              <input type="radio" name="gender" id="dot-2" required />
-              <span class="gender-title">Jenis Kelamin</span>
-              <div class="category">
-                <label for="dot-1">
-                  <span class="dot one"></span>
-                  <span class="gender">Laki-Laki</span>
-                </label>
-                <label for="dot-2">
-                  <span class="dot two"></span>
-                  <span class="gender">Perempuan</span>
-                </label>
+              <div class="input-box">
+                <span class="details">Guru Penanggung Jawab</span>
+                <input type="text" placeholder="Masukkan Nama Guru" required />
+              </div>
+
+              <div class="input-box">
+                <span class="details">Kontak Penanggung Jawab</span>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="08[0-9]{10}"
+                  placeholder="Masukkan Nomor Telepon"
+                  title="Telp dimulai dengan 08 dan terdiri dari 12 digit"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <span class="details">Surat Permohonan</span>
+                <input class="custom-file" type="file" id="myfile" required />
               </div>
             </div>
           </div>

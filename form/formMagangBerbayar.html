@@ -14,9 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <!-- <header class="custom_form-header">
-      <h1 class="text-center text-uppercase">Pendaftaran Guru Magang</h1>
-    </header> -->
     <div class="container">
       <div class="title text-center mb-4">
         Data diri Peserta Magang Berbayar
@@ -24,113 +21,115 @@
       <div class="content">
         <form action="#">
           <div class="user-details">
-            <div class="input-box">
-              <span class="details">Nama Instansi</span>
-              <div
-                id="nama-instansi-error"
-                class="error-message"
-                style="color: red"
-              ></div>
-              <input
-                type="text"
-                id="nama-instansi"
-                name="nama-instansi"
-                placeholder="Masukkan Nama Instansi"
-                required
-                maxlength="75"
-                autofocus
-              />
-            </div>
-            <!-- <div class="gender-details">
-              <input type="radio" name="gender" id="dot-1" required />
-              <input type="radio" name="gender" id="dot-2" required />
-              <span class="gender-title">Jenis Kelamin</span>
-              <div class="category">
-                <label for="dot-1">
-                  <span class="dot one"></span>
-                  <span class="gender">Laki-Laki</span>
-                </label>
-                <label for="dot-2">
-                  <span class="dot two"></span>
-                  <span class="gender">Perempuan</span>
-                </label>
+            <!-- Column Kiri -->
+            <div class="left-column">
+              <div class="input-box">
+                <span class="details">Nama Instansi</span>
+                <div
+                  id="nama-instansi-error"
+                  class="error-message"
+                  style="color: red"
+                ></div>
+                <input
+                  type="text"
+                  id="nama-instansi"
+                  name="nama-instansi"
+                  placeholder="Masukkan Nama Instansi"
+                  required
+                  maxlength="75"
+                  autofocus
+                />
               </div>
-            </div> -->
 
-            <div class="input-box">
-              <span class="details">Nama Peserta</span>
-              <input
-                type="text"
-                id="nip"
-                name="nip"
-                pattern="[0-9]{18}"
-                inputmode="numeric"
-                placeholder="Masukkan NIP"
-                title="NIP harus terdiri dari 18 angka"
-                required
-              />
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault1"
-              />
-              <label class="form-check-label" for="flexRadioDefault1">
-                Default radio
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-                checked
-              />
-              <label class="form-check-label" for="flexRadioDefault2">
-                Default checked radio
-              </label>
-            </div>
-            <div class="input-box">
-              <span class="details">Jurusan</span>
-              <select
-                class="form-select form-select-lg mb-3"
-                aria-label="Large select example"
-                required
-              >
-                <option selected disabled>Pilih Jurusan</option>
-                <option value="1">DKV</option>
-                <option value="2">RPL</option>
-                <option value="3">TITL</option>
-                <option value="4">TJKT</option>
-              </select>
+              <div class="input-box">
+                <span class="details">Nama Peserta</span>
+                <input type="text" placeholder="Masukkan Nama" required />
+              </div>
+
+              <div class="input-box">
+                <span class="details">Jurusan</span>
+                <select
+                  class="form-select form-select-lg mb-3"
+                  aria-label="Large select example"
+                  required
+                >
+                  <option selected disabled>Pilih Jurusan</option>
+                  <option value="1">DKV</option>
+                  <option value="2">RPL</option>
+                  <option value="3">TITL</option>
+                  <option value="4">TJKT</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <span class="details">Tahun Lulus</span>
+                <input
+                  type="text"
+                  placeholder="Masukkan Tahun lulus"
+                  required
+                />
+              </div>
             </div>
 
-            <div class="input-box">
-              <span class="details">Surat Lamaran</span>
-              <input class="custom-file" type="file" id="myfile" required />
-            </div>
-            <div class="input-box">
-              <span class="details">Tahun Lulus</span>
-              <input type="text" placeholder="Masukkan Tahun Lulus" required />
-            </div>
-            <!-- <div class="gender-details">
-              <input type="radio" name="gender" id="dot-1" required />
-              <input type="radio" name="gender" id="dot-2" required />
-              <span class="gender-title">Jenis Kelamin</span>
-              <div class="category">
-                <label for="dot-1">
-                  <span class="dot one"></span>
-                  <span class="gender">Laki-Laki</span>
-                </label>
-                <label for="dot-2">
-                  <span class="dot two"></span>
-                  <span class="gender">Perempuan</span>
-                </label>
+            <!-- Column Kanan -->
+            <div class="right-column">
+              <span class="details">Mempunyai Laptop</span>
+              <div class="select-box">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="select-laptop"
+                    id="select-laptop1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    IYA
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="select-laptop"
+                    id="select-laptop2"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    TIDAK
+                  </label>
+                </div>
               </div>
-            </div> -->
+
+              <span class="details mt-4 pt-3">Mempunyai SIM C</span>
+              <div class="select-box">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="select-sim"
+                    id="select-sim1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    IYA
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="select-sim"
+                    id="select-sim2"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    TIDAK
+                  </label>
+                </div>
+              </div>
+
+              <div class="input-box mt-4 pt-1">
+                <span class="details">Surat Permohonan</span>
+                <input class="custom-file" type="file" id="myfile" required />
+              </div>
+            </div>
           </div>
 
           <div class="button d-flex justify-content-end">
