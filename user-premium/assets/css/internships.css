@@ -80,7 +80,6 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
 }
 
 .navbar .navbar-nav-right span {
@@ -112,7 +111,7 @@ body{
     position: absolute;
     right: 0;
     top: 100%;
-    z-index: 2;
+    z-index: 1000;
 }
 /* Navbar one End*/
 
@@ -150,32 +149,12 @@ font-weight: 400;
 /* Navbar Menu Two End */
 
 /* Main Section Start */
+
 .page-header {
     background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../../assets/image/guru-tamu.jpg) center center no-repeat;
     background-size: cover;
 }
 
-.main-job-lists {
-    /* background: #000000; */
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
 
-/* .main-job-lists .title-job-lists .container .row .search-list {
-    
-} */
-
-.job-lists .container .job-item{
-    background-color: #F0F2F3;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-}
-
-.job-lists .container .job-item .card {
-    background-color: red;
-}
 
 /* Main Section End */
