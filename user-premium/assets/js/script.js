@@ -40,3 +40,36 @@ tanggalSelesaiInput.addEventListener("input", function () {
     tanggalError.style.display = "none";
   }
 });
+
+
+// Accordion Scripts
+const accordionContent = document.querySelectorAll(".job-item");
+
+accordionContent.forEach((item, index) => {
+  let header = item.querySelector("header");
+  header.addEventListener("click", () =>{
+    item.classList.toggle("open");;
+
+    let description = item.querySelector(".description");
+    if(item.classList.contains("open")) {
+      description.style.height = `${description.scrollHeight}px`;
+      item.querySelector("a").classList.replace("Lihat detail >>", "Tutup detail <<");
+    } else {
+      description.style.height = "0px";
+      item.querySelector("a").classList.replace("Tutup detail <<", "Lihat detail >>");
+    }
+    removeOpen(index);
+  })
+})
+
+function removeOpen(index1){
+  accordionContent.forEach((item2, index2) => {
+    if(index1 != index2){
+        item2.classList.remove("open");
+
+        let des = item2.querySelector(".description");
+        des.style.height = "0px";
+        item2.querySelector("a").classList.replace("Tutup detail <<", "Lihat detail >>");
+    }
+  })
+}
