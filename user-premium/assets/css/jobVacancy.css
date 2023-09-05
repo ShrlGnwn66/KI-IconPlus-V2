@@ -1,0 +1,181 @@
+/* icon boostrap */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+
+/* ------------------------------------------------------------- */
+/* Bootstrap Main */
+
+:root {
+    --ki-main-color: #00616f;
+    --ki-second-color: #008194;
+    --ki-button-color: #007181;
+    --ki-copyright-color: rgba(0, 0, 0, 0.2);
+    --ki-blue: #5E50F9;
+    --ki-indigo: #6610f2;
+    --ki-purple: #6a008a;
+    --ki-pink: #E91E63;
+    --ki-red: #f96868;
+    --ki-orange: #f2a654;
+    --ki-yellow: #ffff00;
+    --ki-green: #46c35f;
+    --ki-teal: #58d8a3;
+    --ki-cyan: #57c7d4;
+    --ki-white: #ffffff;
+    --ki-gray: #434a54;
+    --ki-gray-light: #aab2bd;
+    --ki-gray-lighter: #e8eff4;
+    --ki-gray-lightest: #e6e9ed;
+    --ki-gray-dark: #0f1531;
+    --ki-black: #000000;
+    --ki-gray-100: #f8f9fa;
+    --ki-gray-200: #e9ecef;
+    --ki-gray-300: #dee2e6;
+    --ki-gray-400: #ced4da;
+    --ki-gray-500: #adb5bd;
+    --ki-gray-600: #6c757d;
+    --ki-gray-700: #495057;
+    --ki-gray-800: #343a40;
+    --ki-gray-900: #212529;
+    --ki-primary: #464dee;
+    --ki-secondary: #d8d8d8;
+    --ki-success: #0ddbb9;
+    --ki-info: #0ad7f7;
+    --ki-warning: #fcd53b;
+    --ki-danger: #ee5b5b;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    max-width: 1550px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* top navbar */
+.header{
+    margin: auto;
+}
+
+.custom_nav-one {
+    background-color: var(--ki-main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* .navbar {
+
+} */
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar .navbar-nav-right span {
+    vertical-align: middle;
+    color: #ffff;
+    font-size: 20px;
+}
+.navbar .navbar-nav-right img {
+    margin-left: 8px;
+    width: 50px;
+}
+
+.navbar .navbar-nav-right i {
+    margin-left: 10px;
+    width: 5px;
+}
+
+.navbar .navbar-nav-right .custom-dropdown a {
+    cursor: pointer;
+}
+.navbar .navbar-nav-right .custom-dropdown a:hover {
+    background-color: #7f8875;
+}
+.navbar .navbar-nav-right .dropdown-toggle::after {
+    content: none;
+}
+
+.navbar .navbar-nav-right .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 2;
+}
+/* Navbar one End*/
+
+/* bottom navbar */
+.custom_nav-menu {
+    /* position: relative; */
+    /* width: 100%; */
+    /* max-width: 1550px; */
+    background-color: var(--ki-button-color);
+    padding: 10px 0;
+}
+
+.custom_nav-menu.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom_nav-menu .navbar-nav .nav-item .nav-link {
+font-weight: 400;
+color: #fff;
+}
+.custom_nav-menu .navbar-nav .nav-item .nav-link:hover {
+color: var(--ki-yellow);
+}
+
+.custom_nav-menu .navbar-nav .nav-item .nav-link.active {
+color: var(--ki-yellow);
+/* color: red; */
+font-weight: 400;
+}
+
+/* Navbar Menu Two End */
+
+/* Main Section Start */
+.page-header {
+    background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../../assets/image/guru-tamu.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.main-job-lists {
+    /* background: #000000; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* .main-job-lists .title-job-lists .container .row .search-list {
+    
+} */
+
+.job-lists .container .job-item{
+    background-color: #F0F2F3;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.job-lists .container .job-item .card {
+    background-color: red;
+}
+
+/* Main Section End */
