@@ -183,12 +183,11 @@ font-weight: 400;
 
 .title-registration .container .registration-content .content-text a{
     color: var(--ki-white);
-    background-color: var(--ki-button-color);;
+    background-color: var(--ki-second-color);;
 }
 
 .title-registration .container .registration-content .content-text a:hover{
-    color: var(--ki-yellow);
-    background-color: var(--ki-second-color);
+    background-color: var(--ki-button-color);
     transition: all 0.3 ease;
     -webkit-transition: all 0.3 ease;
     -moz-transition: all 0.3 ease;
