@@ -1,7 +1,6 @@
 /* icon boostrap */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-
 /* ------------------------------------------------------------- */
 /* Bootstrap Main */
 
@@ -10,10 +9,10 @@
   --ki-second-color: #008194;
   --ki-button-color: #007181;
   --ki-copyright-color: rgba(0, 0, 0, 0.2);
-  --ki-blue: #5E50F9;
+  --ki-blue: #5e50f9;
   --ki-indigo: #6610f2;
   --ki-purple: #6a008a;
-  --ki-pink: #E91E63;
+  --ki-pink: #e91e63;
   --ki-red: #f96868;
   --ki-orange: #f2a654;
   --ki-yellow: #ffff00;
@@ -135,30 +134,15 @@
   padding-bottom: 180px;
 }
 
-/* .container{
-  display: grid;
-  place-items: center;
-  height: 55vh;
-} */
-
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
 
-.align-items-center{
+.align-items-center {
   align-items: center !important;
 }
 
-
-study-option{
-  padding: 46px 32px;
-}
-
-.bg-study-option {
-  background: linear-gradient(249.11deg, #2DAAE1 23.74%, #2D7FC1 74.11%);
-}
 /* Main Section End */
-
