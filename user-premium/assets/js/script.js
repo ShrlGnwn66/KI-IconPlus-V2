@@ -1,3 +1,29 @@
+// Accordion Scripts For FAQ
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
+    
+        // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+        
+        const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+        if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+            currentlyActiveAccordionItemHeader.classList.toggle("active");
+            currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+        }
+
+        accordionItemHeader.classList.toggle("active");
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if(accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        }
+        else {
+            accordionItemBody.style.maxHeight = 0;
+        }
+    
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const bottomNavbar = document.querySelector(".custom_nav-menu");
   const topNavbarHeight = document.querySelector(".custom_nav-one").clientHeight;
@@ -40,36 +66,3 @@ tanggalSelesaiInput.addEventListener("input", function () {
     tanggalError.style.display = "none";
   }
 });
-
-
-// Accordion Scripts
-const accordionContent = document.querySelectorAll(".job-item");
-
-accordionContent.forEach((item, index) => {
-  let header = item.querySelector("header");
-  header.addEventListener("click", () =>{
-    item.classList.toggle("open");;
-
-    let description = item.querySelector(".description");
-    if(item.classList.contains("open")) {
-      description.style.height = `${description.scrollHeight}px`;
-      item.querySelector("a").classList.replace("Lihat detail >>", "Tutup detail <<");
-    } else {
-      description.style.height = "0px";
-      item.querySelector("a").classList.replace("Tutup detail <<", "Lihat detail >>");
-    }
-    removeOpen(index);
-  })
-})
-
-function removeOpen(index1){
-  accordionContent.forEach((item2, index2) => {
-    if(index1 != index2){
-        item2.classList.remove("open");
-
-        let des = item2.querySelector(".description");
-        des.style.height = "0px";
-        item2.querySelector("a").classList.replace("Tutup detail <<", "Lihat detail >>");
-    }
-  })
-}
