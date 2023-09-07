@@ -27,6 +27,7 @@
     --ki-gray-lightest: #e6e9ed;
     --ki-gray-dark: #0f1531;
     --ki-black: #000000;
+    --ki-dark-light: ##F0F2F3
     --ki-gray-100: #f8f9fa;
     --ki-gray-200: #e9ecef;
     --ki-gray-300: #dee2e6;
@@ -157,12 +158,7 @@ font-weight: 400;
 
 
 .title-description .container .description-content{
-    background-color: #F0F2F3;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    background-color: var(--ki-dark-light);
     padding: 100px;
     box-shadow: 7px 10px 10px rgba(0, 0, 0, 0.1);;
 }
@@ -194,8 +190,77 @@ font-weight: 400;
     -o-transition: all 0.3 ease;
 }
 
-/* title-registration .container {
-    margin-left: 10000px;
-} */
+.job-desc .row img{
+    width: 500%;
+}
+
+.list-job-desc {
+    background-color: var(--ki-dark-light);
+    box-shadow: rgba(200, 200, 200, 0.25) 0px 8px 29px 5px;
+}
+
+.list-job-desc .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--ki-second-color);
+    margin-left: -25px;
+}
+
+/* Accordion Start */
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    /* position relative penyebab numpuk diatas header / navbar ? */
+    position: relative; 
+    cursor: pointer;
+}
+.accordion-item-header::after {
+    content: "+";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+.accordion-item-header.active::after {
+    content: "-";
+}
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    -ms-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 1rem;
+    text-align: start;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #ffff, transparent) 1;
+}
+
+/* Accordion End */
 
 /* Main Section End */
