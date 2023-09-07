@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > topNavbarHeight) {
-      bottomNavbar.classList.add("fixed");
+      bottomNavbar.classList.add("fixed-top");
     } else {
-      bottomNavbar.classList.remove("fixed");
+      bottomNavbar.classList.remove("fixed-top");
     }
   });
 });
