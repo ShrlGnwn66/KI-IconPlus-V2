@@ -1,68 +1,75 @@
 // Accordion Scripts For FAQ
-const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+const accordionItemHeaders = document.querySelectorAll(
+  ".accordion-item-header"
+);
 
-accordionItemHeaders.forEach(accordionItemHeader => {
-    accordionItemHeader.addEventListener("click", event => {
-    
-        // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-        
-        const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-        if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
-            currentlyActiveAccordionItemHeader.classList.toggle("active");
-            currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-        }
+accordionItemHeaders.forEach((accordionItemHeader) => {
+  accordionItemHeader.addEventListener("click", (event) => {
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
 
-        accordionItemHeader.classList.toggle("active");
-        const accordionItemBody = accordionItemHeader.nextElementSibling;
-        if(accordionItemHeader.classList.contains("active")) {
-            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-        }
-        else {
-            accordionItemBody.style.maxHeight = 0;
-        }
-    
-    });
+    const currentlyActiveAccordionItemHeader = document.querySelector(
+      ".accordion-item-header.active"
+    );
+    if (
+      currentlyActiveAccordionItemHeader &&
+      currentlyActiveAccordionItemHeader !== accordionItemHeader
+    ) {
+      currentlyActiveAccordionItemHeader.classList.toggle("active");
+      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   const bottomNavbar = document.querySelector(".custom_nav-menu");
-  const topNavbarHeight = document.querySelector(".custom_nav-one").clientHeight;
+  const topNavbarHeight =
+    document.querySelector(".custom_nav-one").clientHeight;
 
   window.addEventListener("scroll", function () {
-      if (window.scrollY > topNavbarHeight) {
-          bottomNavbar.classList.add("fixed");
-      } else {
-          bottomNavbar.classList.remove("fixed");
-      }
+    if (window.scrollY > topNavbarHeight) {
+      bottomNavbar.classList.add("fixed");
+    } else {
+      bottomNavbar.classList.remove("fixed");
+    }
   });
 });
 
-// Pesan eror nama instansi
-const namaInstansiInput = document.getElementById("nama-instansi");
-const namaInstansiError = document.getElementById("nama-instansi-error");
+// // show details
+const linksShowDetails = document.querySelectorAll(".btn-show-details");
+const linksShowLess = document.querySelectorAll(".btn-show-less");
 
-namaInstansiInput.addEventListener("input", function () {
-  if (namaInstansiInput.validity.valueMissing) {
-    namaInstansiError.textContent = "Nama Instansi tidak boleh kosong";
-  } else {
-    namaInstansiError.textContent = "";
-  }
+linksShowDetails.forEach((linkShowDetails) => {
+  linkShowDetails.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const newsItem = linkShowDetails.closest(".job-item");
+    const description = newsItem.querySelector(".description");
+    const linkShowLess = newsItem.querySelector(".btn-show-less");
+
+    description.style.display = "block";
+    linkShowDetails.style.display = "none";
+    linkShowLess.style.display = "block";
+  });
 });
 
-// Pesan eror Periode Magang
-const tanggalMulaiInput = document.getElementById("tanggal-mulai");
-const tanggalSelesaiInput = document.getElementById("tanggal-selesai");
-const tanggalError = document.getElementById("tanggal-error");
+linksShowLess.forEach((linkShowLess) => {
+  linkShowLess.addEventListener("click", (e) => {
+    e.preventDefault();
 
-tanggalSelesaiInput.addEventListener("input", function () {
-  const tanggalMulai = new Date(tanggalMulaiInput.value);
-  const tanggalSelesai = new Date(this.value);
-  
-  if (tanggalSelesai < tanggalMulai) {
-    tanggalError.textContent = "Tanggal Selesai harus setelah Tanggal Mulai";
-    tanggalError.style.display = "block";
-  } else {
-    tanggalError.textContent = "";
-    tanggalError.style.display = "none";
-  }
+    const newsItem = linkShowLess.closest(".job-item");
+    const description = newsItem.querySelector(".description");
+    const linkShowDetails = newsItem.querySelector(".btn-show-details");
+
+    description.style.display = "none";
+    linkShowLess.style.display = "none";
+    linkShowDetails.style.display = "block";
+  });
 });
