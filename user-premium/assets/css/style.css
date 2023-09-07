@@ -146,3 +146,188 @@
 }
 
 /* Main Section End */
+
+/* Form CSS */
+
+/* Form CSS End */
+
+.form {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f2f3;
+}
+
+.form .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .title {
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+  position: relative;
+}
+
+.content form .user-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content form .user-details .left-column,
+.content form .user-details .right-column {
+  width: 46%;
+}
+
+form .user-details .input-box,
+form .user-details .select-box {
+  margin-bottom: 15px;
+}
+
+form .user-details .input-box .custom-file {
+  padding-top: 7px;
+}
+
+form .user-details .custom-periode {
+  display: flex;
+  align-items: center;
+}
+
+form .input-box span.details,
+form span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .select-box {
+  display: flex;
+}
+
+.user-details .select-box .form-check {
+  margin-right: 50px;
+}
+
+.user-details .input-box input,
+.user-details .input-box select {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box select:focus,
+.user-details .input-box input:valid,
+.user-details .select-box input:focus {
+  border-color: #9b59b6;
+  box-shadow: none;
+}
+
+form input[type="radio"] {
+  border: 1px solid #929292;
+}
+
+/* Inputan */
+#nama-instansi {
+  text-transform: uppercase;
+}
+#nama-instansi::placeholder {
+  text-transform: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 20px 0;
+}
+form .button a {
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 12px 55px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #035b71;
+
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+form .button input {
+  height: 100%;
+  width: 140px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #035b71;
+}
+form .button input:hover,
+form .button a:hover {
+  background-color: #007181;
+  transform: scale(0.99);
+}
+
+/* Responsive */
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .content form .user-details {
+    flex-direction: column;
+  }
+
+  .content form .user-details .left-column,
+  .content form .user-details .right-column {
+    width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 417px) {
+  form .button a,
+  form .button input {
+    margin-right: auto;
+  }
+}
