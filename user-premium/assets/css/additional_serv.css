@@ -154,8 +154,6 @@ font-weight: 400;
     background-size: cover;
 }
 
-/* Main Section Start */
-
 .title-description .container .description-content{
     background-color: var(--ki-dark-light);
     padding: 100px;
@@ -167,47 +165,84 @@ font-weight: 400;
     text-align: justify;
 }
 
-.title-registration {
-    margin: 150px 0px 150px;
+/* Main Section Start */
+
+/* The actual timeline (the vertical ruler) */
+.documentation-timeline {
+    position: relative;
 }
 
-.title-registration .container .registration-content p{
-    margin-bottom: 50px;
+/* The actual timeline (the vertical ruler) */
+.documentation-timeline::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: var(--ki-main-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
 
-.title-registration .container .registration-content a{
-    color: var(--ki-white);
-    background-color: var(--ki-second-color);;
+/* Container around content */
+.timeline-2 {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
 }
 
-.title-registration .container .registration-content a:hover{
-    background-color: var(--ki-button-color);
-    transition: all 0.3 ease;
-    -webkit-transition: all 0.3 ease;
-    -moz-transition: all 0.3 ease;
-    -ms-transition: all 0.3 ease;
-    -o-transition: all 0.3 ease;
-}
-
-.job-desc .row img{
-    width: 500%;
-}
-
-.list-job-desc {
-    background-color: var(--ki-dark-light);
-    box-shadow: rgba(200, 200, 200, 0.25) 0px 8px 29px 5px;
-}
-
-.list-job-desc .circle {
-    width: 40px;
-    height: 40px;
+/* The circles on the timeline */
+.timeline-2::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -11px;
+    background-color: var(--ki-main-color);
+    top: 15px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background-color: var(--ki-second-color);
-    margin-left: -25px;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+}
+
+/* Can remove */
+.left-2::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Can remove */
+.right-2::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+    left: -14px;
 }
 
 /* Accordion Start */
@@ -262,77 +297,4 @@ font-weight: 400;
 
 /* Accordion End */
 
-/* Timeline Guest Teacher Start */
-
-.main-timeline {
-    position: relative;
-    text-align: start;
-}
-
-.main-timeline::after {
-    content: "";
-    position: absolute;
-    width: 6px;
-    background-color: var(--ki-gray-500);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-.timeline {
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-.timeline::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -13px;
-    background-color: var(--ki-gray-500);
-    border: 5px solid var(--ki-yellow);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.left {
-    padding: 0px 40px 20px 0px;
-    left: 0;
-}
-
-.right {
-    padding: 0px 0px 20px 40px;
-    left: 50%;
-}
-
-.left::before {
-    content: " ";
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-
-.right::before {
-    content: " ";
-    position: absolute;
-    top: 18px;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
-
-.right::after {
-    left: -12px;
-}
-/* Timeline Guest Teacher End */
 /* Main Section End */
