@@ -167,39 +167,134 @@ font-weight: 400;
 
 /* Main Section Start */
 
-.benefit-wrapper {
-    text-align: start;
+/* The actual timeline (the vertical ruler) */
+.documentation-timeline {
+    position: relative;
 }
 
-.benefit-description {
-    text-align: justify;
+/* The actual timeline (the vertical ruler) */
+.documentation-timeline::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: var(--ki-main-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
 
-.gallery-trip {
+/* Container around content */
+.timeline-2 {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -11px;
+    background-color: var(--ki-main-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+}
+
+/* Can remove */
+.left-2::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Can remove */
+.right-2::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+    left: -14px;
+}
+
+/* Accordion Start */
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
     display: flex;
-    gap: 20px;
+    align-items: center;
+    /* position relative penyebab numpuk diatas header / navbar ? */
+    position: relative; 
+    cursor: pointer;
 }
-
-.trip-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.accordion-item-header::after {
+    content: "+";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
 }
-
-.trip-photo {
+.accordion-item-header.active::after {
+    content: "-";
+}
+.accordion-item-body {
+    max-height: 0;
     overflow: hidden;
-    border-radius: 5px;
+    transition: max-height 0.2s ease-out;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    -ms-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 1rem;
+    text-align: start;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #ffff, transparent) 1;
 }
 
-.trip-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s ease;
-}
-
-.trip-photo:hover img {
-    transform: scale(1.1);
-}
+/* Accordion End */
 
 /* Main Section End */
