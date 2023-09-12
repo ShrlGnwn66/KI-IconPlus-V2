@@ -22,40 +22,21 @@
         <!-- kiri -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
           <li class="nav-item">
-            <img
-              class="img-fluid"
-              src="../../assets/image/logo/logo_putih.png"
-              alt=""
-              width="100"
-            />
+            <img class="img-fluid" src="../../assets/image/logo/logo_putih.png" alt="" width="100" />
           </li>
         </ul>
 
         <!-- kanan -->
         <ul class="navbar-nav navbar-nav-right mb-2 mb-lg-0 me-2">
           <li class="nav-item nav-profile dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
-              id="profileDropdown"
-            >
-              <span class="nav-profile-name"
-                >Politeknik Negeri Jember
-              </span>
-              <img
-                class="img-fluid"
-                src="../../assets/image/logo/polije.png"
-                alt="profile"
-              />
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+              <span class="nav-profile-name">Politeknik Negeri Jember </span>
+              <img class="img-fluid" src="../../assets/image/logo/polije.png" alt="profile" />
               <span>
                 <i class="bi bi-caret-down-fill"></i>
               </span>
             </a>
-            <div
-              class="dropdown-menu dropdown-menu-end navbar-dropdown custom-dropdown"
-              aria-labelledby="profileDropdown"
-            >
+            <div class="dropdown-menu dropdown-menu-end navbar-dropdown custom-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
                 <i class="bi bi-gear"></i>
                 Settings
@@ -73,119 +54,58 @@
     <!-- Navbar Two -->
     <nav class="navbar navbar-expand-lg custom_nav-menu">
       <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 justify-content-end">
             <li class="nav-item mx-4">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="../../index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
             </li>
             <li class="nav-item dropdown mx-4">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Informasi
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="../informasi/job_vacancy.html"
-                    >Lowongan Kerja</a
-                  >
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="../404/404_error.html"
-                    >Typography</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown mx-4">
-              <a
-                class="nav-link dropdown-toggle active"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Program Magang
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="regular_intern.html"
-                    >PKL</a
-                  >
+                  <a class="dropdown-item" href="../internships/regular_intern.html">PKL</a>
                 </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Magang Dibayar</a>
+                  <hr class="dropdown-divider" />
                 </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="teacher_intern.html"
-                    >Guru Magang</a
-                  >
+                  <a class="dropdown-item" href="../internships/paid_intern.html">Magang Dibayar</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../internships/teacher_intern.html">Guru Magang</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item dropdown mx-4">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Guru & Penguji
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../teacher_examiner/guest_teacher.html"
-                    >Guru Tamu</a
-                  >
+                  <a class="dropdown-item" href="../teacher_examiner/guest_teacher.html">Guru Tamu</a>
                 </li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../teacher_examiner/ukk_examiner.html"
-                    >Penguji UKK</a
-                  >
+                  <hr class="dropdown-divider" />
                 </li>
+                <li><a class="dropdown-item" href="../teacher_examiner/ukk_examiner.html">Penguji UKK</a></li>
               </ul>
             </li>
             <li class="nav-item mx-4">
-              <a class="nav-link" href="../kunjungan_industri/edu_trip.html"
-                >Kunjungan Industri</a
-              >
+              <a class="nav-link" href="../informasi/job_vacancy.html">Lowongan Kerja</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="../kunjungan_industri/edu_trip.html">Kunjungan Industri</a>
             </li>
             <li class="nav-item mx-4">
               <a class="nav-link" href="../layanan_penunjang/additional_services.html">Layanan Penunjang</a>
-            </li>
-            <li class="nav-item mx-4">
-              <a class="nav-link" href="#">Sertifikat</a>
             </li>
           </ul>
         </div>
