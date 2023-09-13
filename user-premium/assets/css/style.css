@@ -242,7 +242,6 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  /* position relative penyebab numpuk diatas header / navbar ? */
   position: relative; 
   cursor: pointer;
 }
@@ -255,6 +254,29 @@
 .accordion-item-header.active::after {
   content: "-";
 }
+
+/* Accordion For Benefit Magang */
+.accordion-item-header-benefit {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative; 
+  cursor: pointer;
+}
+.accordion-item-header-benefit::after {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f107";
+  font-size: 1.6rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header-benefit.active::after {
+  content: "\f106";
+}
+
 .accordion-item-body {
   max-height: 0;
   overflow: hidden;

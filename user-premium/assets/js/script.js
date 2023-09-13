@@ -28,6 +28,36 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
   });
 });
 
+// Accordion Scripts For Benefit Magang
+const accordionItemHeaderBenefits = document.querySelectorAll(
+  ".accordion-item-header-benefit"
+);
+
+accordionItemHeaderBenefits.forEach((accordionItemHeaderBenefit) => {
+  accordionItemHeaderBenefit.addEventListener("click", (event) => {
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+
+    const currentlyActiveAccordionItemHeaderBenefit = document.querySelector(
+      ".accordion-item-header-benefit.active"
+    );
+    if (
+      currentlyActiveAccordionItemHeaderBenefit &&
+      currentlyActiveAccordionItemHeaderBenefit !== accordionItemHeaderBenefit
+    ) {
+      currentlyActiveAccordionItemHeaderBenefit.classList.toggle("active");
+      currentlyActiveAccordionItemHeaderBenefit.nextElementSibling.style.maxHeight = 0;
+    }
+
+    accordionItemHeaderBenefit.classList.toggle("active");
+    const accordionItemBody = accordionItemHeaderBenefit.nextElementSibling;
+    if (accordionItemHeaderBenefit.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const bottomNavbar = document.querySelector(".custom_nav-menu");
   const topNavbarHeight =
