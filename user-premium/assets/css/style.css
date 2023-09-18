@@ -145,7 +145,7 @@
   align-items: center !important;
 }
 
-/* Magang Dibayar Start */
+/* Program Magang Start */
 .page-header-internships {
   background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../../assets/image/guru-tamu.jpg) center center no-repeat;
   background-size: cover;
@@ -188,7 +188,9 @@
   -ms-transition: all 0.3 ease;
   -o-transition: all 0.3 ease;
 }
-/* Magang Dibayar End */
+
+
+/* Program Magang End */
 
 /* Teacher & Examiner Start */
 .page-header-guest-teacher {  
