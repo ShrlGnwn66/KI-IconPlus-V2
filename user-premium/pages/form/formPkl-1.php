@@ -38,10 +38,6 @@
             </a>
             <div class="dropdown-menu dropdown-menu-end navbar-dropdown custom-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
-                <i class="bi bi-gear"></i>
-                Settings
-              </a>
-              <a class="dropdown-item">
                 <i class="bi bi-box-arrow-left"></i>
                 Logout
               </a>
