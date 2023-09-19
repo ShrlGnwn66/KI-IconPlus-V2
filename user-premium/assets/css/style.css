@@ -1,6 +1,9 @@
 /* icon boostrap */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
+/* icon fontawesome */
+@import url("https://cdn.jsdelivr.net/npm/font-awesome@6.4.2/css/font-awesome.min.css");
+
 /* ------------------------------------------------------------- */
 /* Bootstrap Main */
 
@@ -284,14 +287,14 @@
   cursor: pointer;
 }
 .accordion-item-header-benefit::after {
-  font-family: 'Font Awesome 5 Free';
-  content: "\f107";
+  font-family: 'Font Awesome 6 Free';
+  content: "\f078";
   font-size: 1.6rem;
   position: absolute;
   right: 1rem;
 }
 .accordion-item-header-benefit.active::after {
-  content: "\f106";
+  content: "\f077";
 }
 
 .accordion-item-body {
