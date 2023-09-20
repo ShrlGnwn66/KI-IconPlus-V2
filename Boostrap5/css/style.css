@@ -507,3 +507,9 @@ html {
     margin: 0 auto;
   }
 }
+
+.bi{
+  font-size: 25px;
+  padding: 0px 3px;
+  color: #f7a407;
+}
