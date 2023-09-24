@@ -3,10 +3,10 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
-/* CSS FOR FORM AND LOGIN PAGE */
 
 /* 01 Login Page CSS */
 
@@ -40,7 +40,6 @@ html {
 }
 /* Login page end */
 
-/* Sticky top */
 /* Custom Nav Section */
 .custom_nav-container {
   background-color: #e5f5f8;
@@ -75,6 +74,24 @@ html {
 .custom_nav-container .navbar-nav .nav-item-active .custom_button-login:hover {
   background-color: #66c7d5;
   color: #2b2a2a;
+}
+
+.custom_nav-container .button-back {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #007181;
+  color: #fff;
+  padding: 7px 30px;
+}
+.custom_nav-container .button-back:hover {
+  background-color: #66c7d5;
+  color: #2b2a2a;
+}
+
+@media (max-width: 446px) {
+  .custom_nav-container .logoCenter {
+    display: none;
+  }
 }
 /* Custom Nav section end */
 
@@ -490,8 +507,7 @@ html {
   }
 
   .wcu_area-section .custom_wcu-image img {
-    width: 100%;
-    height: 480px;
+    display: none;
   }
 
   .custom_galery-section .galeri-image .item {
@@ -508,8 +524,13 @@ html {
   }
 }
 
-.bi{
+/* elemen shared news */
+h5 a .bi {
   font-size: 25px;
   padding: 0px 3px;
   color: #f7a407;
+}
+
+h5 a .bi:hover {
+  color: #000;
 }
