@@ -16,10 +16,9 @@ class HomeController extends Controller
         return $content
             ->css_file(Admin::asset("open-admin/css/pages/dashboard.css"))
             ->title('Dashboard')
-            ->description('Description...')
+            ->description('Kelas Industri | PLN Icon Plus')
             ->row(Dashboard::title())
             ->row(function (Row $row) {
-
                 $row->column(4, function (Column $column) {
                     $column->append(Dashboard::environment());
                 });

@@ -50,7 +50,7 @@
                                     <div class="row justify-content-center mb-2 mt-4">
                                         <div class="col-auto px-3">
                                             <small class="text-muted">
-                                                {{ \Carbon\Carbon::parse($newsImage->date)->format('j F Y') }} &nbsp;&nbsp; | &nbsp;&nbsp; {{ $newsImage->created_at }}
+                                                {{ \Carbon\Carbon::parse($newsImage->date)->format('j F Y') }} &nbsp;&nbsp; | &nbsp;&nbsp; {{ $newsImage->created_at->format('H:i') }} WIB
                                             </small>
                                         </div>
                                     </div>
@@ -71,6 +71,9 @@
                                     </div>
                                     <hr class="mt-20 mb-40" />
                                     <div class="has-dropcap" style="overflow-wrap: break-word; word-wrap: break-word; word-break: break-word;">
+                                        @if(isset($newsImage->picture))
+                                            <img src="{{ asset('uploads/' . $newsImage->picture) }}" alt="" class="mb-2" style="width:100%"/>
+                                        @endif
                                         @php
                                         $content = $newsImage->contentnews;
                                         $paragraphs = explode("\n", $content);
@@ -80,9 +83,9 @@
                                             <p style="text-align: left;">{{ $paragraph }}</p>
                                         @endforeach
                                     </div>
-                                </center>
-                                @else
-                                    <!-- Tampilan jika $newsImage tidak tersedia atau $id null -->
+                                    <h5>Share to : </h5>
+                                    <div id="shareRoundIcons"></div>
+                                    </center>
                                 @endif
                             </div>
                         </div>

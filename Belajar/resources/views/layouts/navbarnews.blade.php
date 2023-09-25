@@ -1,59 +1,22 @@
 <header class="header_section sticky-top">
     <nav class="navbar navbar-expand-lg custom_nav-container">
-      <div class="container-lg">
-        <a class="navbar-brand pt-3" href="#">
+      <div
+        class="container-lg d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand pt-3" href="../index.html#news-section">
           <img src="../assets/images/logo.png" alt="" width="120" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <img
+          class="logoCenter"
+          src="http://ki-plniconplus.id/img/logo-ki.svg"
+          alt=""
+          width="150"
+        />
+        <a
+          class="btn rounded-3 shadow button-back"
+          href="/#news"
+          >Kembali</a
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse fw-semibold"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            {{-- <li class="nav-item mx-1">
-              <a
-                class="nav-link rounded-pill"
-                aria-current="page"
-                href="#hero-section"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link rounded-pill" href="#about-section">About</a>
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link rounded-pill" href="#services-section"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item mx-1">
-              <a class="nav-link rounded-pill" href="#galery-section"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item active mx-1">
-              <a class="nav-link rounded-pill" href="#news-section">News</a>
-            </li> --}}
-            <li class="nav-item-active mx-3">
-              <a
-                class="btn rounded-3 shadow custom_button-login"
-                href="/#news"
-                role="button"
-                >back</a
-              >
-            </li>
-          </ul>
-        </div>
       </div>
     </nav>
-  </header>
+</header>

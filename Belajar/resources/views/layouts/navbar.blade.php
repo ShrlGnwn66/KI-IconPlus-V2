@@ -2,7 +2,7 @@
 <header class="header_section sticky-top">
     <nav class="navbar navbar-expand-lg custom_nav-container">
       <div class="container-lg">
-        <a class="navbar-brand pt-3" href="#">
+        <a class="navbar-brand pt-3" href="/">
           <img src="assets/images/logo.png" alt="" width="120" />
         </a>
         <button

@@ -44,7 +44,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-4">
-          <img src="assets/images/about.png" alt="" />
+          <img class="img-fluid" src="assets/images/aboutUs.png" alt="" />
         </div>
         <div class="col-lg-5 offset-lg-2 custom_about-text">
           <h5 class="text-uppercase fs-5 fw-semibold pt-5">About Us</h5>
@@ -272,7 +272,7 @@
             {{-- <a href="login" class="btn rounded-3 shadow">Acces Now</a> --}}
           </div>
           <div class="col-lg-6 pt-5 offset-lg-2 custom_wcu-image">
-            <img src="assets/images/pp.png" alt="" />
+            <img class="img-fluid" src="assets/images/wcu_image.png" alt="" />
           </div>
         </div>
       </div>
@@ -323,7 +323,7 @@
   <!-- Galery Section End -->
 
 <!-- custom news -->
-<section class="container_news mt-3 pt-5" id="news">
+<section class="container_news mt-3 pt-3" id="news">
     <div class="card__container swiper">
         <h4 class="text-uppercase text-center fs-4 fw-semibold">NEWS</h4>
         <h2 class="text-capitalize text-center fs-2 fw-bolder pb-3" style="color: #0093ae">Berita Terbaru Kami</h2>
@@ -332,7 +332,7 @@
                     @foreach($newsImage as $image)
                         <article class="card__article swiper-slide">
                                 <div class="card__image">
-                                    <img src="{{ asset('uploads/' . $image->picture) }}" alt="" class="card__img">
+                                    <img src="{{ asset('uploads/' . $image->picture) }}" alt="" class="card__img" >
                                     <div class="card__shadow"></div>
                                 </div>
                                 <div class="card__data">

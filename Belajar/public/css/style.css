@@ -232,11 +232,15 @@ html {
 /* custom social media end */
 
 /* Custom About Section */
-
+.about_area-section{
+    height: 95vh;
+}
 .about_area-section img {
   width: 650px;
-  margin-left: 50px;
+  margin-left: 140px;
+  margin-top: 80px;
 }
+
 
 .about_area-section .custom_about-text {
   padding-top: 75px;
@@ -429,6 +433,23 @@ html {
 /* Gallery Custom End */
 
 /*custom news */
+.custom_nav-container .button-back {
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #007181;
+    color: #fff;
+    padding: 7px 30px;
+  }
+  .custom_nav-container .button-back:hover {
+    background-color: #66c7d5;
+    color: #2b2a2a;
+  }
+
+  @media (max-width: 446px) {
+    .custom_nav-container .logoCenter {
+      display: none;
+    }
+  }
 .container_news {
     background-color: #e5f5f8;
     display: flex;
@@ -451,7 +472,8 @@ html {
   }
 
   .card__article {
-    width: 300px; /* Remove after adding swiper js */
+    width: 300px;
+    height: 550px; /* Remove after adding swiper js */
     border-radius: 1.25rem;
     overflow: hidden;
   }
@@ -475,24 +497,12 @@ html {
 
   .card__img {
     width: 320px;
+    height: 165px;
+    /* Atur tinggi gambar secara permanen */
     margin: 0 auto;
     /* position: relative; */
     border-radius: 10px 10px 0px 0px;
-
-  }
-/*
-  .card__shadow {
-    width: 200px;
-    height: 200px;
-    background-color: var(--first-color-alt);
-    border-radius: 50%;
-    position: absolute;
-    top: 3.75rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    filter: blur(45px);
-  } */
+    }
 
   .card__name {
     font-size: var(--h2-font-size);
@@ -559,14 +569,18 @@ html {
   .swiper-pagination-bullet-active {
     background-color: var(--second-color);
   }
+  .jssocials-share-link {
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-  /*=============== BREAKPOINTS ===============*/
-  /* For small devices */
-  @media screen and (max-width: 320px) {
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
     .card__data {
       padding: 1rem;
     }
-
   }
 
   /* For medium devices */
@@ -594,6 +608,7 @@ html {
       right: -1rem;
     }
   }
+
 /*custom news end*/
 
 @media (max-width: 991px) {
@@ -626,8 +641,7 @@ html {
   }
 
   .wcu_area-section .custom_wcu-image img {
-    width: 100%;
-    height: 480px;
+    display: none;
   }
 
   .custom_galery-section .galeri-image .item {
