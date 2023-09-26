@@ -8,11 +8,6 @@ use Illuminate\Http\Request;
 
 class GalleryController extends Controller
 {
-    // public function index()
-    // {
-    //     $galleryItems = Gallery::all();
-    //     return view('welcome', compact('galleryItems'));
-    // }
     public function index()
     {
         $galleryItems = Gallery::all(); // Gantilah dengan model dan data Anda

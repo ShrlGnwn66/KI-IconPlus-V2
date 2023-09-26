@@ -30,8 +30,8 @@ class NewsController extends AdminController
         $grid->column('picture')->image();
         $grid->column('title', __('Title'));
         $grid->column('date', __('Date'));
-        $grid->column('description', __('Description'));
-        $grid->column('contentnews', __('contentnews'));
+        $grid->column('description', __('Description'))->limit(20);
+        $grid->column('contentnews', __('contentnews'))->limit(20);
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
