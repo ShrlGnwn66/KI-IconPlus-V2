@@ -19,4 +19,6 @@ Route::group([
 
     $router->resource('news', NewsController::class);
 
+    $router->resource('job-vacancies', JobVacancyController::class);
+
 });

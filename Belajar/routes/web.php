@@ -5,6 +5,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PremiumPageController;
+use App\Http\Controllers\JobVacancyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +19,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 //home /root
 Route::get('/', [HomeController::class, 'home'])->middleware('isPremium');
 
@@ -45,10 +43,11 @@ Route::get('additionalServices', [PremiumPageController::class, 'additionalServi
 //gallery and News controller news jadi satu sama Gallery
 Route::get('/', [GalleryController::class, 'index']);
 
-
-// Route::get('news{title}', [NewsController::class, 'news'])->name('news');
-
 Route::get('news/{id}', [NewsController::class, 'news'])->name('news');
+
+// Job Vacancy
+Route::get('jobVacancy', [JobVacancyController::class, 'job']);
+
 
 
 

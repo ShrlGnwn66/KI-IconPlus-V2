@@ -64,7 +64,7 @@
                                                         class="bi bi-envelope"></i>
                                                 </span>
                                                 <input type="text" name="email"
-                                                    class="form-control @error('email')
+                                                    class="form-control shadow-none @error('email')
                             is-invalid
                             @enderror"
                                                     id="email" autofocus required value="{{ old('email') }}">
@@ -83,7 +83,7 @@
                                             <div class="input-group has-validation">
                                                 <span class="input-group-text fs-5" id="inputGroupPrepend"><i
                                                         class="bi bi-lock"></i></span>
-                                                <input type="password" name="password" class="form-control"
+                                                <input type="password" name="password" class="form-control shadow-none"
                                                     id="Password" required />
                                             </div>
                                             <div class="invalid-feedback">
