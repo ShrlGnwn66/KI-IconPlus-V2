@@ -79,55 +79,34 @@ counters.forEach((counter) => {
 //end count
 
 // Gallery Items Filter
-// const filterButtons = document.querySelector("#galery-btns").children;
-// const items = document.querySelector(".galeri-image").children;
-
-// for (let k = 0; k < items.length; k++) {
-//   if (items[k].getAttribute("data-id") === "DKV") {
-//     items[k].style.display = "block";
-//   } else {
-//     items[k].style.display = "none";
-//   }
-// }
-
-// for (let i = 0; i < filterButtons.length; i++) {
-//   filterButtons[i].addEventListener("click", function () {
-//     for (let j = 0; j < filterButtons.length; j++) {
-//       filterButtons[j].classList.remove("active");
-//     }
-//     this.classList.add("active");
-//     const target = this.getAttribute("data-target");
-
-//     for (let k = 0; k < items.length; k++) {
-//       items[k].style.display = "none";
-//       if (target === items[k].getAttribute("data-id") || target === "All") {
-//         items[k].style.display = "block";
-//       }
-//     }
-//   });
-// }
-
 let filterItem = document.querySelector(".item-links");
-let fileteImages = document.querySelectorAll(".grid-item");
+let filterImages = document.querySelectorAll(".grid-item");
+
+let activeCategory = "DKV"; // Set kategori awal yang aktif
+
+function filterImagesByCategory(category) {
+    filterImages.forEach((image) => {
+        let imageCategory = image.getAttribute("data-name");
+        if (imageCategory === category) {
+            image.style.display = "grid";
+        } else {
+            image.style.display = "none";
+        }
+    });
+}
+
+filterImagesByCategory(activeCategory); // Inisialisasi untuk menampilkan gambar kategori "DKV" saat halaman dimuat
 
 window.addEventListener("load", () => {
-  filterItem.addEventListener("click", (selectedItem) => {
-    if (selectedItem.target.classList.contains("item-link")) {
-      document.querySelector(".menu-active").classList.remove("menu-active");
-      selectedItem.target.classList.add("menu-active");
-      let filterName = selectedItem.target.getAttribute("data-name");
-      fileteImages.forEach((image) => {
-        let filterImages = image.getAttribute("data-name");
-        if (filterImages == filterName || filterName == "all") {
-          image.style.display = "grid";
-        } else {
-          image.style.display = "none";
+    filterItem.addEventListener("click", (selectedItem) => {
+        if (selectedItem.target.classList.contains("item-link")) {
+            document.querySelector(".menu-active").classList.remove("menu-active");
+            selectedItem.target.classList.add("menu-active");
+            let filterName = selectedItem.target.getAttribute("data-name");
+            filterImagesByCategory(filterName);
         }
-      });
-    }
-  });
+    });
 });
-
 
 //scroll top
 let custom_scroll_top = document.querySelector(".custom_scroll-top");
@@ -172,4 +151,31 @@ let swiperCards = new Swiper(".card__content", {
         slidesPerView: 3,
       },
     },
+  });
+
+
+  // Close toogler dimana saja
+  document.addEventListener("DOMContentLoaded", function () {
+    // Ambil elemen menu burger dan navbar-collapse
+    var burgerButton = document.querySelector(".navbar-toggler");
+    var navbarCollapse = document.querySelector("#navbarSupportedContent");
+
+    // Tambahkan event listener untuk mengatur perilaku menu
+    burgerButton.addEventListener("click", function () {
+      // Toggle class 'show' pada navbar-collapse untuk menampilkan/sembunyikan menu
+      navbarCollapse.classList.toggle("show");
+    });
+
+    // Tambahkan event listener untuk menutup menu saat pengguna mengklik di luar menu
+    document.addEventListener("click", function (event) {
+      // Periksa apakah menu burger sedang terbuka dan apakah klik dilakukan di luar menu
+      if (
+        navbarCollapse.classList.contains("show") &&
+        !navbarCollapse.contains(event.target) &&
+        event.target !== burgerButton
+      ) {
+        // Jika menu terbuka dan klik dilakukan di luar menu atau bukan pada tombol burger, tutup menu
+        navbarCollapse.classList.remove("show");
+      }
+    });
   });

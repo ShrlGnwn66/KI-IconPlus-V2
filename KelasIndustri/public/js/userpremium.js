@@ -167,3 +167,28 @@ function tampilData() {
   }
 }
 
+  // Close toogler dimana saja
+  document.addEventListener("DOMContentLoaded", function () {
+    // Ambil elemen menu burger dan navbar-collapse
+    var burgerButton = document.querySelector(".navbar-toggler");
+    var navbarCollapse = document.querySelector("#navbarSupportedContent");
+
+    // Tambahkan event listener untuk mengatur perilaku menu
+    burgerButton.addEventListener("click", function () {
+      // Toggle class 'show' pada navbar-collapse untuk menampilkan/sembunyikan menu
+      navbarCollapse.classList.toggle("show");
+    });
+
+    // Tambahkan event listener untuk menutup menu saat pengguna mengklik di luar menu
+    document.addEventListener("click", function (event) {
+      // Periksa apakah menu burger sedang terbuka dan apakah klik dilakukan di luar menu
+      if (
+        navbarCollapse.classList.contains("show") &&
+        !navbarCollapse.contains(event.target) &&
+        event.target !== burgerButton
+      ) {
+        // Jika menu terbuka dan klik dilakukan di luar menu atau bukan pada tombol burger, tutup menu
+        navbarCollapse.classList.remove("show");
+      }
+    });
+  });
