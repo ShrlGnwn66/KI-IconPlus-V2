@@ -391,39 +391,90 @@ html {
     color: #008194;
     margin: 0 0 5px;
 }
-.custom_galery-section .galery-button {
-    flex: 0 0 100%;
-    max-width: 100%;
+
+.item-links {
+    width: 60%;
+    margin: 3px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.custom_galery-section .galery-button ul li {
-    display: inline-block;
-    margin: 0px 20px;
+.item-link {
+    border: 2px solid #19abc0;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #19abc0;
     cursor: pointer;
+    border-radius: 2rem;
+    transition: 0.5s ease;
 }
 
-.custom_galery-section .galery-button ul li.active {
+.item-link:hover {
+    background: #19abc0;
     color: #fff;
-    padding: 7px 25px;
-    background-color: #19abc0;
 }
 
-.custom_galery-section .galeri-image {
-    flex: 0 0 100%;
-    max-width: 100%;
+.grid {
+    width: auto;
+    margin: 50px auto;
+    columns: 4;
+    column-gap: 40px;
 }
 
-.custom_galery-section .galeri-image .item {
-    flex: 0 0 calc(25% - 16px);
-    max-width: calc(25% - 16px);
-    margin-left: 15px;
-    padding: 7px;
-}
-
-.custom_galery-section .galeri-image .item img {
+.grid .grid-item {
     width: 100%;
-    display: block;
+    margin-bottom: 10px;
+    break-inside: avoid;
 }
+
+.grid .grid-item img {
+    max-width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    animation: scaleAnimation 0.5s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Active menu*/
+.menu-active {
+    background-color: #19abc0;
+    color: #fff;
+}
+
+@media screen and (max-width: 1260px) {
+    .grid {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grid {
+        columns: 2;
+    }
+}
+@media screen and (max-width: 480px) {
+    .grid {
+        columns: 1;
+    }
+}
+
 /* Gallery Custom End */
 
 /*custom news */

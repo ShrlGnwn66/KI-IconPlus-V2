@@ -18,7 +18,7 @@ class FormController extends Controller
     public function pkl2 (){
         return view ('premiumpage.pages.form.pkl2');
     }
-    //form magang
+    //form magang di bayar
     public function magangDibayar (){
         return view ('premiumpage.pages.form.magangDibayar');
     }

@@ -79,33 +79,55 @@ counters.forEach((counter) => {
 //end count
 
 // Gallery Items Filter
-const filterButtons = document.querySelector("#galery-btns").children;
-const items = document.querySelector(".galeri-image").children;
+// const filterButtons = document.querySelector("#galery-btns").children;
+// const items = document.querySelector(".galeri-image").children;
 
-for (let k = 0; k < items.length; k++) {
-  if (items[k].getAttribute("data-id") === "DKV") {
-    items[k].style.display = "block";
-  } else {
-    items[k].style.display = "none";
-  }
-}
+// for (let k = 0; k < items.length; k++) {
+//   if (items[k].getAttribute("data-id") === "DKV") {
+//     items[k].style.display = "block";
+//   } else {
+//     items[k].style.display = "none";
+//   }
+// }
 
-for (let i = 0; i < filterButtons.length; i++) {
-  filterButtons[i].addEventListener("click", function () {
-    for (let j = 0; j < filterButtons.length; j++) {
-      filterButtons[j].classList.remove("active");
-    }
-    this.classList.add("active");
-    const target = this.getAttribute("data-target");
+// for (let i = 0; i < filterButtons.length; i++) {
+//   filterButtons[i].addEventListener("click", function () {
+//     for (let j = 0; j < filterButtons.length; j++) {
+//       filterButtons[j].classList.remove("active");
+//     }
+//     this.classList.add("active");
+//     const target = this.getAttribute("data-target");
 
-    for (let k = 0; k < items.length; k++) {
-      items[k].style.display = "none";
-      if (target === items[k].getAttribute("data-id") || target === "All") {
-        items[k].style.display = "block";
-      }
+//     for (let k = 0; k < items.length; k++) {
+//       items[k].style.display = "none";
+//       if (target === items[k].getAttribute("data-id") || target === "All") {
+//         items[k].style.display = "block";
+//       }
+//     }
+//   });
+// }
+
+let filterItem = document.querySelector(".item-links");
+let fileteImages = document.querySelectorAll(".grid-item");
+
+window.addEventListener("load", () => {
+  filterItem.addEventListener("click", (selectedItem) => {
+    if (selectedItem.target.classList.contains("item-link")) {
+      document.querySelector(".menu-active").classList.remove("menu-active");
+      selectedItem.target.classList.add("menu-active");
+      let filterName = selectedItem.target.getAttribute("data-name");
+      fileteImages.forEach((image) => {
+        let filterImages = image.getAttribute("data-name");
+        if (filterImages == filterName || filterName == "all") {
+          image.style.display = "grid";
+        } else {
+          image.style.display = "none";
+        }
+      });
     }
   });
-}
+});
+
 
 //scroll top
 let custom_scroll_top = document.querySelector(".custom_scroll-top");
