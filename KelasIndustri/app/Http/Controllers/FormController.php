@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\FormInternTeacher;
-use App\Models\FormPaidIntern;
 use App\Models\FormUkkExaminer;
+use App\Models\FormGuestTeacher;
 use Illuminate\Http\Request;
 use Illuminate\HTTP\UploadedFile;
 
@@ -18,19 +18,21 @@ class FormController extends Controller
     public function pkl2 (){
         return view ('premiumpage.pages.form.pkl2');
     }
-    //form magang di bayar
-    public function magangDibayar (){
-        return view ('premiumpage.pages.form.magangDibayar');
+
+    //form Guru Tamu
+    public function guruTamu (){
+        return view ('premiumpage.pages.form.guruTamu');
     }
-    public function magang(Request $request){
-        $validateData = $request->validate([
+    public function tamu (Request $request)
+    {
+        $validateTamu = $request->validate([
             'agency_name' => 'required',
-            'participant_name'=> 'required',
-            'department' => 'required',
-            'graduation_year' => 'required',
-            'laptop_device' => 'required',
-            'driver_license' => 'required',
-            'apply_letter' => 'required'
+            'subject_exam' => 'required',
+            'exam_date' => 'required',
+            'exam_time' => 'required',
+            'responsible_teacher' => 'required',
+            'responsible_contact' => 'required',
+            'apply_letter' => 'required',
         ]);
 
         // Menyimpan file yang diunggah
@@ -39,16 +41,14 @@ class FormController extends Controller
         $file->storeAs('files', $name);
         $link = 'files/' .$name;
 
-        $validateData['apply_letter'] = $link;
+        $validateTamu['apply_letter'] = $link;
 
+       FormGuestTeacher::create($validateTamu);
 
+       return redirect('/guruTamu')->with('success', 'Data anda berhasil disimpan');
 
-        FormPaidIntern::create($validateData);
-
-        session()->flash('success', 'Data anda berhasil disimpan');
-
-        return redirect('magangDibayar');
     }
+
     //form guru magang
     public function guruMagang (){
         return view ('premiumpage.pages.form.guruMagang');

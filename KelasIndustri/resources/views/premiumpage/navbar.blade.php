@@ -125,7 +125,7 @@
             {{-- pendaftaran --}}
             <li class="nav-item dropdown mx-4">
                 <a
-                  class="nav-link dropdown-toggle {{ request()->is('pkl','pkl2','magangDibayar','guruMagang','pengujiUKK')  ? 'active' : '' }}"
+                  class="nav-link dropdown-toggle {{ request()->is('pkl','pkl2','guruTamu','guruMagang','pengujiUKK')  ? 'active' : '' }}"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -145,16 +145,16 @@
                   <li>
                     <a
                       class="dropdown-item"
-                      href="magangDibayar"
-                      >Magang Dibayar</a
+                      href="guruMagang"
+                      >Guru Magang</a
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a
                       class="dropdown-item"
-                      href="guruMagang"
-                      >Guru Magang</a
+                      href="guruTamu"
+                      >Guru Tamu</a
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
