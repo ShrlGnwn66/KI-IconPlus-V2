@@ -43,7 +43,9 @@ Route::get('eduTrip', [PremiumPageController::class, 'eduTrip']);
 Route::get('additionalServices', [PremiumPageController::class, 'additionalServices']);
 //form
 Route::get('pkl', [FormController::class, 'pkl']);
+Route::post('/simpandata', [FormController::class, 'simpanData']);
 Route::get('pkl2', [FormController::class, 'pkl2']);
+
 
 Route::get('magangDibayar', [FormController::class, 'magangDibayar']);
 Route::post('/magangDibayar', [FormController::class, 'magang']); //post
