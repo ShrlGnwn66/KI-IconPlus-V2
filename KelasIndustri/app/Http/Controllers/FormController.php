@@ -18,32 +18,9 @@ class FormController extends Controller
     public function pkl2 (){
         return view ('premiumpage.pages.form.pkl2');
     }
-    public function simpanData(Request $request)
-    {
-        // Validasi data
-        $request->validate([
-            'nama' => 'required|string|max:255',
-            'nis-nim' => 'required|string|min:6|max:10',
-            'jenis-kelamin' => 'required|in:laki-laki,Perempuan',
-            'jurusan' => 'required|string',
-        ]);
-        
-        // Kirim data yang telah divalidasi ke view
-        return view('premiumpage.pages.form.pkl');
-
-        // redirect('pkl');
-    }
 
 
-
-
-
-
-
-
-
-
-    //form magang
+    //form magang di bayar
     public function magangDibayar (){
         return view ('premiumpage.pages.form.magangDibayar');
     }
