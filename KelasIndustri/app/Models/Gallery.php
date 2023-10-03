@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Gallery extends Model
 {
     protected $table = 'gallery';
-    
+
+
 
     public function setimageAttribute($image)
     {
@@ -20,4 +21,8 @@ class Gallery extends Model
     {
         return json_decode($image, true);
     }
+
+    
+
 }
+

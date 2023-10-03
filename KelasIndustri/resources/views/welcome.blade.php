@@ -261,8 +261,7 @@
             </div>
 
             <div class="item-links">
-                <span class="item-link menu-active" data-name="all">All</span>
-                <span class="item-link" data-name="DKV">DKV</span>
+                <span class="item-link menu-active" data-name="DKV">DKV</span>
                 <span class="item-link" data-name="RPL">RPL</span>
                 <span class="item-link" data-name="TITL">TITL</span>
                 <span class="item-link" data-name="TJKT">TJKT</span>
@@ -285,7 +284,8 @@
                         @endforeach
                     @endif
                 @endforeach
-            </div>
+
+            </div>
             </form>
         </div>
     </section>
@@ -312,8 +312,8 @@
                                 <p class="card__description" data-id="{{ $image->description }}">
                                     {{ $image->description }}
                                 </p>
-                                <a href="{{ route('news', ['id' => $image->id]) }}" target="_blank"
-                                    class="card__button">Baca Selengkapnya</a>
+                                <a href="{{ route('news', ['id' => $image->id]) }}" class="card__button">Baca
+                                    Selengkapnya</a>
 
                             </div>
                         </article>
