@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFormPaidInternTable extends Migration
+class CreateFormGuestTeacherTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateFormPaidInternTable extends Migration
      */
     public function up()
     {
-        Schema::create('form_paid_intern', function (Blueprint $table) {
+        Schema::create('form_guest_teacher', function (Blueprint $table) {
             $table->increments('id');
             $table->string('agency_name')->nullable();
-            $table->string('participant_name')->nullable();
-            $table->string('department')->nullable();
-            $table->string('graduation_year')->nullable();
-            $table->boolean('laptop_device')->nullable();
-            $table->boolean('driver_license')->nullable();
+            $table->string('subject_exam')->nullable();
+            $table->date('exam_date')->nullable();
+            $table->time('exam_time')->nullable();
+            $table->string('responsible_teacher')->nullable();
+            $table->string('responsible_contact')->nullable();
             $table->string('apply_letter')->nullable();
             $table->timestamps();
         });
@@ -33,6 +33,6 @@ class CreateFormPaidInternTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('form_paid_intern');
+        Schema::dropIfExists('form_guest_teacher');
     }
 }

@@ -25,6 +25,7 @@
                   required
                   maxlength="75"
                   autofocus
+                  value="{{ auth()->user()->name }}"
                 />
               </div>
 

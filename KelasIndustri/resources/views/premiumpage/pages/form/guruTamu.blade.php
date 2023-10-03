@@ -1,11 +1,11 @@
 @extends('premiumpage.layouts')
 @section('home')
-<!-- main content section start -->
-<section class="form">
+   {{-- guru Tamu --}}
+   <section class="form">
     <div class="container">
-        <div class="title text-center mb-4">Form Pendampingan UJI UKK</div>
+        <div class="title text-center mb-4">Form Guru Tamu</div>
         <div class="content">
-        <form method="POST" enctype="multipart/form-data" action="/pengujiUKK">
+        <form method="POST" enctype="multipart/form-data"  action="/guruTamu">
             @csrf
             <div class="user-details">
             <!-- Column Kiri -->
@@ -32,11 +32,11 @@
 
                 <div class="input-box">
                 <span class="details">Materi</span>
-                <input type="text" required name="subject_exam" id="" placeholder="Masukkan Materi Ujian">
+                <input type="text" required name="subject_exam" id="" placeholder="Masukkan Materi">
                 </div>
 
                 <div class="input-box">
-                <span class="details">Pelaksanaan UKK</span>
+                <span class="details">Tanggal Pelaksanaan</span>
                 <input
                     type="date"
                     id="tanggal-ukk"
@@ -97,5 +97,5 @@
         </div>
     </div>
     </section>
-    <!-- main content section end -->
 @endsection
+
