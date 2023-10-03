@@ -70,7 +70,7 @@ class GalleryController extends AdminController
             'RPL' => 'RPL',
         ]);
 
-        $form->image('image', __('Image'));
+        $form->multipleImage('image', 'Image')->removable();
         return $form;
     }
 }

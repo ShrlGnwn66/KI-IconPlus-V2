@@ -269,14 +269,24 @@
 
             <div class="grid">
                 @foreach ($galleryItems as $item)
-                    <div class="grid-item" data-aos="fade-left" data-name="{{ $item->department }}">
-                        <a href="{{ asset('uploads/' . $item->image) }}" data-fancybox="gallery"
-                            data-caption="{{ $item->department }}">
-                            <img src="{{ asset('uploads/' . $item->image) }}" alt="" />
-                        </a>
-                    </div>
+                    @if ($item->image !== null)
+                        @php
+                            $filteredImages = array_filter($item->image, 'is_string');
+                        @endphp
+
+                        @foreach ($filteredImages as $image)
+                            <div class="grid-item" data-aos="fade-left" data-name="{{ $item->department }}">
+                                <a href="{{ asset('uploads/' . $image) }}" data-fancybox="gallery"
+                                    data-caption="{{ $item->department }}">
+                                    <img src="{{ asset('uploads/' . $image) }}" alt="" />
+                                </a>
+                            </div>
+                        @endforeach
+                    @endif
                 @endforeach
             </div>
+
+
             </form>
         </div>
     </section>
