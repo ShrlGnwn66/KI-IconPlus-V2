@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class FormPaidIntern extends Model
+class FormGuestTeacher extends Model
 {
-    protected $table = 'form_paid_intern';
+    protected $table = 'form_guest_teacher';
     protected $guarded = ['id'];
 }

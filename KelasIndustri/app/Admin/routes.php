@@ -21,7 +21,7 @@ Route::group([
 
     $router->resource('form-pkls', FormPklController::class);
 
-    $router->resource('form-paid-interns', FormPaidInternController::class);
+    $router->resource('form-guest-teachers', FormGuestTeacherController::class);
 
     $router->resource('form-intern-teachers', FormInternTeacherController::class);
 
