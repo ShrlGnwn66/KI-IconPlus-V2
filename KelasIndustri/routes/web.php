@@ -8,6 +8,7 @@ use App\Http\Controllers\PremiumPageController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\FormGuruMagangController;
 use App\Http\Controllers\JobVacancyController;
+use App\Http\Controllers\InternVacancyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -62,6 +63,7 @@ Route::get('news/{id}', [NewsController::class, 'news'])->name('news');
 
 // Job Vacancy
 Route::get('jobVacancy', [JobVacancyController::class, 'job']);
+Route::get('internVacancy', [InternVacancyController::class, 'internjob']);
 
 
 
