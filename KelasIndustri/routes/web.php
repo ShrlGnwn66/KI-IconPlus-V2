@@ -8,6 +8,7 @@ use App\Http\Controllers\PremiumPageController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\GuruTamuController;
 use App\Http\Controllers\JobVacancyController;
+use App\Http\Controllers\InternVacancyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -57,12 +58,13 @@ Route::post('/pengujiUKK', [FormController::class, 'penguji']); //post
 
 // Job Vacancy
 Route::get('jobVacancy', [JobVacancyController::class, 'job'])->middleware('isLogin');
+Route::get('internVacancy', [InternVacancyController::class, 'internjob'])->middleware('isLogin');
+
 
 //gallery and News controller news jadi satu sama Gallery
 Route::get('/', [GalleryController::class, 'index']);
 
 Route::get('news/{id}', [NewsController::class, 'news'])->name('news');
-
 
 
 

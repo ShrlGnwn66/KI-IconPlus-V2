@@ -29,4 +29,6 @@ Route::group([
 
     $router->resource('job-vacancies', JobVacancyController::class);
 
+    $router->resource('intern-vacancies', InternVacancyController::class);
+
 });
