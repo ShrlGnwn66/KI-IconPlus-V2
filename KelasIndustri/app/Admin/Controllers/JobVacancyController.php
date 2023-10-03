@@ -75,8 +75,8 @@ class JobVacancyController extends AdminController
 
         $form->image('picture', __('Picture'));
         $form->text('title', __('Title'));
-        $form->text('job_description', __('Job description'));
-        $form->text('qualifications', __('Qualifications'));
+        $form->textarea('job_description','Job description')->rows(5);
+        $form->textarea('qualifications','Qualifications')->rows(5);
         $form->text('placement', __('Placement'));
         $form->text('work_hours', __('Work hours'));
         $form->date('expired_date', __('Expired date'))->default(date('Y-m-d'));
