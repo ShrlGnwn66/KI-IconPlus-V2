@@ -58,19 +58,14 @@ Route::post('/pengujiUKK', [FormController::class, 'penguji']); //post
 
 // Job Vacancy
 Route::get('jobVacancy', [JobVacancyController::class, 'job'])->middleware('isLogin');
+Route::get('internVacancy', [InternVacancyController::class, 'internjob'])->middleware('isLogin');
+
 
 //gallery and News controller news jadi satu sama Gallery
 Route::get('/', [GalleryController::class, 'index']);
 
 Route::get('news/{id}', [NewsController::class, 'news'])->name('news');
 
-<<<<<<< HEAD
-// Job Vacancy
-Route::get('jobVacancy', [JobVacancyController::class, 'job']);
-Route::get('internVacancy', [InternVacancyController::class, 'internjob']);
-=======
-
->>>>>>> 8a64f0645089786d7ed5505976023fe919804f3b
 
 
 
