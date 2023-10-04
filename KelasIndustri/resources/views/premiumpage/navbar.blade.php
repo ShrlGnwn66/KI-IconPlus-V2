@@ -75,7 +75,7 @@
                 class="nav-link {{ request()->is('internships') ? 'active' : '' }}"
                 aria-current="page"
                 href="internships"
-                >Program Magang</a
+                >Program PKL</a
               >
             </li>
             <li class="nav-item dropdown mx-4">
