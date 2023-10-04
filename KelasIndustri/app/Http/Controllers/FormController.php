@@ -53,34 +53,74 @@ class FormController extends Controller
     public function guruMagang (){
         return view ('premiumpage.pages.form.guruMagang');
     }
+    public function guruMagang2 (){
+        return view ('premiumpage.pages.form.guruMagang2');
+    }
 
-    public function guru(Request $request){
-        // return $request->all();
-        $validateGuru = $request->validate([
-            'agency_name' => 'required',
+    // data preview with sessions
+    public function guru(Request $request)
+    {
+        // Reset Session
+        if ($request->has('reset')) {
+            // Hapus data preview dari session
+            session()->forget('data_preview');
+            // Redirect kembali ke halaman form pertama
+            return redirect('/guruMagang');
+        }
+
+        // Validasi data dari form pertama
+        $validatedData = $request->validate([
             'participant_name' => 'required',
-            'nip' => 'required',
             'gender' => 'required',
             'department' => 'required',
-            'start_intern_period' => 'required',
-            'end_intern_period' => 'required',
-            'responsible_teacher' => 'required',
-            'responsible_contact' => 'required',
-            'apply_letter' => 'required',
+            'nip' => 'required',
         ]);
-         // Menyimpan file yang diunggah
-         $file = $request->file('apply_letter');
-         $name = ''. $file->getClientOriginalName();
-         $file->storeAs('files', $name);
-         $link = 'files/' .$name;
 
-         $validateGuru['apply_letter'] = $link;
+        // Data dari form pertama
+        $data = [
+            'participant_name' => $validatedData['participant_name'],
+            'gender' => $validatedData['gender'],
+            'department' => $validatedData['department'],
+            'nip' => $validatedData['nip'],
+        ];
 
-        FormInternTeacher::create($validateGuru);
+        // Simpan data preview ke session
+        $request->session()->push('data_preview', $data);
 
-        return redirect('/guruMagang')->with('success', 'Data anda berhasil disimpan');
-
+        // Redirect kembali ke form pertama atau form kedua
+        return redirect('/guruMagang');
     }
+
+
+
+
+    // public function guru(Request $request){
+    //     // return $request->all();
+    //     $validateGuru = $request->validate([
+    //         'agency_name' => 'required',
+    //         'participant_name' => 'required',
+    //         'nip' => 'required',
+    //         'gender' => 'required',
+    //         'department' => 'required',
+    //         'start_intern_period' => 'required',
+    //         'end_intern_period' => 'required',
+    //         'responsible_teacher' => 'required',
+    //         'responsible_contact' => 'required',
+    //         'apply_letter' => 'required',
+    //     ]);
+    //      // Menyimpan file yang diunggah
+    //      $file = $request->file('apply_letter');
+    //      $name = ''. $file->getClientOriginalName();
+    //      $file->storeAs('files', $name);
+    //      $link = 'files/' .$name;
+
+    //      $validateGuru['apply_letter'] = $link;
+
+    //     FormInternTeacher::create($validateGuru);
+
+    //     return redirect('/guruMagang')->with('success', 'Data anda berhasil disimpan');
+
+    // }
     //form penguji UKK
     public function pengujiUKK (){
         return view ('premiumpage.pages.form.pengujiUKK');

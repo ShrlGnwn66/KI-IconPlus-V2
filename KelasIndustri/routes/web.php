@@ -51,19 +51,20 @@ Route::get('guruTamu', [FormController::class, 'guruTamu'])->middleware('isLogin
 Route::post('/guruTamu', [FormController::class, 'tamu']); //post
 
 Route::get('guruMagang', [FormController::class, 'guruMagang'])->middleware('isLogin');
+Route::get('guruMagang2', [FormController::class, 'guruMagang2'])->middleware('isLogin');
 Route::post('/guruMagang', [FormController::class, 'guru']); //post
+
 
 Route::get('pengujiUKK', [FormController::class, 'pengujiUKK'])->middleware('isLogin');
 Route::post('/pengujiUKK', [FormController::class, 'penguji']); //post
 
-// Job Vacancy
+// Job Vacancy dan Intern Vacancy
 Route::get('jobVacancy', [JobVacancyController::class, 'job'])->middleware('isLogin');
 Route::get('internVacancy', [InternVacancyController::class, 'internjob'])->middleware('isLogin');
 
 
 //gallery and News controller news jadi satu sama Gallery
 Route::get('/', [GalleryController::class, 'index']);
-
 Route::get('news/{id}', [NewsController::class, 'news'])->name('news');
 
 
