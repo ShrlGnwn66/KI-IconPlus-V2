@@ -8,7 +8,7 @@
         <div class="container-h py-5 bg-dark page-header-internships">
           <div class="container my-5 pt-5 pb-4">
             <h1 class="display-4 text-white fw-semibold mb-3">
-              Program Magang
+              Program PKL
             </h1>
           </div>
         </div>
@@ -19,14 +19,14 @@
         <div class="container d-flex align-items-center justify-content-center">
           <div class="description-content text-center">
             <h3 class="mb-4" style="padding-bottom: 3rem;">
-              Apa itu <span class="fw-semibold">Program Magang</span> Kelas Industri ?
+              Apa itu <span class="fw-semibold">Program PKL</span> Kelas Industri ?
             </h3>
             <p>
-              <span class="fw-semibold">Program Magang</span> adalah salah satu bagian dari program Kelas Industri PLN Icon Plus
+              <span class="fw-semibold">Program PKL (Praktik Kerja Lapangan)</span> adalah salah satu bagian dari program Kelas Industri PLN Icon Plus
               yang bertujuan untuk memberikan kesempatan kepada pelajar yang ingin mengembangkan
-              diri. Di dalam Program Magang Kelas Industri, bukan hanya Siswa SMK saja yang bisa
-              mengikuti program ini. Peserta magang akan mendapatkan pengalaman kerja di dunia industri
-              selama <span class="fw-semibold">1 semester</span>. Dengan pembelajaran langsung di industri (Tempat Kerja Mitra Magang), peserta
+              diri. Di dalam Program PKL Kelas Industri, bukan hanya Siswa SMK saja yang bisa
+              mengikuti program ini. Peserta PKL akan mendapatkan pengalaman kerja di dunia industri
+              selama <span class="fw-semibold">1 semester</span>. Dengan pembelajaran langsung di industri (Tempat Kerja Mitra), peserta
               bisa mengasah <span class="fw-semibold">hard skill</span> maupun <span class="fw-semibold">soft skill</span>   yang akan membuat peserta bisa lebih matang
               untuk memasuki dunia kerja.
             </p>
@@ -38,6 +38,23 @@
         <div class="container text-md-center">
           <h2 class="mb-3 text-center" style="padding-bottom: 7rem;">Siapa saja yang bisa mengikuti?</h2>
           <div class="row mx-auto w-100 pb-3 pt-3">
+            <div class="col-md-4 col-lg-4 mb-3 border-0 pl-0 pr-0 pr-sm-3">
+                <div class="card shadow-sm hover-shadow h-100 border-0">
+                    <div class="card-body row w-100 mx-auto">
+                    <div class="col-12 p-0 mb-0">
+                        <p class="mb-0 text-center h5 fw-bold">Siswa (SMA/SMK)</p>
+                    </div>
+                    <div class="col-12 p-0 mb-0 text-center">
+                        <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
+                    </div>
+                    <div class="col-12 p-0">
+                        <p class="mb-0 text-muted small height-jenjang">
+                        Siswa SMA/SMK aktif jurusan DKV, RPL, Multimedia, Jaringan dan Pemasaran dapat bergabung
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4 col-lg-4 mb-3 border-0 pl-0 pr-0 pr-sm-3">
               <div class="card shadow-sm hover-shadow h-100 border-0">
                 <div class="card-body row w-100 mx-auto">
@@ -59,31 +76,14 @@
               <div class="card shadow-sm hover-shadow h-100 border-0">
                 <div class="card-body row w-100 mx-auto">
                   <div class="col-12 p-0 mb-0">
-                    <p class="mb-0 text-center h5 fw-bold">Siswa (SMK)</p>
+                    <p class="mb-0 text-center h5 fw-bold">Karyawan Baru</p>
                   </div>
                   <div class="col-12 p-0 mb-0 text-center">
                     <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
                   </div>
                   <div class="col-12 p-0">
                     <p class="mb-0 text-muted small height-jenjang">
-                      Siswa SMK aktif jurusan DKV, RPL, Multimedia, Jaringan dan Pemasaran dapat bergabung
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-lg-4 mb-3 border-0 pl-0 pr-0 pr-sm-3">
-              <div class="card shadow-sm hover-shadow h-100 border-0">
-                <div class="card-body row w-100 mx-auto">
-                  <div class="col-12 p-0 mb-0">
-                    <p class="mb-0 text-center h5 fw-bold">Guru Sekolah</p>
-                  </div>
-                  <div class="col-12 p-0 mb-0 text-center">
-                    <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
-                  </div>
-                  <div class="col-12 p-0">
-                    <p class="mb-0 text-muted small height-jenjang">
-                      Guru dari sekolah asal juga dapat bergabung dengan program guru magang
+                      Karyawan baru juga bisa mengikuti program PKL dalam Kelas Industri ini
                     </p>
                   </div>
                 </div>
@@ -102,31 +102,31 @@
                 <div class="content-accordion">
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Modul Pelatihan
+                          Pengumuman Lowongan
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Selama proses Program Magang dilakukan, peserta akan mendapatkan modul pelatihan sebagai panduan pelatihan dalam menjalani proses magang.
+                          Salah satu benefit dari program pkl ini adalah, setelah selesai melaksanakan program ini maka siswa/mahasiswa akan mendapatkan informasi lowongan magang dibayar.
                           </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Sertifikat Pelatihan
+                          Sertifikat Industri
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Untuk jurusan TITL akan mendapatkan Sertifikat Pelatihan khusus berstandar profesi yang akan diberikan ketika program magang selesai.
-                          </div>
+                          Untuk peserta PKL akan mendapatkan Surat dan Sertifikat Industri ketika program PKL telah selesai dilakukan.
+                        </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Sertifikat Magang
+                          Sertifikat Profesi (TITL)
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Untuk peserta magang reguler akan mendapatkan surat dan sertifikat magang ketika program magang telah selesai dilakukan.
+                          Untuk jurusan TITL akan mendapatkan Sertifikat Pelatihan khusus berstandar profesi yang akan diberikan ketika program PKL selesai.
                           </div>
                       </div>
                   </div>
@@ -152,7 +152,7 @@
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Peserta magang juga pastinya bisa memperluas relasi dengan karyawan industri untuk saling bertukar pikiran dan memperluas pengetahuan terkait industri bisnis.
+                          Peserta PKL juga pastinya bisa memperluas relasi dengan karyawan industri untuk saling bertukar pikiran dan memperluas pengetahuan terkait industri bisnis.
                           </div>
                       </div>
                   </div>
@@ -162,7 +162,7 @@
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Pengalaman kerja di Industri tentunya juga menjadi salah satu benefit dan keuntungan peserta magang ketika mengikuti Program Magang Kelas Industri.
+                          Pengalaman kerja di Industri tentunya juga menjadi salah satu benefit dan keuntungan peserta PKL ketika mengikuti Program PKL Kelas Industri.
                           </div>
                       </div>
                   </div>
@@ -180,7 +180,7 @@
         <div class="container text-md-center">
           <h2 class="main-heading mb-2">Pilih Bidang dan Kompetensimu</h2>
           <p class="text-muted" style="margin-bottom: 7rem">
-            Berikut adalah beberapa bidang dan kompetensi jurusan untuk program magang
+            Berikut adalah beberapa bidang dan kompetensi jurusan untuk program PKL
           </p>
           <div class="row justify-content-center align-items-stretch text-left mb-3 mb-md-2">
             <div class="col-6 col-sm-3 col-lg-3 pb-4 mt-0 mt-lg-0 mb-lg-0">
@@ -260,7 +260,7 @@
               <h2 class="main-heading text-lg-left fw-normal">
                 Tertarik Bergabung ke Program
                 <br class="d-none d-lg-block" /><span class="fw-semibold"
-                  >Program Magang Kelas Industri ?</span
+                  >Magang Dibayar Kelas Industri ?</span
                 >
               </h2>
               <p class="text-muted text-lg-left fs-14">
