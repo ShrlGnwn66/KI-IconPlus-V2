@@ -51,8 +51,8 @@
                         <div class="right-column">
                             <div class="input-box">
                                 <span class="details">NIP</span>
-                                <input type="text" id="nip" name="nip" pattern="[0-9]"
-                                    placeholder="Masukkan NIP" title="NIP harus terdiri dari deretan angka" required />
+                                <input type="text" id="nip" name="nip" placeholder="Masukkan NIP"
+                                    title="NIP harus terdiri dari deretan angka" required />
                             </div>
                             <button type="submit" class="btn btn-danger me-3" style="width: 120px;" name="reset"
                                 formnovalidate>Reset</button>

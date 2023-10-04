@@ -21,7 +21,7 @@
                             <div class="input-box">
                                 <span class="details">Penempatan</span>
                                 <select class="form-select form-select-lg mb-3" aria-label="Large select example" required
-                                    name="department">
+                                    name="placement">
                                     <option selected disabled>Pilih Penempatan</option>
                                     <option value="Semarang">SBU Semarang</option>
                                     <option value="Yogyakarta">KP Yogyakarta</option>
