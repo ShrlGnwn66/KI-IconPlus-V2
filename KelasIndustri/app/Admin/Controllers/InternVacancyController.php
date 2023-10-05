@@ -29,7 +29,10 @@ class InternVacancyController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('picture')->image();
         $grid->column('title', __('Title'));
-       $grid->column('job_description', __('Job description'))->limit(15);
+        $grid->column('title_job', __('Title Job'));
+        $grid->column('job_description', __('Job description'))->limit(15);
+        $grid->column('title_qualifications', __('Title Qualifications'));
+
         $grid->column('qualifications', __('Qualifications'))->limit(15);
         $grid->column('placement', __('Placement'));
         $grid->column('work_hours', __('Work hours'));
@@ -52,7 +55,10 @@ class InternVacancyController extends AdminController
 
         $show->field('id', __('Id'));
         $show->field('picture')->image();
+        $show->field('title', __('Title'));
+        $show->field('title_job', __('Title Job'));
         $show->field('job_description', __('Job description'));
+        $show->field('title_qualifications', __('Title Qualifications'));
         $show->field('qualifications', __('Qualifications'));
         $show->field('placement', __('Placement'));
         $show->field('work_hours', __('Work hours'));
@@ -74,7 +80,9 @@ class InternVacancyController extends AdminController
 
         $form->image('picture', __('Picture'));
         $form->text('title', __('Title'));
+        $form->text('title_job', __('Title Job'));
         $form->textarea('job_description','Job description')->rows(5);
+        $form->text('title_qualifications', __('Title Qualifications'));
         $form->textarea('qualifications','Qualifications')->rows(5);
         $form->text('placement', __('Placement'));
         $form->text('work_hours', __('Work hours'));
