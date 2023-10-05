@@ -46,6 +46,9 @@ Route::get('additionalServices', [PremiumPageController::class, 'additionalServi
 //Form
 Route::get('pkl', [FormController::class, 'pkl'])->middleware('isLogin');
 Route::get('pkl2', [FormController::class, 'pkl2'])->middleware('isLogin');
+Route::post('/pkl', [FormController::class, 'Up']); //post ke session
+Route::post('/pkl2/form-kedua', [FormController::class, 'upFormKedua']);
+
 
 Route::get('guruTamu', [FormController::class, 'guruTamu'])->middleware('isLogin');
 Route::post('/guruTamu', [FormController::class, 'tamu']); //post

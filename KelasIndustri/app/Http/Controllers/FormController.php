@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\FormInternTeacher;
+use App\Models\FormPkl;
 use App\Models\FormUkkExaminer;
 use App\Models\FormGuestTeacher;
 use Illuminate\Http\Request;
@@ -11,13 +12,104 @@ use Illuminate\HTTP\UploadedFile;
 
 class FormController extends Controller
 {
-    //form pkl
+    //Form PKL
     public function pkl (){
         return view ('premiumpage.pages.form.pkl');
     }
     public function pkl2 (){
         return view ('premiumpage.pages.form.pkl2');
     }
+
+    // Data Preview Form 1
+    public function Up (Request $request) {
+        // Reset Session
+        if ($request->has('reset')) {
+            // Hapus data preview dari session
+            session()->forget('data_preview');
+
+            return redirect('/pkl');
+        }
+
+        // Validasi data dari form pertama
+        $validatedData = $request->validate([
+            'participant_name' => 'required',
+            'gender' => 'required',
+            'department' => 'required',
+            'nisnim' => 'required',
+        ]);
+
+        // Data dari form pertama
+        $data = [
+            'participant_name' => $validatedData['participant_name'],
+            'gender' => $validatedData['gender'],
+            'department' => $validatedData['department'],
+            'nisnim' => $validatedData['nisnim'],
+        ];
+
+        // Simpan data preview ke session
+        $request->session()->push('data_preview', $data);
+
+        // Redirect kembali ke form pertama atau form kedua
+        return redirect('/pkl');
+    }
+
+    public function upFormKedua(Request $request) {
+        // validasi data
+        $validatedData = $request->validate([
+            'agency_name' => 'required',
+            'placement' => 'required',
+            'start_intern_period' => 'required',
+            'end_intern_period' => 'required',
+            'responsible_teacher' => 'required',
+            'responsible_contact' => 'required',
+            'apply_letter' => 'required', 
+        ]);
+
+        // ambil data form kedua
+        $agencyName = $request->input('agency_name');
+        $placement = $request->input('placement');
+        $startInternPeriod = $request->input('start_intern_period');
+        $endInternPeriod = $request->input('end_intern_period');
+        $responsibleTeacher = $request->input('responsible_teacher');
+        $responsibleContact = $request->input('responsible_contact');
+        $applyLetter = $request->file('apply_letter');
+
+        // Simpan file yang di Unggah
+        $name = $applyLetter->getClientOriginalName();
+        $applyLetter->storeAs('files', $name);
+        $link = 'files/' . $name;
+
+        // ambil data session form pertama
+        $Preview = session('data_preview') ?? [];
+        $combineData=[];
+
+        // Loop untuk mendapat semua data
+        foreach ($Preview as $siswa) {
+                $combineData[] = array_merge($siswa, [
+                    'agency_name' => $agencyName,
+                    'placement' => $placement,
+                    'start_intern_period' => $startInternPeriod,
+                    'end_intern_period' => $endInternPeriod,
+                    'responsible_teacher' => $responsibleTeacher,
+                    'responsible_contact' => $responsibleContact,
+                    'apply_letter' => $link,
+            ]);
+        }
+
+        // Simpan data ke model
+        foreach ($combineData as $data) {
+            $model = new FormPkl;
+            $model->fill($data);
+            $model->save();
+        }
+
+        // Hapus session
+        session()->forget('data_preview');
+        return redirect('/pkl')->with('success', 'Data anda berhasil disimpan');
+
+    }
+    
+    
 
     //form Guru Tamu
     public function guruTamu (){
@@ -145,7 +237,7 @@ class FormController extends Controller
     // Hapus data session setelah di save
     session()->forget('data_preview');
 
-    return redirect('/guruMagang')->with('success', 'Data anda berhasil disimpan');;
+    return redirect('/guruMagang')->with('success', 'Data anda berhasil disimpan');
 }
 
 

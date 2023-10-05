@@ -33,7 +33,7 @@ class InternVacancyController extends AdminController
         $grid->column('qualifications', __('Qualifications'))->limit(15);
         $grid->column('placement', __('Placement'));
         $grid->column('work_hours', __('Work hours'));
-        $grid->column('expired_date', __('Expired date'));
+        $grid->column('expired_date', __('Expired date'))->dateFormat('d-M-Y');
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 

@@ -29,7 +29,7 @@ class FormUkkExaminerController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('agency_name', __('Agency name'));
         $grid->column('subject_exam', __('Subject exam'));
-        $grid->column('exam_date', __('Exam date'));
+        $grid->column('exam_date', __('Exam date'))->dateFormat('d-M-Y');
         $grid->column('exam_time', __('Exam time'));
         $grid->column('responsible_teacher', __('Responsible teacher'));
         $grid->column('responsible_contact', __('Responsible contact'));
