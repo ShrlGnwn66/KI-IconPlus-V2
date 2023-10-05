@@ -5,7 +5,7 @@
         <div class="container">
             <div class="title text-center mb-4 pb-4">Data diri Instansi dan Penanggung Jawab</div>
             <div class="content">
-                <form method="POST" action="/guruMagang" enctype="multipart/form-data">
+                <form method="POST" action="/guruMagang2/form-kedua" enctype="multipart/form-data">
                     @csrf
                     <div class="user-details">
                         <!-- Column Kiri -->

@@ -58,13 +58,13 @@ class FormController extends Controller
     }
 
     // data preview with sessions
-    public function guru(Request $request)
+    public function upDataSession(Request $request)
     {
         // Reset Session
         if ($request->has('reset')) {
             // Hapus data preview dari session
             session()->forget('data_preview');
-            // Redirect kembali ke halaman form pertama
+
             return redirect('/guruMagang');
         }
 
@@ -91,36 +91,64 @@ class FormController extends Controller
         return redirect('/guruMagang');
     }
 
+    public function storeFormKedua(Request $request)
+{
+    // Validasi data dari form kedua
+    $validatedData = $request->validate([
+        'agency_name' => 'required',
+        'placement' => 'required',
+        'start_intern_period' => 'required',
+        'end_intern_period' => 'required',
+        'responsible_teacher' => 'required',
+        'responsible_contact' => 'required',
+        'apply_letter' => 'required', 
+    ]);
+
+    // Mengambil data dari form kedua
+    $agencyName = $request->input('agency_name');
+    $placement = $request->input('placement');
+    $startInternPeriod = $request->input('start_intern_period');
+    $endInternPeriod = $request->input('end_intern_period');
+    $responsibleTeacher = $request->input('responsible_teacher');
+    $responsibleContact = $request->input('responsible_contact');
+    $applyLetter = $request->file('apply_letter');
+
+    // Menyimpan file yang diunggah
+    $name = $applyLetter->getClientOriginalName();
+    $applyLetter->storeAs('files', $name);
+    $link = 'files/' . $name;
+
+    // Mengambil data dari session form pertama
+    $dataPreview = session('data_preview') ?? [];
+    $combinedData=[];
+
+    // Loop melalui setiap data siswa dari form pertama
+    foreach ($dataPreview as $siswa) {
+        $combinedData[] = array_merge($siswa, [
+            'agency_name' => $agencyName,
+            'placement' => $placement,
+            'start_intern_period' => $startInternPeriod,
+            'end_intern_period' => $endInternPeriod,
+            'responsible_teacher' => $responsibleTeacher,
+            'responsible_contact' => $responsibleContact,
+            'apply_letter' => $link,
+        ]);
+    }
+
+    // Simpan data ke dalam model
+    foreach ($combinedData as $data) {
+        $model = new FormInternTeacher;
+        $model->fill($data);
+        $model->save();
+    }
+
+    // Hapus data session setelah di save
+    session()->forget('data_preview');
+
+    return redirect('/guruMagang')->with('success', 'Data anda berhasil disimpan');;
+}
 
 
-
-    // public function guru(Request $request){
-    //     // return $request->all();
-    //     $validateGuru = $request->validate([
-    //         'agency_name' => 'required',
-    //         'participant_name' => 'required',
-    //         'nip' => 'required',
-    //         'gender' => 'required',
-    //         'department' => 'required',
-    //         'start_intern_period' => 'required',
-    //         'end_intern_period' => 'required',
-    //         'responsible_teacher' => 'required',
-    //         'responsible_contact' => 'required',
-    //         'apply_letter' => 'required',
-    //     ]);
-    //      // Menyimpan file yang diunggah
-    //      $file = $request->file('apply_letter');
-    //      $name = ''. $file->getClientOriginalName();
-    //      $file->storeAs('files', $name);
-    //      $link = 'files/' .$name;
-
-    //      $validateGuru['apply_letter'] = $link;
-
-    //     FormInternTeacher::create($validateGuru);
-
-    //     return redirect('/guruMagang')->with('success', 'Data anda berhasil disimpan');
-
-    // }
     //form penguji UKK
     public function pengujiUKK (){
         return view ('premiumpage.pages.form.pengujiUKK');

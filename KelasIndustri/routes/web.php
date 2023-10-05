@@ -43,7 +43,7 @@ Route::get('internVacancy', [PremiumPageController::class, 'internVacancy'])->mi
 Route::get('eduTrip', [PremiumPageController::class, 'eduTrip'])->middleware('isLogin');
 Route::get('additionalServices', [PremiumPageController::class, 'additionalServices'])->middleware('isLogin');
 
-//form
+//Form
 Route::get('pkl', [FormController::class, 'pkl'])->middleware('isLogin');
 Route::get('pkl2', [FormController::class, 'pkl2'])->middleware('isLogin');
 
@@ -52,8 +52,8 @@ Route::post('/guruTamu', [FormController::class, 'tamu']); //post
 
 Route::get('guruMagang', [FormController::class, 'guruMagang'])->middleware('isLogin');
 Route::get('guruMagang2', [FormController::class, 'guruMagang2'])->middleware('isLogin');
-Route::post('/guruMagang', [FormController::class, 'guru']); //post
-
+Route::post('/guruMagang', [FormController::class, 'upDataSession']); //post ke session
+Route::post('/guruMagang2/form-kedua', [FormController::class, 'storeFormKedua'])->middleware('isLogin'); //post ke database
 
 Route::get('pengujiUKK', [FormController::class, 'pengujiUKK'])->middleware('isLogin');
 Route::post('/pengujiUKK', [FormController::class, 'penguji']); //post
