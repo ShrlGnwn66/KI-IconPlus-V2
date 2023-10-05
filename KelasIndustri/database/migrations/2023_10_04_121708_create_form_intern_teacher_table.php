@@ -15,11 +15,12 @@ class CreateFormInternTeacherTable extends Migration
     {
         Schema::create('form_intern_teacher', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('agency_name')->nullable();
             $table->string('participant_name')->nullable();
-            $table->string('nip')->nullable();
-            $table->string('gender')->nullable();
+            $table->boolean('gender')->nullable();
             $table->string('department')->nullable();
+            $table->string('nip')->nullable();
+            $table->string('agency_name')->nullable();
+            $table->string('placement')->nullable();
             $table->date('start_intern_period')->nullable();
             $table->date('end_intern_period')->nullable();
             $table->string('responsible_teacher')->nullable();

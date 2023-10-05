@@ -27,13 +27,14 @@ class FormInternTeacherController extends AdminController
         $grid = new Grid(new FormInternTeacher());
 
         $grid->column('id', __('Id'));
-        $grid->column('agency_name', __('Agency name'));
         $grid->column('participant_name', __('Participant name'));
-        $grid->column('nip', __('Nip'));
-        $grid->column('gender', __('Gender'))->using(['1' => 'Laki-Laki', '0' => 'Permpuan']);
+        $grid->column('gender', __('Gender'))->using(['1' => 'Laki-Laki', '0' => 'Perempuan']);
         $grid->column('department', __('Department'));
-        $grid->column('start_intern_period', __('start intern period'));
-        $grid->column('end_intern_period', __('end intern period'));
+        $grid->column('nip', __('Nip'));
+        $grid->column('agency_name', __('Agency name'));
+        $grid->column('placement', __('Placement'));
+        $grid->column('start_intern_period', __('Start intern period'))->dateFormat('d-M-Y');
+        $grid->column('end_intern_period', __('End intern period'))->dateFormat('d-M-Y');
         $grid->column('responsible_teacher', __('Responsible teacher'));
         $grid->column('responsible_contact', __('Responsible contact'));
         $grid->column('apply_letter', __('Apply letter'))->downloadable();
@@ -54,11 +55,12 @@ class FormInternTeacherController extends AdminController
         $show = new Show(FormInternTeacher::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('agency_name', __('Agency name'));
         $show->field('participant_name', __('Participant name'));
-        $show->field('nip', __('Nip'));
-        $show->field('gender', __('Gender'));
+        $show->field('gender', __('Gender'))->using(['1' => 'Laki-Laki', '0' => 'Perempuan']);
         $show->field('department', __('Department'));
+        $show->field('nip', __('Nip'));
+        $show->field('agency_name', __('Agency name'));
+        $show->field('placement', __('Placement'));
         $show->field('start_intern_period', __('Start intern period'));
         $show->field('end_intern_period', __('End intern period'));
         $show->field('responsible_teacher', __('Responsible teacher'));
@@ -79,9 +81,7 @@ class FormInternTeacherController extends AdminController
     {
         $form = new Form(new FormInternTeacher());
 
-        $form->text('agency_name', __('Agency name'));
         $form->text('participant_name', __('Participant name'));
-        $form->text('nip', __('Nip'));
         $form->radio('gender', __('Gender'))->options(['1' => 'Laki-Laki', '0' => 'Permpuan'])->default('');
         $form->select('department', __('Department'))->options([
             'DKV' => 'DKV',
@@ -89,8 +89,15 @@ class FormInternTeacherController extends AdminController
             'TJKT' => 'TJKT',
             'RPL' => 'RPL',
         ]);
-        $form->date('start_intern_period', __('Start intern period'))->format('DD-MM-YYYY');
-        $form->date('end_intern_period', __('End intern period'))->format('DD-MM-YYYY');
+        $form->text('nip', __('Nip'));
+        $form->text('agency_name', __('Agency name'));
+        $form->text('placement', __('Placement'));
+        $form->select('placement', __('Placement'))->options([
+            'Semarang' => 'SBU Semarang',
+            'Yogyakarta' => 'KP Yogyakarta',
+            'Purwokerto' => 'KP Purwokerto',
+        ]);
+        $form->dateRange('start_intern_period', 'end_intern_period', 'Date Range');
         $form->text('responsible_teacher', __('Responsible teacher'));
         $form->text('responsible_contact', __('Responsible contact'));
         $form->file('apply_letter', __('Apply letter'));

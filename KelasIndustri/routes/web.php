@@ -43,27 +43,31 @@ Route::get('internVacancy', [PremiumPageController::class, 'internVacancy'])->mi
 Route::get('eduTrip', [PremiumPageController::class, 'eduTrip'])->middleware('isLogin');
 Route::get('additionalServices', [PremiumPageController::class, 'additionalServices'])->middleware('isLogin');
 
-//form
+//Form
 Route::get('pkl', [FormController::class, 'pkl'])->middleware('isLogin');
 Route::get('pkl2', [FormController::class, 'pkl2'])->middleware('isLogin');
+Route::post('/pkl', [FormController::class, 'Up']); //post ke session
+Route::post('/pkl2/form-kedua', [FormController::class, 'upFormKedua']);
+
 
 Route::get('guruTamu', [FormController::class, 'guruTamu'])->middleware('isLogin');
 Route::post('/guruTamu', [FormController::class, 'tamu']); //post
 
 Route::get('guruMagang', [FormController::class, 'guruMagang'])->middleware('isLogin');
-Route::post('/guruMagang', [FormController::class, 'guru']); //post
+Route::get('guruMagang2', [FormController::class, 'guruMagang2'])->middleware('isLogin');
+Route::post('/guruMagang', [FormController::class, 'upDataSession']); //post ke session
+Route::post('/guruMagang2/form-kedua', [FormController::class, 'storeFormKedua'])->middleware('isLogin'); //post ke database
 
 Route::get('pengujiUKK', [FormController::class, 'pengujiUKK'])->middleware('isLogin');
 Route::post('/pengujiUKK', [FormController::class, 'penguji']); //post
 
-// Job Vacancy
+// Job Vacancy dan Intern Vacancy
 Route::get('jobVacancy', [JobVacancyController::class, 'job'])->middleware('isLogin');
 Route::get('internVacancy', [InternVacancyController::class, 'internjob'])->middleware('isLogin');
 
 
 //gallery and News controller news jadi satu sama Gallery
 Route::get('/', [GalleryController::class, 'index']);
-
 Route::get('news/{id}', [NewsController::class, 'news'])->name('news');
 
 

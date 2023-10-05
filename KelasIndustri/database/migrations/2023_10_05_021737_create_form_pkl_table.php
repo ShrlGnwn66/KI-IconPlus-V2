@@ -16,12 +16,13 @@ class CreateFormPklTable extends Migration
         Schema::create('form_pkl', function (Blueprint $table) {
             $table->increments('id');
             $table->string('participant_name')->nullable();
-            $table->string('gender')->nullable();
+            $table->boolean('gender')->nullable();
             $table->string('department')->nullable();
-            $table->string('nis_nim')->nullable();
+            $table->string('nisnim')->nullable();
             $table->string('agency_name')->nullable();
             $table->string('placement')->nullable();
-            $table->date('intern_period')->nullable();
+            $table->date('start_intern_period')->nullable();
+            $table->date('end_intern_period')->nullable();
             $table->string('responsible_teacher')->nullable();
             $table->string('responsible_contact')->nullable();
             $table->string('apply_letter')->nullable();

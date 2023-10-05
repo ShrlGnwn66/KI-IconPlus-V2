@@ -61,15 +61,15 @@
                     </p>
 
                     <p>
-                        <a href="mailto:sahrultech5@gmail.com" class="text-decoration-none" style="color: #fff"
+                        <a href="mailto:sbu.rjbtg@iconpln.co.id" class="text-decoration-none" style="color: #fff"
                             target="_blank">
                             <span class="me-3"><i class="bi bi-envelope fs-4"></i></span>
-                            plniconplus@gmail.com
+                            sbu.rjbtg@iconpln.co.id
                         </a>
                     </p>
                     <p>
                         <span class="me-3"><i class="bi bi-telephone fs-4"></i></span>
-                        (+62) 0000 0000 000
+                        +0247620576
                     </p>
                 </div>
                 <!--Grid column-->
@@ -97,7 +97,6 @@
         <!-- Copyright -->
     </footer>
     <script src="js/userpremium.js"></script>
-    <script src="js/form.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

@@ -17,7 +17,9 @@ class CreateInternVacancyTable extends Migration
             $table->increments('id');
             $table->string('picture')->nullable();
             $table->string('title')->nullable();
+            $table->string('title_job')->nullable();
             $table->string('job_description')->nullable();
+            $table->string('title_qualifications')->nullable();
             $table->string('qualifications')->nullable();
             $table->string('placement')->nullable();
             $table->string('work_hours')->nullable();

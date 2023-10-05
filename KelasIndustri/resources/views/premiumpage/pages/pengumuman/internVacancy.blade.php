@@ -75,7 +75,7 @@
                         <div class="description">
                             <br />
                             <p>
-                                <strong>Tugas dan Tanggung Jawab</strong>
+                                <strong>{{ $intern->title_job }}</strong>
                             </p>
                             <ul>
                                 @foreach (explode(', ', $intern->job_description) as $description)
@@ -85,7 +85,7 @@
                                 @endforeach
                             </ul>
                             <p>
-                                <strong>Skill dan Pengalaman</strong>
+                                <strong>{{ $intern->title_qualifications }}</strong>
                             </p>
                             <ul>
                                 @foreach (explode(', ', $intern->qualifications) as $qualifications)

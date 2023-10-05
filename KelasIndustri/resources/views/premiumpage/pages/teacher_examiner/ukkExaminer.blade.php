@@ -179,47 +179,6 @@
         </div>
       </section>
 
-      <section
-        class="frequently-asked-question pt-5"
-        style="padding-bottom: 10rem"
-      >
-        <div class="container text-md-center">
-          <h2 class="main-heading mb-2">FAQ Penguji UKK</h2>
-          <p class="text-muted" style="margin-bottom: 7rem">
-            Pertanyaan seputar pendampingan uji UKK
-          </p>
-          <div class="accordion">
-            <div class="accordion-item">
-              <div class="accordion-item-header">Pertanyaan 1</div>
-              <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                  soluta veniam esse aspernatur quo. Cum natus culpa hic qui
-                  repellat.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <div class="accordion-item-header">Pertanyaan 2</div>
-              <div class="accordion-item-body">
-                <div class="accordion-item-body-content">
-                  <ul style="padding-left: 1rem">
-                    <li>Point 1</li>
-                    <li>Point 2</li>
-                    <li>Point 3</li>
-                    <li>Point 4</li>
-                    <li>Point 5</li>
-                    <li>Point 6</li>
-                    <li>Point 7</li>
-                    <li>Point 8</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="pendaftaran" class="title-registration py-lg-4 bg-white">
         <div class="container">
           <div class="registration-content ps-3 text-center">
