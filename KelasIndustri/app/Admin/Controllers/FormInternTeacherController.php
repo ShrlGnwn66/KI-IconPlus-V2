@@ -97,8 +97,6 @@ class FormInternTeacherController extends AdminController
             'Yogyakarta' => 'KP Yogyakarta',
             'Purwokerto' => 'KP Purwokerto',
         ]);
-        // $form->date('start_intern_period', __('Start intern period'))->default(date('Y-m-d'));
-        // $form->date('end_intern_period', __('End intern period'))->default(date('Y-m-d'));
         $form->dateRange('start_intern_period', 'end_intern_period', 'Date Range');
         $form->text('responsible_teacher', __('Responsible teacher'));
         $form->text('responsible_contact', __('Responsible contact'));
