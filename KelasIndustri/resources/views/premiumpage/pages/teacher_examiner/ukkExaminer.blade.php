@@ -230,7 +230,7 @@
               Daftarkan sekolah anda untuk mendapatkan akses program
               pendampingan Uji UKK
             </p>
-            <a class="btn" href="../404/404_error.html">Daftar Sekarang</a>
+            <a class="btn" href="./pengujiUKK">Daftar Sekarang</a>
           </div>
         </div>
       </section>

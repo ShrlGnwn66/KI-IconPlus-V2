@@ -42,23 +42,6 @@
               <div class="card shadow-sm hover-shadow h-100 border-0">
                 <div class="card-body row w-100 mx-auto">
                   <div class="col-12 p-0 mb-0">
-                    <p class="mb-0 text-center h5 fw-bold">Mahasiswa</p>
-                  </div>
-                  <div class="col-12 p-0 mb-0 text-center">
-                    <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
-                  </div>
-                  <div class="col-12 p-0">
-                    <p class="mb-0 text-muted small height-jenjang">
-                      Mahasiswa aktif jurusan DKV, Teknik Informatika, Manajemen Informatika, Teknik Komputer dll
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-lg-4 mb-3 border-0 pl-0 pr-0 pr-sm-3">
-              <div class="card shadow-sm hover-shadow h-100 border-0">
-                <div class="card-body row w-100 mx-auto">
-                  <div class="col-12 p-0 mb-0">
                     <p class="mb-0 text-center h5 fw-bold">Siswa (SMK)</p>
                   </div>
                   <div class="col-12 p-0 mb-0 text-center">
@@ -66,7 +49,7 @@
                   </div>
                   <div class="col-12 p-0">
                     <p class="mb-0 text-muted small height-jenjang">
-                      Siswa SMK aktif jurusan DKV, RPL, Multimedia, Jaringan dan Pemasaran dapat bergabung
+                        Siswa SMK aktif jurusan DKV, RPL, Multimedia, Jaringan dan Pemasaran dapat bergabung
                     </p>
                   </div>
                 </div>
@@ -89,6 +72,23 @@
                 </div>
               </div>
             </div>
+            <div class="col-md-4 col-lg-4 mb-3 border-0 pl-0 pr-0 pr-sm-3">
+              <div class="card shadow-sm hover-shadow h-100 border-0">
+                <div class="card-body row w-100 mx-auto">
+                  <div class="col-12 p-0 mb-0">
+                    <p class="mb-0 text-center h5 fw-bold">Kepala Sekolah</p>
+                  </div>
+                  <div class="col-12 p-0 mb-0 text-center">
+                    <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
+                  </div>
+                  <div class="col-12 p-0">
+                    <p class="mb-0 text-muted small height-jenjang">
+                      Kepala Sekolah dari sekolah asal juga memiliki kesempatan untuk menjadi bagian dari program guru magang
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -102,31 +102,32 @@
                 <div class="content-accordion">
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Modul Pelatihan
+                          Praktik Kerja Lapangan
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Selama proses Program Magang dilakukan, peserta akan mendapatkan modul pelatihan sebagai panduan pelatihan dalam menjalani proses magang.
+                          Dalam hal ini sekolah akan mendapatkan benefit untuk mengirimkan muridnya menikuti program PKL yang diselenggarakan oleh PLN ICON PLUS.
                           </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Sertifikat Pelatihan
+                          Magang Dibayar
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Untuk jurusan TITL akan mendapatkan Sertifikat Pelatihan khusus berstandar profesi yang akan diberikan ketika program magang selesai.
+                            Program "Magang Dibayar" adalah salah satu inisiatif yang digagas oleh PLN ICON PLUS untuk memberikan kesempatan kepada individu yang berminat untuk menjalani magang di PLN ICON PLUS.
                           </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Sertifikat Magang
+                          Sertifikat Industri
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Untuk peserta magang reguler akan mendapatkan surat dan sertifikat magang ketika program magang telah selesai dilakukan.
+                            Dengan hal ini benefit lagi yang akan di dapatkan adalah Sertifikat Industri.
+                            Dimana sertifikat industri ini pemegangnya telah memahami dan memiliki keterampilan yang diperlukan dalam bidang tertentu.
                           </div>
                       </div>
                   </div>
@@ -138,17 +139,17 @@
                 <div class="content-accordion">
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Pengetahuan Industri
+                          Sertifikat Profesi 
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Salah satu benefit yang didapatkan adalah terkait pengetahuan industri yang meliputi Alur Kerja Industri hingga Business Knowledge.
+                          Untuk jurusan TITL akan mendapatkan Sertifikat Pelatihan khusus berstandar profesi yang akan diberikan ketika program magang selesai.
                           </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Relasi Karyawan Industri
+                          Pendampingan UKK
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
@@ -158,7 +159,7 @@
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Pengalaman Kerja
+                          Pendampingan LKS
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">

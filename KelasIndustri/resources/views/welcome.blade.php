@@ -268,24 +268,34 @@
             </div>
 
             <div class="grid">
-                @foreach ($galleryItems as $item)
-                    @if ($item->image !== null)
-                        @php
-                            $filteredImages = array_filter($item->image, 'is_string');
-                        @endphp
-
-                        @foreach ($filteredImages as $image)
-                            <div class="grid-item" data-aos="fade-left" data-name="{{ $item->department }}">
-                                <a href="{{ asset('uploads/' . $image) }}" data-fancybox="gallery"
-                                    data-caption="{{ $item->department }}">
-                                    <img src="{{ asset('uploads/' . $image) }}" alt="" />
-                                </a>
-                            </div>
+                @php
+                    $recentImages = [];
+                @endphp
+                    @foreach ($galleryItems as $item)
+                        @if ($item->image !== null)
+                            @php
+                                $filteredImages = array_filter($item->image, 'is_string');
+                                $recentImages = array_merge($recentImages, $filteredImages);
+                            @endphp
+                            @php
+                                $recentImages = array_slice(array_reverse($recentImages), 0, 15);
+                            @endphp
+                        @endif
                         @endforeach
-                    @endif
-                @endforeach
+
+                            @foreach ($recentImages as $image)
+                                <div class="grid-item" data-aos="fade-left" data-name="{{ $item->department }}">
+                                    <a href="{{ asset('uploads/' . $image) }}" data-fancybox="gallery"
+                                        data-caption="{{ $item->department }}">
+                                        <img src="{{ asset('uploads/' . $image) }}" alt="" />
+                                    </a>
+                                </div>
+                            @endforeach
 
             </div>
+         
+
+
             </form>
         </div>
     </section>
