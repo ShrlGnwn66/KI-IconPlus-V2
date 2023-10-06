@@ -268,22 +268,13 @@
             </div>
 
             <div class="grid">
-                @php
-                    $recentImages = [];
-                @endphp
                     @foreach ($galleryItems as $item)
                         @if ($item->image !== null)
                             @php
-                                $filteredImages = array_filter($item->image, 'is_string');
-                                $recentImages = array_merge($recentImages, $filteredImages);
+                                $filteredImages = array_filter($item->image, 'is_string');  
                             @endphp
-                            @php
-                                $recentImages = array_slice(array_reverse($recentImages), 0, 15);
-                            @endphp
-                        @endif
-                        @endforeach
 
-                            @foreach ($recentImages as $image)
+                            @foreach ($filteredImages as $image)
                                 <div class="grid-item" data-aos="fade-left" data-name="{{ $item->department }}">
                                     <a href="{{ asset('uploads/' . $image) }}" data-fancybox="gallery"
                                         data-caption="{{ $item->department }}">
@@ -291,7 +282,8 @@
                                     </a>
                                 </div>
                             @endforeach
-
+                        @endif
+                    @endforeach
             </div>
          
 
