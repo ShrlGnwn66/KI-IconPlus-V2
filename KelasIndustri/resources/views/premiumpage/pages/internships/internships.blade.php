@@ -59,14 +59,14 @@
               <div class="card shadow-sm hover-shadow h-100 border-0">
                 <div class="card-body row w-100 mx-auto">
                   <div class="col-12 p-0 mb-0">
-                    <p class="mb-0 text-center h5 fw-bold">Mahasiswa</p>
+                    <p class="mb-0 text-center h5 fw-bold">Siswa (SMK)</p>
                   </div>
                   <div class="col-12 p-0 mb-0 text-center">
                     <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
                   </div>
                   <div class="col-12 p-0">
                     <p class="mb-0 text-muted small height-jenjang">
-                      Mahasiswa aktif jurusan DKV, Teknik Informatika, Manajemen Informatika, Teknik Komputer dll
+                        Siswa SMK aktif jurusan DKV, RPL, Multimedia, Jaringan dan Pemasaran dapat bergabung
                     </p>
                   </div>
                 </div>
@@ -76,14 +76,14 @@
               <div class="card shadow-sm hover-shadow h-100 border-0">
                 <div class="card-body row w-100 mx-auto">
                   <div class="col-12 p-0 mb-0">
-                    <p class="mb-0 text-center h5 fw-bold">Karyawan Baru</p>
+                    <p class="mb-0 text-center h5 fw-bold">Kepala Sekolah</p>
                   </div>
                   <div class="col-12 p-0 mb-0 text-center">
                     <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
                   </div>
                   <div class="col-12 p-0">
                     <p class="mb-0 text-muted small height-jenjang">
-                      Karyawan baru juga bisa mengikuti program PKL dalam Kelas Industri ini
+                      Kepala Sekolah dari sekolah asal juga memiliki kesempatan untuk menjadi bagian dari program guru magang
                     </p>
                   </div>
                 </div>
@@ -102,11 +102,21 @@
                 <div class="content-accordion">
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Pengumuman Lowongan
+                          Praktik Kerja Lapangan
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Salah satu benefit dari program pkl ini adalah, setelah selesai melaksanakan program ini maka siswa/mahasiswa akan mendapatkan informasi lowongan magang dibayar.
+                          Dalam hal ini sekolah akan mendapatkan benefit untuk mengirimkan muridnya menikuti program PKL yang diselenggarakan oleh PLN ICON PLUS.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <div class="accordion-item-header-benefit">
+                          Magang Dibayar
+                      </div>
+                      <div class="accordion-item-body">
+                          <div class="accordion-item-body-content">
+                            Program "Magang Dibayar" adalah salah satu inisiatif yang digagas oleh PLN ICON PLUS untuk memberikan kesempatan kepada individu yang berminat untuk menjalani magang di PLN ICON PLUS.
                           </div>
                       </div>
                   </div>
@@ -116,17 +126,8 @@
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Untuk peserta PKL akan mendapatkan Surat dan Sertifikat Industri ketika program PKL telah selesai dilakukan.
-                        </div>
-                      </div>
-                  </div>
-                  <div class="accordion-item">
-                      <div class="accordion-item-header-benefit">
-                          Sertifikat Profesi (TITL)
-                      </div>
-                      <div class="accordion-item-body">
-                          <div class="accordion-item-body-content">
-                          Untuk jurusan TITL akan mendapatkan Sertifikat Pelatihan khusus berstandar profesi yang akan diberikan ketika program PKL selesai.
+                            Dengan hal ini benefit lagi yang akan di dapatkan adalah Sertifikat Industri.
+                            Dimana sertifikat industri ini pemegangnya telah memahami dan memiliki keterampilan yang diperlukan dalam bidang tertentu.
                           </div>
                       </div>
                   </div>
@@ -138,17 +139,17 @@
                 <div class="content-accordion">
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Pengetahuan Industri
+                          Sertifikat Profesi 
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
-                          Salah satu benefit yang didapatkan adalah terkait pengetahuan industri yang meliputi Alur Kerja Industri hingga Business Knowledge.
+                          Untuk jurusan TITL akan mendapatkan Sertifikat Pelatihan khusus berstandar profesi yang akan diberikan ketika program magang selesai.
                           </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Relasi Karyawan Industri
+                          Pendampingan UKK
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
@@ -158,7 +159,7 @@
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-item-header-benefit">
-                          Pengalaman Kerja
+                          Pendampingan LKS
                       </div>
                       <div class="accordion-item-body">
                           <div class="accordion-item-body-content">
