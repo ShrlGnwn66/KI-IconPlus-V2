@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\GalleryKunjunganController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PremiumPageController;
@@ -69,6 +70,9 @@ Route::get('internVacancy', [InternVacancyController::class, 'internjob'])->midd
 //gallery and News controller news jadi satu sama Gallery
 Route::get('/', [GalleryController::class, 'index']);
 Route::get('news/{id}', [NewsController::class, 'news'])->name('news');
+
+// Gallery user premium
+Route::get('eduTrip', [GalleryKunjunganController::class, 'galleryKunjungan'])->middleware('isLogin');
 
 
 
