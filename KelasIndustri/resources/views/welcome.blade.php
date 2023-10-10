@@ -267,24 +267,24 @@
                 <span class="item-link" data-name="TJKT">TJKT</span>
             </div>
 
-            <div class="grid">
-                    @foreach ($galleryItems as $item)
-                        @if ($item->image !== null)
-                            @php
-                                $filteredImages = array_filter($item->image, 'is_string');  
-                            @endphp
+            <div class="grid" style="position: relative;">
+    @foreach ($galleryItems as $item)
+        @if ($item->image !== null)
+            @php
+                $filteredImages = array_filter($item->image, 'is_string');  
+            @endphp
 
-                            @foreach ($filteredImages as $image)
-                                <div class="grid-item" data-aos="fade-left" data-name="{{ $item->department }}">
-                                    <a href="{{ asset('uploads/' . $image) }}" data-fancybox="gallery"
-                                        data-caption="{{ $item->department }}">
-                                        <img src="{{ asset('uploads/' . $image) }}" alt="" />
-                                    </a>
-                                </div>
-                            @endforeach
-                        @endif
-                    @endforeach
-            </div>
+            @foreach ($filteredImages as $image)
+                <div class="grid-item" data-aos="fade-left" data-name="{{ $item->department }}">
+                    <a href="{{ asset('uploads/' . $image) }}" data-fancybox="gallery"
+                        data-caption="{{ $item->department }}">
+                        <img src="{{ asset('uploads/' . $image) }}" alt="" />
+                    </a>
+                </div>
+            @endforeach
+        @endif
+    @endforeach
+</div>
          
 
 

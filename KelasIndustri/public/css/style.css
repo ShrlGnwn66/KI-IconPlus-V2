@@ -430,6 +430,7 @@ html {
     width: 100%;
     margin-bottom: 25px;
     break-inside: avoid;
+    position: relative;
 }
 
 .grid .grid-item img {
@@ -438,6 +439,7 @@ html {
     cursor: pointer;
     transition: 0.5s ease;
     animation: scaleAnimation 0.5s ease;
+    
 }
 
 .grid-item img:hover {
@@ -452,6 +454,47 @@ html {
         transform: scale(1);
     }
 }
+.grid .grid-item::before{
+        content: "PHOTO";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        width: auto; /* Menghapus width: 100% */
+        margin-top: -40px; /* Menghapus margin-top: -100px */
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .2s;
+        z-index: 1;
+    
+}
+
+.grid .grid-item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+    transition: .3s;
+}
+
+.grid .grid-item:hover::after{
+    height: 100%;
+}
+.grid .grid-item:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+
+
 
 
 /* Active menu*/
