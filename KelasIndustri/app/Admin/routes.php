@@ -17,6 +17,8 @@ Route::group([
 
     $router->resource('galleries', GalleryController::class);
 
+    $router->resource('gallery-kunjungans', GalleryKunjunganController::class);
+
     $router->resource('news', NewsController::class);
 
     $router->resource('form-pkls', FormPklController::class);

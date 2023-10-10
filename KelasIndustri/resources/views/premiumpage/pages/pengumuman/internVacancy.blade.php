@@ -7,7 +7,7 @@
         <div class="container-h py-5 bg-dark page-header-job-vacancy">
             <div class="container my-5 pt-5 pb-4">
                 <h1 class="display-4 text-white fw-semibold mb-3">
-                    Lowongan Magang
+                    Magang Di Bayar
                 </h1>
             </div>
         </div>
@@ -21,7 +21,7 @@
                 <div class="row justify-content-between">
                     <div class="title-list col-md-6 col-lg-6">
                         <h2 class="fw-bold text-md-left mb-md-0 mb-4 pb-2 pb-md-0">
-                            Lowongan Magang Terbaru
+                            Lowongan Terbaru
                         </h2>
                     </div>
                     <div class="search-list col-9 col-md-5 col-lg-6">
@@ -78,7 +78,7 @@
                                 <strong>{{ $intern->title_job }}</strong>
                             </p>
                             <ul>
-                                @foreach (explode(', ', $intern->job_description) as $description)
+                                @foreach (explode('- ', $intern->job_description) as $description)
                                     @if (!@empty(trim($description)))
                                         <li>{!! $description !!}</li>
                                     @endif
@@ -88,7 +88,7 @@
                                 <strong>{{ $intern->title_qualifications }}</strong>
                             </p>
                             <ul>
-                                @foreach (explode(', ', $intern->qualifications) as $qualifications)
+                                @foreach (explode('- ', $intern->qualifications) as $qualifications)
                                     @if (!@empty(trim($qualifications)))
                                         <li>{!! $qualifications !!}</li>
                                     @endif

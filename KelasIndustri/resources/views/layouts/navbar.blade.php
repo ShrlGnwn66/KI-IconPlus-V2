@@ -28,7 +28,7 @@
                         <a class="nav-link rounded-pill" href="#news">News</a>
                     </li>
                     <li class="nav-item-active mx-3 ms-auto">
-                        <a class="btn rounded-3 shadow custom_button-login" href="login" role="button">LOGIN</a>
+                        <a class="btn rounded-3 shadow custom_button-login ms-3" href="login" role="button">LOGIN</a>
                     </li>
                 </ul>
             </div>

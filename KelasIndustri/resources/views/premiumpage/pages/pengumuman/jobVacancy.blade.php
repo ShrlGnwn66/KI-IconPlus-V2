@@ -78,7 +78,7 @@
                                 <strong>{{ $job->title_job }}</strong>
                             </p>
                             <ul>
-                                @foreach (explode(', ', $job->job_description) as $description)
+                                @foreach (explode('- ', $job->job_description) as $description)
                                     @if (!@empty(trim($description)))
                                         <li>{!! $description !!}</li>
                                     @endif
@@ -88,7 +88,7 @@
                                 <strong>{{ $job->title_qualifications }}</strong>
                             </p>
                             <ul>
-                                @foreach (explode(', ', $job->qualifications) as $qualifications)
+                                @foreach (explode('- ', $job->qualifications) as $qualifications)
                                     @if (!@empty(trim($qualifications)))
                                         <li>{!! $qualifications !!}</li>
                                     @endif

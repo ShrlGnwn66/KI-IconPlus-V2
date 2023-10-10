@@ -179,6 +179,8 @@
 .title-description .container .description-content p {
     color: #797b7c;
     text-align: justify;
+    line-height: 1.7rem;
+    font-size: 17px;
 }
 
 .title-registration {
@@ -190,6 +192,7 @@
 }
 
 .title-registration .container .registration-content a {
+    padding: 10px 30px;
     color: var(--ki-white);
     background-color: var(--ki-second-color);
 }
