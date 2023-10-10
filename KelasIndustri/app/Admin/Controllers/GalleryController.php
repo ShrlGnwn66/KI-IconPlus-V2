@@ -29,6 +29,7 @@ class GalleryController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('department', __('Department'));
         $grid->column('image')->image()->width(150);
+        $grid->column('description', __('Description'))->limit(15);
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -48,6 +49,7 @@ class GalleryController extends AdminController
         $show->field('id', __('Id'));
         $show->field('department', __('Department'));
         $show->field('image')->image();
+        $show->field('description', __('Description'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -70,6 +72,7 @@ class GalleryController extends AdminController
             'RPL' => 'RPL',
         ]);
         $form->multipleImage('image', 'Image')->removable();
+        $form->text('description', __('Description'));
 
         return $form;
     }
