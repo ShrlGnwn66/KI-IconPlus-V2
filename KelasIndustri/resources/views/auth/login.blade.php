@@ -57,7 +57,7 @@
 
                                     <form class="row g-3 needs-validation" novalidate method="POST">
                                         @csrf
-                                        <div class="col-12">
+                                        <div class="col-12"> 
                                             <label for="email" class="form-label">Email</label>
                                             <div class="input-group has-validation">
                                                 <span class="input-group-text fs-5" id="inputGroupPrepend"><i
