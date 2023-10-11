@@ -131,7 +131,7 @@ html {
 .custom_hero-section .custom_hero-text h2::after {
     content: "";
     border-bottom: 3.5px solid black;
-    width: 10rem;
+    width: 15rem;
     display: block;
     margin-top: 20px;
 }
