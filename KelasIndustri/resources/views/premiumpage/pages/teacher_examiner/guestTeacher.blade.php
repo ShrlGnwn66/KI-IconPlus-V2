@@ -28,7 +28,7 @@
             </div>
         </section>
 
-        <section class="timeline-guest-teacher pt-5" style="padding-bottom: 10rem;">
+        <section class="timeline-guest-teacher pt-5" style="padding-bottom: 3rem;">
             <div class="container text-md-center">
                 <h2 class="main-heading mb-2">Timeline Materi Guru Tamu</h2>
                 <p class="mb-3 mb-lg-5 text-muted" style="padding-bottom: 7rem;">Beberapa urutan pemaparan materi penyambungan Fiber Optic</p>
@@ -99,7 +99,12 @@
                 </div>
             </div>
         </section>
-
+        <section>
+            <div class="container-embed">
+                <h4>Lihat selengkapnya..</h4>
+                <a href="uploads/files/Doc1.pdf" class="btn rounded-3 shadow">Buka PDF</a>
+            </div>
+        </section>
         <!--Main Content Section End -->
 
 
