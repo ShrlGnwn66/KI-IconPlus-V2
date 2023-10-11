@@ -62,7 +62,7 @@ class FormController extends Controller
             'end_intern_period' => 'required',
             'responsible_teacher' => 'required',
             'responsible_contact' => 'required',
-            'apply_letter' => 'required', 
+            'apply_letter' => 'required',
         ]);
 
         // ambil data form kedua
@@ -108,8 +108,8 @@ class FormController extends Controller
         return redirect('/pkl')->with('success', 'Data anda berhasil disimpan');
 
     }
-    
-    
+
+
 
     //form Guru Tamu
     public function guruTamu (){
@@ -193,7 +193,7 @@ class FormController extends Controller
         'end_intern_period' => 'required',
         'responsible_teacher' => 'required',
         'responsible_contact' => 'required',
-        'apply_letter' => 'required', 
+        'apply_letter' => 'required',
     ]);
 
     // Mengambil data dari form kedua
