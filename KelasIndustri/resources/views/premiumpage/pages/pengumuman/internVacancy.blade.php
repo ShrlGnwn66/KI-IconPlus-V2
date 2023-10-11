@@ -9,6 +9,10 @@
                 <h1 class="display-4 text-white fw-semibold mb-3">
                     Magang Di Bayar
                 </h1>
+                <p class="text-white overflow-hidden" style="max-width: 100vh">
+                    Program Magang Dibayar merupakan salah satu program yang digagas oleh PLN ICON PLUS untuk memberikan
+                    kesempatan kepada individu yang berminat untuk menjalani magang di PLN ICON PLUS.
+                </p>
             </div>
         </div>
     </section>

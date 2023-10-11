@@ -10,7 +10,7 @@
                                 <div class="post-content detail-content">
                                     @if (isset($newsImage))
                                         <div class="text-center">
-                                            <h1 class="post-title">
+                                            <h1 class="post-title pt-5 ">
                                                 {{ $newsImage->title }}
                                             </h1>
                                             <div class="row justify-content-center mb-2 mt-4">
@@ -27,7 +27,7 @@
                                                     <div class="author-info-box">
                                                         <div class="content px-2">
                                                             <div class="d-flex flex-column h-100 justify-content-center">
-                                                                <small class="d-block" style="max-width: 500px">
+                                                                <small class="d-block fw-medium" style="max-width: 500px">
                                                                     PLN Icon+
                                                                 </small>
                                                             </div>

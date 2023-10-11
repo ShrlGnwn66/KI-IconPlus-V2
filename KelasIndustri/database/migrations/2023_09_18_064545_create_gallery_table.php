@@ -17,6 +17,7 @@ class CreateGalleryTable extends Migration
             $table->increments('id');
             $table->string('department')->nullable();
             $table->longText('image')->nullable();
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }
