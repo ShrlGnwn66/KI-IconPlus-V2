@@ -30,17 +30,21 @@
 
         <section class="timeline-guest-teacher pt-5" style="padding-bottom: 3rem;">
             <div class="container text-md-center">
-                <h2 class="main-heading mb-2">Timeline Materi Guru Tamu</h2>
+                <h2 class="main-heading mb-2">Capaian Materi Guru Tamu</h2>
                 <p class="mb-3 mb-lg-5 text-muted" style="padding-bottom: 7rem;">Beberapa urutan pemaparan materi penyambungan Fiber Optic</p>
                 <div class="main-timeline">
                     <div class="timeline left">
                         <div class="card">
                             <div class="card-body p-4">
-                                <h3>Materi 1</h3>
+                                <h4>Teknik Komputer dan Jaringan</h4>
                                 <ul class="mb-0" style="padding-left: 1rem;">
-                                    <li>Pembahasan Implementasi Fiber Optic di ranah industri</li>
-                                    <li>Praktik Penyambungan Fiber Optic menggunakan Splicer</li>
-                                    <li>Praktik evaluasi Fiber Optic dengan alat ukur yang tersedia (OPM, OLS, OTDR)</li>
+                                    <li>K3LH</li>
+                                    <li>LAN</li>
+                                    <li>VLAN</li>
+                                    <li>Routing</li>
+                                    <li>Management Bandwith</li>
+                                    <li>WAN for Fiber Optic</li>
+                                    <li>Network Administration</li>
                                 </ul>
                             </div>
                         </div>
@@ -48,13 +52,14 @@
                     <div class="timeline right">
                         <div class="card">
                             <div class="card-body p-4">
-                                <h3>Materi 2</h3>
+                                <h4>Teknik Instalasi Tenaga Listrik</h4>
                                 <ul class="mb-0" style="padding-left: 1rem;">
-                                    <li>Mengupas kabel Multi (6/12/96) core</li>
-                                    <li>Setting Optical Distribution Point (ODP) Multi (6/12/96) core</li>
-                                    <li>Setting Joint Closure / Optical Distribution Point (ODP) / Joint Box (JB)</li>
-                                    <li>Pematangan materi urutan warna core pada kabel</li>
-                                    <li>Setting ODF, Riset Multi Core</li>
+                                    <li>K3LH dan Budaya Kerja</li>
+                                    <li>Teori Dasar Ketenagalistrikan</li>
+                                    <li>K3U Kelistrikan</li>
+                                    <li>Jaringan Tegangan Menengah & Rendah</li>
+                                    <li>Standing Operation Prosedure (SOP) Sistem Listrik</li>
+                                    <li>Instalasi Tenaga & Penerangan Listrik</li>
                                 </ul>
                             </div>
                         </div>
@@ -62,10 +67,14 @@
                     <div class="timeline left">
                         <div class="card">
                             <div class="card-body p-4">
-                                <h3>Materi 3</h3>
+                                <h4>Desain Komunikasi Visual</h4>
                                 <ul class="mb-0" style="padding-left: 1rem;">
-                                    <li>Pemaparan Materi HSE</li>
-                                    <li>Praktik HSE untuk ketinggian</li>
+                                    <li>Content Writer</li>
+                                    <li>Content Creator</li>
+                                    <li>UI/UX Designer</li>
+                                    <li>Social Media Administrator/Specialist</li>
+                                    <li>Social Media Marketer</li>
+                                    <li>Broadcasting</li>
                                 </ul>
                             </div>
                         </div>
@@ -73,25 +82,14 @@
                     <div class="timeline right">
                         <div class="card">
                             <div class="card-body p-4">
-                                <h3>Materi 4</h3>
+                                <h4>Rekayasa Perangkat Lunak</h4>
                                 <ul class="mb-0" style="padding-left: 1rem;">
-                                    <li>Penjelasan implementasi instalasi dropcore di dalam rumah</li>
-                                    <li>Praktik tarikan drop core dari ODP ke modem</li>
-                                    <li>Praktik evaluasi instalasi dropcore</li>
-                                    <li>Implementasi Instalasi Media FO Converter</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline left">
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <h3>Materi 5</h3>
-                                <ul class="mb-0" style="padding-left: 1rem;">
-                                    <li>Penjelasan implementasi dan topologi EPON dan GPON</li>
-                                    <li>Praktik Setting Router</li>
-                                    <li>Implementasi Instalasi OLT</li>
-                                    <li>Implementasi Instalasi ONT</li>
+                                    <li>Pemahaman Konsep Dasar Teknologi Informasi</li>
+                                    <li>Pemrograman Dasar</li>
+                                    <li>Algoritma Pemrograman</li>
+                                    <li>Struktur dan Basis Data</li>
+                                    <li>Dasar-dasar Version Control System</li>
+                                    <li>Keterampilan Troubleshooting</li>
                                 </ul>
                             </div>
                         </div>
