@@ -392,29 +392,29 @@
 /* Timeline Guest Teacher End */
 
 .container-embed {
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    height: 30vh; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
 }
 
 .container-embed h3 {
-    margin-bottom: 3px; 
+    margin-bottom: 3px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     text-align: center;
 }
 
-.container-embed a{
+.container-embed a {
     margin-top: 20px;
     padding: 10px 30px;
     font-weight: 500;
     background-color: #007181;
     color: #f3f0f6;
 }
-.container-embed a:hover{
+.container-embed a:hover {
     background-color: #19abc0;
 }
 /* Teacher & Examiner End */
@@ -589,7 +589,6 @@
         columns: 1;
     }
 }
-
 
 /* Education Trip End */
 
