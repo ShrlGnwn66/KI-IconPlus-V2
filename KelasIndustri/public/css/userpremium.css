@@ -388,8 +388,35 @@
 .right::after {
     left: -12px;
 }
+
 /* Timeline Guest Teacher End */
 
+.container-embed {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 30vh; 
+}
+
+.container-embed h3 {
+    margin-bottom: 3px; 
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.container-embed a{
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-weight: 500;
+    background-color: #007181;
+    color: #f3f0f6;
+}
+.container-embed a:hover{
+    background-color: #19abc0;
+}
 /* Teacher & Examiner End */
 
 /* Job Vacancy Start */
@@ -476,6 +503,49 @@
 .trip-photo:hover img {
     transform: scale(1.1);
 }
+
+.gallery-trip .trip-column .trip-photo::before{
+    content: "PHOTO";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: auto; /* Menghapus width: 100% */
+    margin-top: -40px; /* Menghapus margin-top: -100px */
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+}
+
+.gallery-trip .trip-column .trip-photo::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+    transition: .3s;
+}
+
+.gallery-trip .trip-column .trip-photo:hover::after{
+    height: 100%;
+}
+
+.gallery-trip .trip-column .trip-photo:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+
+
+
 /* Education Trip End */
 
 /* Additional Service Start */

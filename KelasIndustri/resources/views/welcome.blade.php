@@ -8,9 +8,9 @@
                 <div class="col-lg-4 pt-5 custom_hero-text">
                     <h5 class="text-uppercase fs-5 fw-semibold">Welcome</h5>
                     <h1 class="text-uppercase fw-bold">Kelas Industri</h1>
-                    <h2 class="fs-3 mb-3">PT Indonesia Comnet Plus</h2>
+                    <h2 class="fs-3 mb-3 fw-semibold">PLN Icon Plus</h2>
                     <p>
-                        Kelas Industri merupakan salah satu program dari PT Icon Plus SBU
+                        Kelas Industri merupakan salah satu program dari PLN Icon Plus SBU
                         Regional Jawa Bagian Tengah yang ditujukan untuk sekolah vokasi
                         dengan berbagai benefit yang akan didapat jika bergabung dengan
                         program ini.
@@ -43,18 +43,18 @@
                     <img class="img-fluid" src="assets/images/aboutUs.png" alt="" />
                 </div>
                 <div class="col-lg-5 offset-lg-2 custom_about-text">
-                    <h5 class="text-uppercase fs-5 fw-semibold pt-5">About Us</h5>
-                    <h2 class="fs-2 mb-2 pt-2 fw-bolder">PT Indonesia Comnet Plus</h2>
+                    <h5 class="text-uppercase fw-semibold pt-5">About Us</h5>
+                    <h2 class="fs-2 mb-2 fw-bolder">PLN Icon Plus</h2>
                     <p>
-                        Merupakan entitas Anak PT PLN (Persero) yang bergerak di bidang
-                        jasa penyedia jaringan telekomunikasi ketenagalistrikan serat
+                        Merupakan entitas Anak Perusahaan PLN (Persero) yang bergerak di bidang
+                        jasa penyedia jaringan telekomunikasi serat
                         optik sejak tahun 2001.
                         <br />
                         <br />
                         PLN Icon Plus secara konsisten melakukan inovasi produk dan
                         layanan dengan mengedepankan kualitas jaringan dan teknologi
                         terkini sesuai dengan visi
-                        <span class="fw-bolder">"Menjadi Penyedia Solusi Teknologi Informasi dan Komunikasi
+                        <span class="fw-semibold">"Menjadi Penyedia Solusi Teknologi Informasi dan Komunikasi
                             (TIK) Terkemuka di Indonesia Berbasis Jaringan Melalui
                             Pemanfaatan Aset Strategis".</span>
                     </p>
