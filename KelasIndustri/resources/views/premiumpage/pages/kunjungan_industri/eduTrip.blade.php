@@ -125,14 +125,14 @@
 
                 @foreach ($recentImages as $picture)
                     @php
-                        $item = $galleryKunjunganItems->first(function($value) use ($picture) {
+                        $item = $galleryKunjunganItems->first(function ($value) use ($picture) {
                             return in_array($picture, $value->picture);
                         });
                     @endphp
 
                     @if ($item)
                         <div class="grid-item" data-aos="fade-left" data-description="{{ $item->description }}">
-                            <a href="{{ asset('uploads/' . $picture) }}" data-fancybox="gallery" data-caption="{{ $item->department }}">
+                            <a href="{{ asset('uploads/' . $picture) }}" data-fancybox="gallery">
                                 <img src="{{ asset('uploads/' . $picture) }}" alt="" />
                             </a>
                         </div>
@@ -140,6 +140,6 @@
                 @endforeach
             </div>
         </div>
-    </section>       
+    </section>
     <!--Main Content Section End -->
 @endsection

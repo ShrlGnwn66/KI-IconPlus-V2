@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\GalleryKunjunganController;
+use App\Http\Controllers\GalleryPengujiUKKController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PremiumPageController;
@@ -73,6 +74,9 @@ Route::get('news/{id}', [NewsController::class, 'news'])->name('news');
 
 // Gallery user premium
 Route::get('eduTrip', [GalleryKunjunganController::class, 'galleryKunjungan'])->middleware('isLogin');
+
+// Gallery Penguji UKK
+Route::get('ukkExaminer', [GalleryPengujiUKKController::class, 'galleryPengujiUKK'])->middleware('isLogin');
 
 
 

@@ -18,6 +18,8 @@ Route::group([
     $router->resource('galleries', GalleryController::class);
 
     $router->resource('gallery-kunjungans', GalleryKunjunganController::class);
+    
+    $router->resource('gallery-penguji-u-k-ks', GalleryPengujiUKKController::class);
 
     $router->resource('news', NewsController::class);
 

@@ -476,12 +476,12 @@
     text-align: justify;
 }
 
-/* Foto Kunjungan Industri */
+/* Gallery Kunjungan Industri */
 
 .custom_galery-section {
     box-sizing: border-box;
     margin: 0;
-    padding: 100px 7px;
+    padding: 30px 7px;
     height: auto;
 }
 
