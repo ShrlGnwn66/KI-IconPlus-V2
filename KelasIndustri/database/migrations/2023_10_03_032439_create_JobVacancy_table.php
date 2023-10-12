@@ -18,9 +18,9 @@ class CreateJobVacancyTable extends Migration
             $table->string('picture')->nullable();
             $table->string('title')->nullable();
             $table->string('title_job')->nullable();
-            $table->string('job_description')->nullable();
+            $table->longText('job_description')->nullable();
             $table->string('title_qualifications')->nullable();
-            $table->string('qualifications')->nullable();
+            $table->longText('qualifications')->nullable();
             $table->string('placement')->nullable();
             $table->string('work_hours')->nullable();
             $table->date('expired_date')->nullable();
