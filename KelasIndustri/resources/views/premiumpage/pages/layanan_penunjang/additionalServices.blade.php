@@ -19,12 +19,10 @@
                 <div class="description-content text-center">
                     <h3 class="mb-4">Apa itu <span class="fw-semibold">Layanan Penunjang ?</span></h3>
                     <p>
-                        <span class="fw-bold">Layanan Penunjang</span> adalah sebuah kegiatan yang dilakukan siswa SMK untuk mengenal Dunia Usaha, Dunia Industri
-                        dan Dunia Kerja dengan mengunjungi sebuah perusahaan atau daerah industrial untuk melihat secara langsung gambaran
-                        pekerjaan yang kelak akan di jalani oleh siswa tersebut. Di dalam <span class="fw-bold">Kunjungan Industri</span>, siswa bisa mengamati dari dekat
-                        bagaimana kegiatan operasi industrial dari sebuah perusahaan. Sehingga, siswa bisa mendapat gambaran sebuah
-                        pekerjaan di bidang kompetensi atau bidang keahlian yang mereka minati. <span class="fw-bold">Kunjungan Industri</span> sangat penting dilakukan
-                        agar siswa tidak kaget saat memasuki dunia kerja yang sesungguhnya.
+                        <span class="fw-bold">Layanan Penunjang</span> adalah salah satu dari vallue added Program Kelas Industri yang menyediakan
+                        berbagai sarana dan prasarana untuk penyelenggaraan kegiatan di setiap pelaksanaan Kelas Industri. <span class="fw-bold">Layanan Penunjang</span>
+                        yang diberikan bukan hanya dalam bentuk layanan fisik ataupun barang. Layanan yang diberikan dari perusahaan juga berbentuk fasilitas internet
+                        dan juga pemberian materi tambahan kepada para peserta kegiatan.
                     </p>
                 </div>
             </div>
