@@ -108,30 +108,36 @@
             </div>
             <div class="grid" style="position: relative;">
                 @php
-                    $recentImages = [];
+                    $filteredImages = [];
                 @endphp
 
                 @foreach ($galleryKunjunganItems as $item)
                     @if ($item->picture !== null)
                         @php
-                            $filteredImages = array_filter($item->picture, 'is_string');
-                            $recentImages = array_merge($recentImages, $filteredImages);
+                            $filteredImages = array_merge($filteredImages, array_filter($item->picture, 'is_string'));
                         @endphp
                     @endif
                 @endforeach
+
+                @php
+                    $recentImages = array_slice(array_reverse($filteredImages), 0, 12); // Mengambil 12 gambar terbaru
+                @endphp
+
+                @foreach ($recentImages as $picture)
                     @php
-                        $recentImages = array_slice(array_reverse($recentImages), 0, 12); // Mengambil 12 gambar terbaru
+                        $item = $galleryKunjunganItems->first(function($value) use ($picture) {
+                            return in_array($picture, $value->picture);
+                        });
                     @endphp
 
-                    
-                        @foreach ($recentImages as $picture)
-                            <div class="grid-item" data-aos="fade-left" data-description=" {{ $item->description }}">
-                                    <a href="{{ asset('uploads/' . $picture) }}" data-fancybox="gallery"
-                                        data-caption="{{ $item->department }}">
-                                            <img src="{{ asset('uploads/' . $picture) }}" alt="" />
-                                    </a>
-                            </div>
-                        @endforeach 
+                    @if ($item)
+                        <div class="grid-item" data-aos="fade-left" data-description="{{ $item->description }}">
+                            <a href="{{ asset('uploads/' . $picture) }}" data-fancybox="gallery" data-caption="{{ $item->department }}">
+                                <img src="{{ asset('uploads/' . $picture) }}" alt="" />
+                            </a>
+                        </div>
+                    @endif
+                @endforeach
             </div>
         </div>
     </section>       
