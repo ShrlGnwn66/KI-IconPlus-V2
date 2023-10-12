@@ -422,7 +422,7 @@ html {
 .grid {
     width: auto;
     margin: 50px auto;
-    columns: 4;
+    columns: 3;
     column-gap: 25px;
 }
 

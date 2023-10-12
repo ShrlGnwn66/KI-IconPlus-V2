@@ -477,51 +477,75 @@
 }
 
 /* Foto Kunjungan Industri */
-.gallery-trip {
-    display: flex;
-    gap: 20px;
+
+.custom_galery-section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 7px;
+    height: auto;
 }
 
-.trip-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.custom_galery-section .custom_galery-container {
+    max-width: 1140px;
 }
 
-.trip-photo {
-    overflow: hidden;
-    border-radius: 5px;
+.custom_galery-section .section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
-.trip-photo img {
+.grid {
+    width: auto;
+    margin: 50px auto;
+    columns: 3;
+    column-gap: 25px;
+}
+
+.grid .grid-item {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s ease;
+    margin-bottom: 25px;
+    break-inside: avoid;
+    position: relative;
 }
 
-.trip-photo:hover img {
+.grid .grid-item img {
+    max-width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    animation: scaleAnimation 0.5s ease;
+}
+
+.grid-item img:hover {
     transform: scale(1.1);
 }
 
-.gallery-trip .trip-column .trip-photo::before{
-    content: "PHOTO";
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.grid .grid-item::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    width: auto; /* Menghapus width: 100% */
-    margin-top: -40px; /* Menghapus margin-top: -100px */
+    width: auto;
     opacity: 0;
-    transition: .3s;
-    transition-delay: .2s;
+    transition: 0.3s;
+    transition-delay: 0.2s;
     z-index: 1;
 }
 
-.gallery-trip .trip-column .trip-photo::after{
+.grid .grid-item::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -529,21 +553,42 @@
     left: 0;
     border-radius: 10px;
     height: 0;
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
-    transition: .3s;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 1));
+    transition: 0.3s;
 }
 
-.gallery-trip .trip-column .trip-photo:hover::after{
+.grid .grid-item:hover::after {
     height: 100%;
 }
-
-.gallery-trip .trip-column .trip-photo:hover::before{
+.grid .grid-item:hover::before {
+    content: attr(data-description); /* ambil data dari db */
+    transition-delay: 0s;
     margin-top: 0;
     opacity: 1;
 }
 
+/* Active menu*/
+.menu-active {
+    background-color: #19abc0;
+    color: #fff;
+}
 
-
+@media screen and (max-width: 1260px) {
+    .grid {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grid {
+        columns: 2;
+    }
+}
+@media screen and (max-width: 480px) {
+    .grid {
+        columns: 1;
+    }
+}
 
 
 /* Education Trip End */

@@ -99,27 +99,32 @@
         </div>
     </section>
 
-    <section class="documentation-trip pt-5" style="padding-bottom: 10rem;">
-        <div class="container text-md-center">
-            <h2 class="main-heading fw-semibold fs-2" style="padding-bottom: 4rem;">Kunjungan Industri Sebelumnya</h2>
-            <div class="gallery-trip">
-                @php
-                    $columns = 3; // Jumlah kolom yang diinginkan
-                    $itemsPerColumn = ceil(count($galleryKunjunganItems) / $columns);
-                @endphp
-
-                @for ($i = 0; $i < $columns; $i++)
-                    <div class="trip-column">
-                        @foreach ($galleryKunjunganItems->slice($i * $itemsPerColumn, $itemsPerColumn) as $item)
-                            <div class="trip-photo">
-                                <img src="{{ asset('uploads/' . $item->picture) }}" alt="">
+    <section class="custom_galery-section" id="galeryKunjunagnItems">
+        <div class="container custom_galery-container">
+            <div class="row">
+                <div class="section-title text-center pb-4">
+                    <h2 class="main-heading fw-semibold fs-2">Kunjungan Industri Sebelumnya</h2>
+                </div>
+            </div>
+            <div class="grid" style="position: relative;">
+                @foreach ($galleryKunjunganItems as $item)
+                    @if ($item->picture !== null)
+                        @php
+                            $filteredImages = array_filter($item->picture, 'is_string')
+                        @endphp
+                    
+                        @foreach ($filteredImages as $picture)
+                            <div class="grid-item" data-aos="fade-left" data-description=" {{ $item->description }}">
+                                    <a href="{{ asset('uploads/' . $picture) }}" data-fancybox="gallery"
+                                        data-caption="{{ $item->department }}">
+                                            <img src="{{ asset('uploads/' . $picture) }}" alt="" />
+                                    </a>
                             </div>
-                        @endforeach
-                    </div>
-                @endfor
+                        @endforeach 
+                    @endif
+                @endforeach
             </div>
         </div>
-    </section>
-
+    </section>       
     <!--Main Content Section End -->
 @endsection

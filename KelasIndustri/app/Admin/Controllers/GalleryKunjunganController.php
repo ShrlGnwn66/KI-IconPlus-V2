@@ -62,8 +62,7 @@ class GalleryKunjunganController extends AdminController
     protected function form()
     {
         $form = new Form(new GalleryKunjungan());
-
-        $form->image('picture', __('Picture'));
+        $form->multipleImage('picture', 'Picture')->removable();
         $form->text('description', __('Description'));
 
         return $form;
