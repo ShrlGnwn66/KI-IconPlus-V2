@@ -282,7 +282,7 @@
                                     <img src="{{ asset('uploads/' . $image) }}" alt="" />
                                 </a>
                             </div>
-                        @endforeach
+                        @endforeach 
                     @endif
                 @endforeach
             </div>
