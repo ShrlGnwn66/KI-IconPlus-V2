@@ -37,7 +37,7 @@
             <div class="documentation-timeline">
                 <div class="timeline-2 left-2">
                     <div class="card">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(135).webp" class="card-img-top"
+                        <img src="../../assets/images/userpremium/layananpenunjang/wifi_corner.png" class="card-img-top"
                             alt="Responsive image">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">WIFI CORNER</h4>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="timeline-2 right-2">
                     <div class="card">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(129).webp" class="card-img-top"
+                        <img src="../../assets/images/userpremium/layananpenunjang/seat_manajemen.png" class="card-img-top"
                             alt="Responsive image">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">SEAT MANAJEMEN</h4>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="timeline-2 left-2">
                     <div class="card">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(131).webp" class="card-img-top"
+                        <img src="../../assets/images/userpremium/layananpenunjang/cctv.png" class="card-img-top"
                             alt="Responsive image">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">CCTV </h4>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="timeline-2 right-2">
                     <div class="card">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(125).webp" class="card-img-top"
+                        <img src="../../assets/images/userpremium/layananpenunjang/cloud_data_center.png" class="card-img-top"
                             alt="Responsive image">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">CLOUD DATA CENTER</h4>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="timeline-2 left-2">
                     <div class="card">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(144).webp" class="card-img-top"
+                        <img src="../../assets/images/userpremium/layananpenunjang/smart_school.png" class="card-img-top"
                             alt="Responsive image">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">SMART SCHOOL</h4>
