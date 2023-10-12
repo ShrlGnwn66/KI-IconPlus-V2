@@ -20,6 +20,7 @@ class CreateNewsTable extends Migration
             $table->date('date')->nullable();
             $table->string('description')->nullable();
             $table->text('contentnews')->nullable();
+            $table->string('source')->nullable();
             $table->timestamps();
         });
     }

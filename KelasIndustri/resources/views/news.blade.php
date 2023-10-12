@@ -48,8 +48,12 @@
                                                 @endphp
 
                                                 @foreach ($paragraphs as $paragraph)
-                                                    <p style="text-align: left;">{{ $paragraph }}</p>
+                                                    <p class="text-start">{{ $paragraph }}</p>
                                                 @endforeach
+                                                <p class="text-start">Source:
+                                                    <a href="{{ $newsImage->source }}" target="_blank"
+                                                        rel="noopener noreferrer">{{ $newsImage->source }}</a>
+                                                </p>
                                             </div>
                                             <h5 class="fw-semibold">Share to : </h5>
                                             <div id="shareRoundIcons"></div>

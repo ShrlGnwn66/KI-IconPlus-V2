@@ -301,39 +301,48 @@
             <h2 class="text-capitalize text-center fs-2 fw-bolder pb-3" style="color: #0093ae">Berita Terbaru Kami</h2>
             <div class="card__content">
                 <div class="swiper-wrapper">
-                    @foreach ($newsImage as $image)
-                        <article class="card__article swiper-slide">
-                            <div class="card__image">
-                                <img src="{{ asset('uploads/' . $image->picture) }}" alt="" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            <div class="card__data">
-                                <h3 class="card__name" data-id="{{ $image->title }}">{{ $image->title }}</h3>
-                                <p class="card__date" class="card__date" data-id="{{ $image->date }}">
-                                    {{ \Carbon\Carbon::parse($image->date)->format('j-F-Y') }}
-                                </p>
-                                <p class="card__description" data-id="{{ $image->description }}">
-                                    {{ $image->description }}
-                                </p>
-                                <a href="{{ route('news', ['id' => $image->id]) }}" class="card__button">Baca
-                                    Selengkapnya</a>
+                    @if ($newsImage->count() > 0)
+                        @foreach ($newsImage as $image)
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <img src="{{ asset('uploads/' . $image->picture) }}" alt=""
+                                        class="card__img">
+                                    <div class="card__shadow"></div>
+                                </div>
+                                <div class="card__data">
+                                    <h3 class="card__name" data-id="{{ $image->title }}">{{ $image->title }}</h3>
+                                    <p class="card__date" class="card__date" data-id="{{ $image->date }}">
+                                        {{ \Carbon\Carbon::parse($image->date)->format('j-F-Y') }}
+                                    </p>
+                                    <p class="card__description" data-id="{{ $image->description }}">
+                                        {{ $image->description }}
+                                    </p>
+                                    <a href="{{ route('news', ['id' => $image->id]) }}" class="card__button">Baca
+                                        Selengkapnya</a>
 
-                            </div>
-                        </article>
-                    @endforeach
+                                </div>
+                            </article>
+                        @endforeach
+                    @else
+                        <p class="pt-2 fw-medium">Tidak ada berita yang tersedia saat ini.</p>
+                    @endif
                 </div>
             </div>
 
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next">
-                <i class="ri-arrow-right-s-line"></i>
-            </div>
+            @if ($newsImage->count() > 0)
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
 
-            <div class="swiper-button-prev">
-                <i class="ri-arrow-left-s-line"></i>
-            </div>
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            @endif
+
         </div>
     </section>
     <!-- custom news -->

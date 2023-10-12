@@ -31,7 +31,8 @@ class NewsController extends AdminController
         $grid->column('title', __('Title'));
         $grid->column('date', __('Date'));
         $grid->column('description', __('Description'))->limit(20);
-        $grid->column('contentnews', __('contentnews'))->limit(20);
+        $grid->column('contentnews', __('Content'))->limit(20);
+        $grid->column('source', __('Source'))->limit(20);
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -55,7 +56,8 @@ class NewsController extends AdminController
         $show->field('title', __('Title'));
         $show->field('date', __('Date'));
         $show->field('description', __('Description'));
-        $show->field('contentnews', __('contentnews'));
+        $show->field('contentnews', __('Content'));
+        $show->field('source', __('Source'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -75,7 +77,8 @@ class NewsController extends AdminController
         $form->text('title', __('Title'))->rules('max:75');
         $form->date('date', __('Date'))->format('YYYY-MM-DD');
         $form->text('description', __('Description'))->rules('max:135');
-        $form->textarea('contentnews', __('contentnews'))->rows(10);
+        $form->textarea('contentnews', __('Content'))->rows(10);
+        $form->text('source', __('Source'));
 
         return $form;
     }
