@@ -91,7 +91,6 @@ class FormInternTeacherController extends AdminController
         ]);
         $form->text('nip', __('Nip'));
         $form->text('agency_name', __('Agency name'));
-        $form->text('placement', __('Placement'));
         $form->select('placement', __('Placement'))->options([
             'Semarang' => 'SBU Semarang',
             'Yogyakarta' => 'KP Yogyakarta',
