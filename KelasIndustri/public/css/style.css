@@ -426,6 +426,13 @@ html {
     column-gap: 25px;
 }
 
+.grid p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+
 .grid .grid-item {
     width: 100%;
     margin-bottom: 25px;

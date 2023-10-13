@@ -157,37 +157,42 @@
                 </div>
             </div>
             <div class="grid" style="position: relative;">
-                @php
-                    $filteredImages = [];
-                @endphp
-
-                @foreach ($galleryPengujiUKKItems as $item)
-                    @if ($item->picture !== null)
-                        @php
-                            $filteredImages = array_merge($filteredImages, array_filter($item->picture, 'is_string'));
-                        @endphp
-                    @endif
-                @endforeach
-
-                @php
-                    $recentImages = array_slice(array_reverse($filteredImages), 0, 12); // Mengambil 12 gambar terbaru
-                @endphp
-
-                @foreach ($recentImages as $picture)
+                @if ($galleryPengujiUKKItems->count() > 0)
                     @php
-                        $item = $galleryPengujiUKKItems->first(function ($value) use ($picture) {
-                            return in_array($picture, $value->picture);
-                        });
+                        $filteredImages = [];
                     @endphp
 
-                    @if ($item)
-                        <div class="grid-item" data-aos="fade-left" data-description="{{ $item->description }}">
-                            <a href="{{ asset('uploads/' . $picture) }}" data-fancybox="gallery">
-                                <img src="{{ asset('uploads/' . $picture) }}" alt="" />
-                            </a>
-                        </div>
-                    @endif
-                @endforeach
+                    @foreach ($galleryPengujiUKKItems as $item)
+                        @if ($item->picture !== null)
+                            @php
+                                $filteredImages = array_merge($filteredImages, array_filter($item->picture, 'is_string'));
+                            @endphp
+                        @endif
+                    @endforeach
+
+                    @php
+                        $recentImages = array_slice(array_reverse($filteredImages), 0, 12); // Mengambil 12 gambar terbaru
+                    @endphp
+
+                    @foreach ($recentImages as $picture)
+                        @php
+                            $item = $galleryPengujiUKKItems->first(function ($value) use ($picture) {
+                                return in_array($picture, $value->picture);
+                            });
+                        @endphp
+
+                        @if ($item)
+                            <div class="grid-item" data-aos="fade-left" data-description="{{ $item->description }}">
+                                <a href="{{ asset('uploads/' . $picture) }}" data-fancybox="gallery">
+                                    <img src="{{ asset('uploads/' . $picture) }}" alt="" />
+                                </a>
+                            </div>
+                        @endif
+                    @endforeach
+                @else
+                    <p class="text-center pt-2 fw-medium">Tidak ada dokumentasi yang tersedia saat ini.</p>
+                @endif
+
             </div>
         </div>
     </section>
