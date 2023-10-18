@@ -105,7 +105,7 @@
     <section>
         <div class="container-embed">
             <h4>Lihat selengkapnya..</h4>
-            <a href="uploads/files/Doc1.pdf" class="btn rounded-3 shadow">Buka PDF</a>
+            <a href="uploads/files/guru_tamu_mater.pdf" class="btn rounded-3 shadow">Buka PDF</a>
         </div>
     </section>
     <!--Main Content Section End -->
