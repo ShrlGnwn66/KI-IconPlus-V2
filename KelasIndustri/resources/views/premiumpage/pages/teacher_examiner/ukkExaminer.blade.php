@@ -19,17 +19,16 @@
                     Apa itu <span class="fw-semibold">Penguji UKK ?</span>
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                    commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-                    sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                    vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                    mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-                    semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-                    porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
-                    ante, dapibus in.
+                    Uji Kompetensi Keahlian (UKK) adalah salah satu komponen penting dalam sistem pendidikan vokasi atau
+                    kejuruan, yang bertujuan untuk mengukur tingkat kompetensi dan keterampilan siswa dalam bidang tertentu.
+                    UKK biasanya diadakan oleh sekolah atau lembaga pendidikan kejuruan sebagai bagian dari kurikulum
+                    mereka. Kegiatan ini dirancang untuk memastikan bahwa siswa telah mencapai tingkat kompetensi yang
+                    sesuai dengan bidang keahliannya sebelum mereka lulus.
+
+                    Pendampingan saat UKK adalah praktek yang umum dilakukan untuk memastikan bahwa ujian berjalan dengan
+                    adil, transparan, dan sesuai dengan standar industri. Dalam konteks ini, pendampingan mengacu pada
+                    kehadiran perwakilan dari industri sebagai pengawas selama pelaksanaan UKK. Perwakilan industri ini
+                    biasanya adalah praktisi yang berpengalaman dan ahli dalam bidang yang diuji.
                 </p>
             </div>
         </div>
@@ -49,7 +48,7 @@
                                 <p class="mb-0" style="margin-top: 0.6rem">1</p>
                             </div>
                             <p class="ms-4 mt-3 fs-14">
-                                Menjamin keamanan dan kenyamanan peserta
+                                Validasi Standar Industri
                             </p>
                         </div>
                     </div>
@@ -58,7 +57,7 @@
                             <div class="circle bg-torquise text-white fw-bold mt-2">
                                 <p class="mb-0" style="margin-top: 0.6rem">2</p>
                             </div>
-                            <p class="ms-4 mt-3 fs-14">Memantau berlangsungnya ujian</p>
+                            <p class="ms-4 mt-3 fs-14">Kepatuhan dengan Kebutuhan Pasar Kerja</p>
                         </div>
                     </div>
                     <div class="list-job-desc rounded-3 mb-md-3 mb-2 p-2">
@@ -66,7 +65,7 @@
                             <div class="circle bg-torquise text-white fw-bold mt-2">
                                 <p class="mb-0" style="margin-top: 0.6rem">3</p>
                             </div>
-                            <p class="ms-4 mt-3 fs-14">Menjaga ketertiban selama ujian</p>
+                            <p class="ms-4 mt-3 fs-14">Evaluasi Objektif</p>
                         </div>
                     </div>
                     <div class="list-job-desc rounded-3 mb-md-3 mb-2 p-2">
@@ -75,7 +74,7 @@
                                 <p class="mb-0" style="margin-top: 0.6rem">4</p>
                             </div>
                             <p class="ms-4 mt-3 fs-14">
-                                Mengisi lembar penilaian peserta
+                                Koneksi dengan Dunia Nyata
                             </p>
                         </div>
                     </div>
@@ -84,7 +83,7 @@
                             <div class="circle bg-torquise text-white fw-bold mt-2">
                                 <p class="mb-0" style="margin-top: 0.6rem">5</p>
                             </div>
-                            <p class="ms-4 mt-3 fs-14">Mengisi berita acara</p>
+                            <p class="ms-4 mt-3 fs-14">Kemungkinan Kolaborasi</p>
                         </div>
                     </div>
                 </div>

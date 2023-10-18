@@ -21,7 +21,8 @@
                 <p style="line-height: 1.8rem;">
                     <span class="fw-semibold">Guru Tamu</span> merupakan salah satu fitur premium eksklusif yang ditawarkan
                     oleh Kelas Industri kepada mitra kerjasama kami. Dalam program ini, siswa/siswi berkesempatan untuk
-                    mendapatkan paparan materi secara langsung dari instruktur/pemateri berpengalaman yang aktif dalam
+                    mendapatkan paparan materi dan praktek secara langsung dari instruktur/pemateri berpengalaman yang aktif
+                    dalam
                     industri. Keunggulan utama dari program Guru Tamu ini adalah kualitas dan keahlian para pemateri yang
                     berasal langsung dari dunia industri. Fitur premium ini memberikan manfaat yang luar biasa bagi
                     siswa/mahasiswa kami dengan membantu mereka mengembangkan pengetahuan dan pemahaman yang mendalam dalam

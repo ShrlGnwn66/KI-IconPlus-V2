@@ -11,9 +11,10 @@
                     <h2 class="fs-3 mb-3 fw-semibold">PLN Icon Plus</h2>
                     <p>
                         Kelas Industri merupakan salah satu program dari PLN Icon Plus SBU
-                        Regional Jawa Bagian Tengah yang ditujukan untuk sekolah vokasi
-                        dengan berbagai benefit yang akan didapat jika bergabung dengan
-                        program ini.
+                        Regional Jawa Bagian Tengah yang ditujukan untuk mengurangi <strong>gap</strong> kompetensi
+                        kebutuhan industri dengan
+                        lulusan SMK, sehingga dapat lebih siap kerja dan sesuai dengan tuntutan perkembangan
+                        teknologi.
                     </p>
                     <a href="login" class="btn rounded-3 shadow">Access Now</a>
                 </div>
@@ -46,9 +47,9 @@
                     <h5 class="text-uppercase fw-semibold pt-5">About Us</h5>
                     <h2 class="fs-2 mb-2 fw-bolder">PLN Icon Plus</h2>
                     <p>
-                        Merupakan entitas Anak Perusahaan PLN (Persero) yang bergerak di bidang
+                        Merupakan subholding dari Perusahaan PLN (Persero) yang bergerak di bidang
                         jasa penyedia jaringan telekomunikasi serat
-                        optik sejak tahun 2001.
+                        optik sejak 21 September 2022.
                         <br />
                         <br />
                         PLN Icon Plus secara konsisten melakukan inovasi produk dan
@@ -56,7 +57,9 @@
                         terkini sesuai dengan visi
                         <span class="fw-semibold">"Menjadi Penyedia Solusi Teknologi Informasi dan Komunikasi
                             (TIK) Terkemuka di Indonesia Berbasis Jaringan Melalui
-                            Pemanfaatan Aset Strategis".</span>
+                            Pemanfaatan Aset Strategis".</span> PLN Icon Plus tak lagi hanya berperan sebagai IT Enabler
+                        PLN. Melainkan, akan menjadi ujung tombak PLN dalam membangun lini bisnis di luar kelistrikan atau
+                        Beyond kWh.
                     </p>
                     <a href="https://plniconplus.co.id/about/" target="_blank" class="btn rounded-3 shadow">Read More</a>
                 </div>
@@ -81,7 +84,7 @@
                         <div class="card-body">
                             <h5 class="card-title text-center fw-semibold">Connectivity</h5>
                             <p class="card-text text-center">
-                                Icon+ memberikan akses Internet, Setup Jaringan, dan
+                                PLN Icon Plus menyediakan akses Internet, Setup Jaringan, dan
                                 Fiberisasi 24/7 tanpa batas kuota dan flate rate.
                             </p>
                         </div>
@@ -95,7 +98,7 @@
                                 Branding & Tools
                             </h5>
                             <p class="card-text text-center">
-                                Kami memberikan kelas industri untuk jurusan TJKT, TITL, DKV
+                                PLN Icon Plus membantu menyiapkan laboratorium kelas industri untuk jurusan TJKT, TITL, DKV
                                 dan RPL serta menyediakan peralatan dan perangkat pendukung.
                             </p>
                         </div>
@@ -105,10 +108,10 @@
                     <div class="card h-100 card border-0 custom_card-section">
                         <img src="assets/icons/tenaga_ahli.png" class="card-img-top" alt="" />
                         <div class="card-body">
-                            <h5 class="card-title text-center fw-semibold">Tenaga Ahli</h5>
+                            <h5 class="card-title text-center fw-semibold">Guru Tamu</h5>
                             <p class="card-text text-center">
-                                Kami menyediakan Guru Tamu dan Tenaga Penguji untuk Uji
-                                Kompetensi dan Pendamping LKS.
+                                PLN Icon Plus menyediakan Guru Tamu, Tenaga Penguji untuk Uji
+                                Kompetensi, Pendamping LKS dan Teaching Factory.
                             </p>
                         </div>
                     </div>
@@ -121,7 +124,7 @@
                                 Digital Solution
                             </h5>
                             <p class="card-text text-center">
-                                Kami memberikan solusi bagi sekolah mitra untuk memudahkan
+                                PLN Icon Plus memberikan solusi bagi sekolah mitra untuk memudahkan
                                 pelayanan sekolah (I-School).
                             </p>
                         </div>
@@ -135,7 +138,7 @@
                                 Renewable Energy Solution
                             </h5>
                             <p class="card-text text-center">
-                                Pemasangan sistem Photovoltaic Rooftop sebagai solusi untuk
+                                Pembelajaran sistem Photovoltaic Rooftop sebagai solusi untuk
                                 mengurangi konsumsi listrik.
                             </p>
                         </div>
@@ -149,7 +152,7 @@
                                 Education Trip
                             </h5>
                             <p class="card-text text-center">
-                                Jadwal kunjungan pembelajaran untuk siswa/mahasiswa ke data
+                                Jadwal kunjungan pembelajaran untuk siswa/siswi ke data
                                 center untuk memperluas pengetahuan.
                             </p>
                         </div>
@@ -165,7 +168,8 @@
         <div class="container me-5 custom_counter">
             <div class="row">
                 <div class="col-lg-1">
-                    <span class="count" data-target="3">0</span>
+                    {{-- angkatahun --}}
+                    <span class="count" data-target="23">0</span>
                     <span class="plus fs-3">+</span>
                     <p>Years</p>
                 </div>
@@ -175,7 +179,8 @@
                     </p>
                 </div>
                 <div class="col-lg-1 offset-lg-1">
-                    <span class="count" data-target="10">0</span>
+                    {{-- angkaproject --}}
+                    <span class="count" data-target="23">0</span>
                     <span class="plus fs-3">+</span>
                     <p>Project</p>
                 </div>
@@ -185,7 +190,8 @@
                     </p>
                 </div>
                 <div class="col-lg-1 offset-lg-1">
-                    <span class="count" data-target="50">0</span>
+                    {{-- angkasekolah --}}
+                    <span class="count" data-target="52">0</span>
                     <span class="plus fs-3">+</span>
                     <p>Clients</p>
                 </div>
