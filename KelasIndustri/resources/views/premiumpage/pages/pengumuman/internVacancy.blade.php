@@ -10,8 +10,11 @@
                     Magang Di Bayar
                 </h1>
                 <p class="text-white overflow-hidden" style="max-width: 100vh">
-                    Program Magang Dibayar merupakan salah satu program yang digagas oleh PLN ICON PLUS untuk memberikan
-                    kesempatan kepada individu yang berminat untuk menjalani magang di PLN ICON PLUS.
+                    Program Magang Dibayar merupakan salah satu program yang digagas oleh PLN Icon Plus pusat untuk
+                    memberikan
+                    kesempatan kepada siswa/siswi dari sekolah yang sudah menjalin kerjasama untuk menjalani magang di PLN
+                    Icon Plus dengan
+                    penempatan di 10 SBU.
                 </p>
             </div>
         </div>
