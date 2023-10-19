@@ -64,7 +64,7 @@
                 </div>
                 <div class="timeline-2 right-2">
                     <div class="card">
-                        <img src="../../assets/images/userpremium/layananpenunjang/cloud_data_center.png" class="card-img-top"
+                        <img src="../../assets/images/userpremium/layananpenunjang/datacenter.png" class="card-img-top"
                             alt="Responsive image">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">CLOUD DATA CENTER</h4>
