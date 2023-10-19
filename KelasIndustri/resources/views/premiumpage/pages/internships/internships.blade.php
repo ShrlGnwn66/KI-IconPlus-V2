@@ -47,8 +47,8 @@
                             <div class="col-12 p-0 mb-0">
                                 <p class="mb-0 text-center h5 fw-bold">Siswa (SMA/SMK)</p>
                             </div>
-                            <div class="col-12 p-0 mb-0 text-center">
-                                <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
+                            <div class="col-12 p-0 mb-2 text-center">
+                                <img src="../../assets/icons/siswa.png" alt="" width="100">
                             </div>
                             <div class="col-12 p-0">
                                 <p class="mb-0 text-muted small height-jenjang">
@@ -64,8 +64,8 @@
                             <div class="col-12 p-0 mb-0">
                                 <p class="mb-0 text-center h5 fw-bold">Guru Sekolah</p>
                             </div>
-                            <div class="col-12 p-0 mb-0 text-center">
-                                <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
+                            <div class="col-12 p-0 mb-2 text-center">
+                                <img src="../../assets/icons/guru.png" alt="" width="100">
                             </div>
                             <div class="col-12 p-0">
                                 <p class="mb-0 text-muted small height-jenjang">
@@ -81,8 +81,8 @@
                             <div class="col-12 p-0 mb-0">
                                 <p class="mb-0 text-center h5 fw-bold">Kepala Sekolah</p>
                             </div>
-                            <div class="col-12 p-0 mb-0 text-center">
-                                <img src="../../assets/icons/icons8-permanent-job-100.png" alt="">
+                            <div class="col-12 p-0 mb-4 mt-3 text-center">
+                                <img src="../../assets/icons/kepala_sekolah.png" alt="" width="100">
                             </div>
                             <div class="col-12 p-0">
                                 <p class="mb-0 text-muted small height-jenjang">
