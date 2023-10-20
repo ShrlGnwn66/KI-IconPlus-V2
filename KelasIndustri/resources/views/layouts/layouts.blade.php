@@ -34,6 +34,7 @@
 
 
     <!-- custom footer -->
+    {{-- FooterSection --}}
     <footer class="text-white text-center text-lg-start pt-5" style="background-color: #00616f">
         <!-- Grid container -->
         <div class="container p-4">

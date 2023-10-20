@@ -3,6 +3,7 @@
     <!--Main Content Section Start -->
 
     <!-- Title Hero of Feature Pages Start -->
+    {{-- BannerKunjunganIndustri --}}
     <section class="features-title-hero">
         <div class="container-h py-5 bg-dark page-header-edu-trip">
             <div class="container my-5 pt-5 pb-4">
@@ -14,6 +15,7 @@
     </section>
     <!-- Title Hero of Feature Pages End -->
 
+    {{-- PengertianKunjunganIndustri --}}
     <section class="title-description bg-white m-5">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="description-content text-center">
@@ -35,6 +37,7 @@
         </div>
     </section>
 
+    {{-- BenefitKunjunganIndustri --}}
     <section class="benefit-trip pt-5" style="padding-bottom: 7rem;">
         <div class="container text-md-center">
             <h2 class="main-heading mb-2 fw-semibold fs-2">Benefit Mengikuti Kunjungan Industri</h2>
@@ -99,6 +102,7 @@
         </div>
     </section>
 
+    {{-- GaleryKunjunganIndustri --}}
     <section class="custom_galery-section" id="galeryKunjunagnItems">
         <div class="container custom_galery-container">
             <div class="row">

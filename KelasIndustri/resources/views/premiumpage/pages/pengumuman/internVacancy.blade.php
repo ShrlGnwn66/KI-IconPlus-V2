@@ -4,7 +4,7 @@
 
     <!-- Title Hero of Feature Pages Start -->
     <section class="features-title-hero">
-        <div class="container-h py-5 bg-dark page-header-job-vacancy">
+        <div class="container-h py-5 bg-dark page-header-intern-vacancy">
             <div class="container my-5 pt-5 pb-4">
                 <h1 class="display-4 text-white fw-semibold mb-3">
                     Magang Di Bayar

@@ -163,6 +163,7 @@ html {
 }
 
 /* Program Magang Start */
+/* BannerProgramPKL */
 .page-header-internships {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
         url("/assets/images/userpremium/guru-tamu.jpg") center center no-repeat;
@@ -213,15 +214,17 @@ html {
 /* Program Magang End */
 
 /* Teacher & Examiner Start */
+/* BannerGuruTamu */
 .page-header-guest-teacher {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/guru-tamu.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_guru_tamu.png") center center no-repeat;
     background-size: cover;
 }
 
+/* BannerPengujiUKK */
 .page-header-ukk-examiner {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/guru-tamu.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_penguji_ukk.png") center center no-repeat;
     background-size: cover;
 }
 
@@ -424,9 +427,10 @@ html {
 /* Teacher & Examiner End */
 
 /* Job Vacancy Start */
+/* BannerLowonganKerja */
 .page-header-job-vacancy {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/guru-tamu.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_magang_dibayar.png") center center no-repeat;
     background-size: cover;
 }
 
@@ -465,10 +469,20 @@ html {
 }
 /* Job Vacancy End */
 
+/* Intern Vacancy Start */
+/* BannerMagangDibayar */
+.page-header-intern-vacancy {
+    background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
+        url("/assets/images/userpremium/banner_magang_dibayar.png") center center no-repeat;
+    background-size: cover;
+}
+/* Intern Vacancy End */
+
 /* Education Trip Start */
+/* BannerKunjunganIndustri */
 .page-header-edu-trip {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/guru-tamu.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_kunjungan_industri.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -604,9 +618,10 @@ html {
 /* Education Trip End */
 
 /* Additional Service Start */
+/* BannerLayananPenunjang */
 .page-header-add-service {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/guru-tamu.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_layanan_penunjang.png") center center no-repeat;
     background-size: cover;
 }
 

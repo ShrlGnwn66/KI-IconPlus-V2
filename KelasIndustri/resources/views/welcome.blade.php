@@ -2,6 +2,7 @@
 
 @section('content')
     <!-- Hero area -->
+    {{-- HeroSection --}}
     <section class="hero_area-section" id="home">
         <div class="container-fluid pt-5 custom_hero-section">
             <div class="row">
@@ -18,7 +19,7 @@
                     </p>
                     <a href="login" class="btn rounded-3 shadow">Access Now</a>
                 </div>
-                <div class="col-lg-5 pt-2 offset-md-1 custom_hero-image">
+                <div class="col-lg-5 pt-5 offset-md-1 custom_hero-image">
                     <img src="assets/images/hero.png" alt="" />
                     <!--scroll top-->
                     <span class="custom_scroll-top" href=""><i class="bi bi-arrow-up-square-fill"></i></span>
@@ -37,10 +38,11 @@
     <!-- Hero area -->
 
     <!-- About Area -->
+    {{-- AboutUsSection --}}
     <section class="about_area-section pt-5 pb-5 mb-5" id="about">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 pt-5">
                     <img class="img-fluid" src="assets/images/aboutUs.png" alt="" />
                 </div>
                 <div class="col-lg-5 offset-lg-2 custom_about-text">
@@ -68,7 +70,8 @@
     </section>
     <!-- About Area -->
 
-    <!-- services Area -->
+    <!-- Services Area -->
+    {{-- ServicesSection --}}
     <section class="services_area-section mt-5 pt-5 pb-5" id="services">
         <div class="container mt-5">
             <h4 class="text-uppercase fs-5 fw-semibold text-center">
@@ -164,6 +167,7 @@
     <!--  Area End -->
 
     <!-- Counter Animation Area -->
+    {{-- AchievementSection --}}
     <section class="custom_section-counter" id="count-section">
         <div class="container me-5 custom_counter">
             <div class="row">
@@ -206,7 +210,8 @@
     </section>
     <!-- Counter Animation Area -->
 
-    <!-- Why choose us -->
+    <!-- Why Choose Us -->
+    {{-- WCUSection --}}
     <section class="wcu_area-section pb-5" id="wcu-section">
         <div class="container pb-5 pt-3">
             <div class="row">
@@ -255,6 +260,7 @@
     <!-- Why Choose Us End -->
 
     <!-- Galery Section -->
+    {{-- GalerySection --}}
     <section class="custom_galery-section" id="galery">
         <div class="container custom_galery-container">
             <div class="row">
@@ -304,7 +310,8 @@
     </section>
     <!-- Galery Section End -->
 
-    <!-- custom news -->
+    <!-- Custom News -->
+    {{-- News Section --}}
     <section class="container_news mt-3 pt-3" id="news">
         <div class="card__container swiper">
             <h4 class="text-uppercase text-center fs-4 fw-semibold">NEWS</h4>

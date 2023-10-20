@@ -20,7 +20,7 @@
                 berbasis profesi yang menerapkan kurikulum berbasis industri
                 serta pengajar yang berasal dari pihak industri. Kelas Industri
                 menawarkan beberapa sub-program yang juga merupakan benefit dari
-                pihak mitra sekolah yang sudah menjalin Kerja Sama atau MoU (Memorandum of Undertanding)
+                pihak mitra sekolah yang sudah menjalin Kerja Sama atau MoU (Memorandum of Understanding)
                 dengan pihak PLN Icon Plus .
               </p>
             </div>

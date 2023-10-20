@@ -3,6 +3,7 @@
     <!--Main Content Section Start -->
 
     <!-- Title Hero of Feature Pages Start -->
+    {{-- BannerPengujiUKK --}}
     <section class="features-title-hero">
         <div class="container-h py-5 bg-dark page-header-ukk-examiner">
             <div class="container my-5 pt-5 pb-4">
@@ -12,6 +13,7 @@
     </section>
     <!-- Title Hero of Feature Pages End -->
 
+    {{-- PengertianPengujiUKK --}}
     <section class="title-description bg-white m-5" style="padding-bottom: 5rem">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="description-content text-center rounded-4">
@@ -34,6 +36,7 @@
         </div>
     </section>
 
+    {{-- JobDescPengujiUKK --}}
     <section class="job-desc pt-5" style="padding-bottom: 4rem">
         <div class="container text-md-center">
             <h2 class="main-heading mb-2">Job Desc Penguji UKK Kelas Industri</h2>
@@ -95,6 +98,7 @@
         </div>
     </section>
 
+    {{-- BidKomPengujiUKK --}}
     <section class="competency pt-5" style="padding-bottom: 5rem">
         <div class="container text-md-center">
             <h2 class="main-heading mb-2">Bidang Kompetensi UKK</h2>
@@ -146,6 +150,7 @@
         </div>
     </section>
 
+    {{-- GaleryPengujiUKK --}}
     <section class="custom_galery-section" id="galeryKunjunagnItems">
         <div class="container custom_galery-container">
             <div class="row">
@@ -196,6 +201,7 @@
         </div>
     </section>
 
+    {{-- AccessToFormPengujiUKK --}}
     <section id="pendaftaran" class="title-registration bg-white">
         <div class="container">
             <div class="registration-content ps-3 text-center">

@@ -3,6 +3,7 @@
     <!--Main Content Section Start -->
 
     <!-- Title Hero of Feature Pages Start -->
+    {{-- BannerGuruTamu --}}
     <section class="features-title-hero">
         <div class="container-h py-5 bg-dark page-header-guest-teacher">
             <div class="container my-5 pt-5 pb-4">
@@ -14,6 +15,7 @@
     </section>
     <!-- Title Hero of Feature Pages End -->
 
+    {{-- PengertianGuruTamu --}}
     <section class="title-description bg-white m-5">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="description-content text-center">
@@ -32,6 +34,7 @@
         </div>
     </section>
 
+    {{-- CapaianGuruTamu --}}
     <section class="timeline-guest-teacher pt-5" style="padding-bottom: 3rem;">
         <div class="container text-md-center">
             <h2 class="main-heading mb-2">Capaian Materi Guru Tamu</h2>

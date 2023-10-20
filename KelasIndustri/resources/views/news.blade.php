@@ -1,3 +1,4 @@
+{{-- NewsPage --}}
 @extends('layouts.layoutnews')
 @section('content')
     <section class="content-section">

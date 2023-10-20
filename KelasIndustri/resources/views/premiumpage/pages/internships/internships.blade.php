@@ -4,6 +4,7 @@
     <!--Main Content Section Start -->
 
     <!-- Title Hero of Feature Pages Start -->
+    {{-- BannerProgramPKL --}}
     <section class="features-title-hero">
         <div class="container-h py-5 bg-dark page-header-internships">
             <div class="container my-5 pt-5 pb-4">
@@ -15,6 +16,7 @@
     </section>
     <!-- Title Hero of Feature Pages End -->
 
+    {{-- PengertianProgramPKL --}}
     <section class="title-description bg-white m-5" style="padding-bottom: 3rem;">
         <div class="container d-flex align-items-center justify-content-center">
             <div class="description-content text-center">
@@ -37,6 +39,7 @@
         </div>
     </section>
 
+    {{-- PesertaProgramPKL --}}
     <section class="internship-participation pt-5" style="padding-bottom: 7rem;">
         <div class="container text-md-center">
             <h2 class="mb-3 text-center" style="padding-bottom: 4rem;">Siapa saja yang bisa mengikuti?</h2>
@@ -97,6 +100,7 @@
         </div>
     </section>
 
+    {{-- BenefitProgramPKL --}}
     <section class="internship-benefits pt-5" style="padding-bottom: 7rem;">
         <div class="container text-md-center">
             <h2 class="mb-3 text-center" style="padding-bottom: 4rem;">Apa saja yang didapatkan?</h2>
@@ -192,6 +196,7 @@
         </div>
     </section>
 
+    {{-- BidKomProgramPKL --}}
     <section class="internship-field-competencies pt-5" style="padding-bottom: 3rem;">
         <div class="container text-md-center">
             <h2 class="main-heading mb-2">Pilih Bidang dan Kompetensimu</h2>
@@ -243,6 +248,7 @@
         </div>
     </section>
 
+    {{-- LowonganProgramPKL --}}
     <section id="pendaftaran" class="title-registration">
         <div class="container">
             <div class="registration-content row">
