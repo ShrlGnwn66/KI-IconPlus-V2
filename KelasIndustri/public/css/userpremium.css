@@ -166,7 +166,7 @@ html {
 /* BannerProgramPKL */
 .page-header-internships {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/guru-tamu.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_program_pkl.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -430,7 +430,7 @@ html {
 /* BannerLowonganKerja */
 .page-header-job-vacancy {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_magang_dibayar.png") center center no-repeat;
+        url("/assets/images/userpremium/banner_lowongan_kerja.jpg") center center no-repeat;
     background-size: cover;
 }
 
