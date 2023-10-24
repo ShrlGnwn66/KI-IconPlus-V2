@@ -3,6 +3,7 @@ Project Website Portal Kelas Industri untuk MoU PLN IconPlus SBU Regional Jawa B
 
 Project ini di bangun menggunakan :
 - Laravel 10
+- Open Admin V1.0.25
 - Boostrap v5.3
 - JS
 - CSS
