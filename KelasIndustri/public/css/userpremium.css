@@ -166,7 +166,8 @@ html {
 /* BannerProgramPKL */
 .page-header-internships {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_program_pkl.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_program_pkl1.jpg") center center
+            no-repeat;
     background-size: cover;
 }
 
@@ -217,14 +218,16 @@ html {
 /* BannerGuruTamu */
 .page-header-guest-teacher {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_guru_tamu.png") center center no-repeat;
+        url("/assets/images/userpremium/banner_guru_tamu.jpg") center center
+            no-repeat;
     background-size: cover;
 }
 
 /* BannerPengujiUKK */
 .page-header-ukk-examiner {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_penguji_ukk.png") center center no-repeat;
+        url("/assets/images/userpremium/banner_penguji_ukk.png") center center
+            no-repeat;
     background-size: cover;
 }
 
@@ -430,7 +433,8 @@ html {
 /* BannerLowonganKerja */
 .page-header-job-vacancy {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_lowongan_kerja.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_lowongan_kerja.jpg") center
+            center no-repeat;
     background-size: cover;
 }
 
@@ -473,7 +477,8 @@ html {
 /* BannerMagangDibayar */
 .page-header-intern-vacancy {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_magang_dibayar.png") center center no-repeat;
+        url("/assets/images/userpremium/banner_magang_dibayar.png") center
+            center no-repeat;
     background-size: cover;
 }
 /* Intern Vacancy End */
@@ -482,7 +487,8 @@ html {
 /* BannerKunjunganIndustri */
 .page-header-edu-trip {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_kunjungan_industri.jpg") center center no-repeat;
+        url("/assets/images/userpremium/banner_kunjungan_industri.jpg") center
+            center no-repeat;
     background-size: cover;
 }
 
@@ -621,7 +627,8 @@ html {
 /* BannerLayananPenunjang */
 .page-header-add-service {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_layanan_penunjang.png") center center no-repeat;
+        url("/assets/images/userpremium/layananpenunjang/seat_manajemen.png")
+            center center no-repeat;
     background-size: cover;
 }
 
