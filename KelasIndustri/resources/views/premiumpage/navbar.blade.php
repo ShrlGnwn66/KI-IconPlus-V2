@@ -8,7 +8,7 @@
              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
                  <li class="nav-item">
                      <a href="/">
-                         <img class="img-fluid" src="assets/images/userpremium/logo/logo_putih.png" alt=""
+                         <img class="img-fluid" src="assets/images/userpremium/logo/logo_putih.png" alt="PLN Icon Plus"
                              width="100" />
                      </a>
 
