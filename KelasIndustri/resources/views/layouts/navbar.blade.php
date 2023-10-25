@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg custom_nav-container">
         <div class="container-lg">
             <a class="navbar-brand pt-3" href="/">
-                <img src="assets/images/logo.png" alt="" width="120" />
+                <img src="assets/images/logo.png" alt="PLN Icon Plus" width="120" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

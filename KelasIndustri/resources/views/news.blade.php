@@ -40,8 +40,8 @@
                                             <div class="has-dropcap"
                                                 style="overflow-wrap: break-word; word-wrap: break-word; word-break: break-word;">
                                                 @if (isset($newsImage->picture))
-                                                    <img src="{{ asset('uploads/' . $newsImage->picture) }}" alt=""
-                                                        class="mb-2" style="width:100%" />
+                                                    <img src="{{ asset('uploads/' . $newsImage->picture) }}"
+                                                        alt="{{ $newsImage->title }}" class="mb-2" style="width:100%" />
                                                 @endif
                                                 @php
                                                     $content = $newsImage->contentnews;

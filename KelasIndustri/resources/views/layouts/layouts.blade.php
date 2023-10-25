@@ -42,21 +42,21 @@
             <div class="row mt-4">
                 <!--Grid column-->
                 <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                    <img src="assets/images/logo_footer.png" alt="" width="120" />
+                    <img src="assets/images/logo_footer.png" alt="PLN Icon Plus" width="120" />
                     <div>
                         <p class="text-bottom-img mt-4">“We Speak Beyond Community”</p>
                         <h3 class="fw-semibold fs-3">LET’S GET CONNECTED</h3>
                         <a class="text-decoration-none p-2" href="https://www.instagram.com/iconnet.jatengdiy/"
                             target="_blank">
-                            <img class="mt-3" src="assets/icons/ig_footer.png" alt=""
+                            <img class="mt-3" src="assets/icons/ig_footer.png" alt="Instagram"
                                 style="width: 30px; height: 30px" />
                         </a>
                         <a class="text-decoration-none p-2" href="" target="_blank">
-                            <img class="mt-3" src="assets/icons/wa_footer.png" alt=""
+                            <img class="mt-3" src="assets/icons/wa_footer.png" alt="WhatsApp"
                                 style="width: 30px; height: 30px" />
                         </a>
                         <a class="text-decoration-none p-2" href="https://plniconplus.co.id/" target="_blank">
-                            <img class="mt-3" src="assets/icons/web_footer.png" alt=""
+                            <img class="mt-3" src="assets/icons/web_footer.png" alt="Website"
                                 style="width: 30px; height: 30px" />
                         </a>
                     </div>
