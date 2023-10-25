@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\galleryPengujiUKK;
+use App\Models\GalleryPengujiUKK;
 use Illuminate\Http\Request;
 
 class GalleryPengujiUKKController extends Controller
