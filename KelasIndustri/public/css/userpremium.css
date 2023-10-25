@@ -218,7 +218,7 @@ html {
 /* BannerGuruTamu */
 .page-header-guest-teacher {
     background: linear-gradient(rgba(43, 57, 64, 0.5), rgba(43, 57, 64, 0.5)),
-        url("/assets/images/userpremium/banner_guru_tamu.JPG") center center
+        url("/assets/images/userpremium/banner_guru_tamu.jpg") center center
             no-repeat;
     background-size: cover;
 }
