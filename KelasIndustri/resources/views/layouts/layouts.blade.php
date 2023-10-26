@@ -46,7 +46,7 @@
                     <div>
                         <p class="text-bottom-img mt-4">“We Speak Beyond Community”</p>
                         <h3 class="fw-semibold fs-3">LET’S GET CONNECTED</h3>
-                        <a class="text-decoration-none p-2" href="https://www.instagram.com/iconnet.jatengdiy/"
+                        <a class="text-decoration-none p-2" href="https://www.instagram.com/pln.iconplus_jatengdiy/"
                             target="_blank">
                             <img class="mt-3" src="assets/icons/ig_footer.png" alt="Instagram"
                                 style="width: 30px; height: 30px" />
