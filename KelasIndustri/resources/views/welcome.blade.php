@@ -29,7 +29,7 @@
                     <div class="border"></div>
                     <div class="social_media-button">
                         <a href=""><i class="bi bi-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/iconnet.jatengdiy/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/pln.iconplus_jatengdiy/"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
