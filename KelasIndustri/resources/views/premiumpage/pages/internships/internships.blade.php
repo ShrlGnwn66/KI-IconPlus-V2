@@ -51,7 +51,7 @@
                                 <p class="mb-0 text-center h5 fw-bold">Siswa (SMA/SMK)</p>
                             </div>
                             <div class="col-12 p-0 mb-2 text-center">
-                                <img src="../../assets/icons/siswa.png" alt="" width="100">
+                                <img src="../../assets/icons/siswa.png" alt="Siswa" width="100">
                             </div>
                             <div class="col-12 p-0">
                                 <p class="mb-0 text-muted small height-jenjang">
@@ -68,7 +68,7 @@
                                 <p class="mb-0 text-center h5 fw-bold">Guru Sekolah</p>
                             </div>
                             <div class="col-12 p-0 mb-2 text-center">
-                                <img src="../../assets/icons/guru.png" alt="" width="100">
+                                <img src="../../assets/icons/guru.png" alt="Guru" width="100">
                             </div>
                             <div class="col-12 p-0">
                                 <p class="mb-0 text-muted small height-jenjang">
@@ -85,7 +85,7 @@
                                 <p class="mb-0 text-center h5 fw-bold">Kepala Sekolah</p>
                             </div>
                             <div class="col-12 p-0 mb-4 mt-3 text-center">
-                                <img src="../../assets/icons/kepala_sekolah.png" alt="" width="100">
+                                <img src="../../assets/icons/kepala_sekolah.png" alt="Kepala Sekolah" width="100">
                             </div>
                             <div class="col-12 p-0">
                                 <p class="mb-0 text-muted small height-jenjang">
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-4 mt-3 mb-4 mt-lg-0 mb-lg-0 align-self-center d-lg-block">
-                    <img src="assets/images/userpremium/illustration/vect_smart_object.png" alt=""
+                    <img src="assets/images/userpremium/illustration/vect_smart_object.png" alt="Manfaat Kelas Industri"
                         class="img-fluid">
                 </div>
             </div>
@@ -207,7 +207,7 @@
                 <div class="col-6 col-sm-3 col-lg-3 pb-4 mt-0 mt-lg-0 mb-lg-0">
                     <div class="competency-card h-100 shadow-sm border-0 hover-shadow px-2">
                         <div class="competency-card-body px-1 py-2 text-center">
-                            <img src="../../assets/icons/tjkt-icon.png" alt="" class="img-fluid mb-3" />
+                            <img src="../../assets/icons/tjkt-icon.png" alt="TJKT" class="img-fluid mb-3" />
                             <p class="fw-norml text-muted">
                                 Teknik Jaringan Komputer dan Telekomunikasi (TJKT)
                             </p>
@@ -217,7 +217,7 @@
                 <div class="col-6 col-sm-3 col-lg-3 pb-4 mt-0 mt-lg-0 mb-lg-0">
                     <div class="competency-card h-100 shadow-sm border-0 hover-shadow px-2">
                         <div class="competency-card-body px-1 py-2 text-center">
-                            <img src="../../assets/icons/titl-icon.png" alt="" class="img-fluid mb-3" />
+                            <img src="../../assets/icons/titl-icon.png" alt="TITL" class="img-fluid mb-3" />
                             <p class="fw-norml text-muted">
                                 Teknik Instalasi Tenaga Listrik <br />(TITL)
                             </p>
@@ -227,7 +227,7 @@
                 <div class="col-6 col-sm-3 col-lg-3 pb-4 mt-0 mt-lg-0 mb-lg-0">
                     <div class="competency-card h-100 shadow-sm border-0 hover-shadow px-2">
                         <div class="competency-card-body px-1 py-2 text-`center">
-                            <img src="../../assets/icons/rpl-icon.png" alt="" class="img-fluid mb-3" />
+                            <img src="../../assets/icons/rpl-icon.png" alt="RPL" class="img-fluid mb-3" />
                             <p class="fw-norml text-muted">
                                 Rekayasa Perangkat Lunak<br />(RPL)
                             </p>
@@ -237,7 +237,7 @@
                 <div class="col-6 col-sm-3 col-lg-3 pb-4 mt-0 mt-lg-0 mb-lg-0">
                     <div class="competency-card h-100 shadow-sm border-0 hover-shadow px-2">
                         <div class="competency-card-body px-1 py-2 text-center">
-                            <img src="../../assets/icons/dkv-icon.png" alt="" class="img-fluid mb-3" />
+                            <img src="../../assets/icons/dkv-icon.png" alt="DKV" class="img-fluid mb-3" />
                             <p class="fw-norml text-muted">
                                 Desain Komunikasi Visual <br />(DKV)
                             </p>
@@ -264,7 +264,7 @@
                     <a class="btn" href="internVacancy">Lihat Lowongan </a>
                 </div>
                 <div class="col-md-5">
-                    <img src="assets/images/userpremium/illustration/officeman.png" alt="" />
+                    <img src="assets/images/userpremium/illustration/officeman.png" alt="Program PKL" />
                 </div>
             </div>
         </div>

@@ -41,7 +41,7 @@
                 <div class="timeline-2 left-2">
                     <div class="card">
                         <img src="../../assets/images/userpremium/layananpenunjang/wifi_corner.png" class="card-img-top"
-                            alt="Responsive image">
+                            alt="Wifi Corner">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">WIFI CORNER</h4>
                         </div>
@@ -50,7 +50,7 @@
                 <div class="timeline-2 right-2">
                     <div class="card">
                         <img src="../../assets/images/userpremium/layananpenunjang/seat_manajemen.png" class="card-img-top"
-                            alt="Responsive image">
+                            alt="Seat Manajemen">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">SEAT MANAJEMEN</h4>
                         </div>
@@ -59,7 +59,7 @@
                 <div class="timeline-2 left-2">
                     <div class="card">
                         <img src="../../assets/images/userpremium/layananpenunjang/cctv.png" class="card-img-top"
-                            alt="Responsive image">
+                            alt="CCTV">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">CCTV </h4>
                         </div>
@@ -68,7 +68,7 @@
                 <div class="timeline-2 right-2">
                     <div class="card">
                         <img src="../../assets/images/userpremium/layananpenunjang/datacenter.png" class="card-img-top"
-                            alt="Responsive image">
+                            alt="Cloud Data Center">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">CLOUD DATA CENTER</h4>
                         </div>
@@ -77,7 +77,7 @@
                 <div class="timeline-2 left-2">
                     <div class="card">
                         <img src="../../assets/images/userpremium/layananpenunjang/smart_school.png" class="card-img-top"
-                            alt="Responsive image">
+                            alt="Smart School">
                         <div class="card-body p-4">
                             <h4 class="fw-bold mb-4">SMART SCHOOL</h4>
                         </div>

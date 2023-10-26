@@ -46,12 +46,13 @@
                 event Kunjungan Industri</p>
             <div class="row">
                 <div class="col-md-12 col-lg-5 mt-3 mb-4 mt-lg-0 mb-lg-0 align-self-center d-lg-block">
-                    <img src="../../assets/images/userpremium/illustration/saas.png" alt="" class="img-fluid">
+                    <img src="../../assets/images/userpremium/illustration/saas.png" alt="Benefit Kunjungan Industri"
+                        class="img-fluid">
                 </div>
                 <div class="col-md-12 col-lg-6 offset-1 mt-3 mb-4 mt-lg-0 mb-lg-0 align-self-center">
                     <div class="row">
                         <div class="col-12 col-lg-2 text-center text-lg-right">
-                            <img src="../../assets/icons/dkv-icon.png" alt="" class="img-fluid mb-3 mb-lg-0">
+                            <img src="../../assets/icons/dkv-icon.png" alt="Icon" class="img-fluid mb-3 mb-lg-0">
                         </div>
                         <div class="benefit-wrapper col-12 col-lg-10 text-lg-left">
                             <p class="benefit-title fw-semibold mb-0">Memperluas Jaringan</p>
@@ -63,7 +64,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 text-center text-lg-right">
-                            <img src="../../assets/icons/dkv-icon.png" alt="" class="img-fluid mb-3 mb-lg-0">
+                            <img src="../../assets/icons/dkv-icon.png" alt="Icon" class="img-fluid mb-3 mb-lg-0">
                         </div>
                         <div class="benefit-wrapper col-12 col-lg-10 text-lg-left">
                             <p class="benefit-title fw-semibold mb-0">Menambah Pengetahuan</p>
@@ -75,7 +76,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 text-center text-lg-right">
-                            <img src="../../assets/icons/dkv-icon.png" alt="" class="img-fluid mb-3 mb-lg-0">
+                            <img src="../../assets/icons/dkv-icon.png" alt="Icon" class="img-fluid mb-3 mb-lg-0">
                         </div>
                         <div class="benefit-wrapper col-12 col-lg-10 text-lg-left">
                             <p class="benefit-title fw-semibold mb-0">Mengembangkan Keterampilan Kritis</p>
@@ -87,7 +88,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-2 text-center text-lg-right">
-                            <img src="../../assets/icons/dkv-icon.png" alt="" class="img-fluid mb-3 mb-lg-0">
+                            <img src="../../assets/icons/dkv-icon.png" alt="Icon" class="img-fluid mb-3 mb-lg-0">
                         </div>
                         <div class="benefit-wrapper col-12 col-lg-10 text-lg-left">
                             <p class="benefit-title fw-semibold mb-0">Pemahaman Praktis</p>
@@ -138,7 +139,7 @@
                         @if ($item)
                             <div class="grid-item" data-aos="fade-left" data-description="{{ $item->description }}">
                                 <a href="{{ asset('uploads/' . $picture) }}" data-fancybox="gallery">
-                                    <img src="{{ asset('uploads/' . $picture) }}" alt="" />
+                                    <img src="{{ asset('uploads/' . $picture) }}" alt="{{ $item->description }}" />
                                 </a>
                             </div>
                         @endif

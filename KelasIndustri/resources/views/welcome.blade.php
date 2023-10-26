@@ -20,7 +20,7 @@
                     <a href="login" class="btn rounded-3 shadow">Access Now</a>
                 </div>
                 <div class="col-lg-5 pt-5 offset-md-1 custom_hero-image">
-                    <img src="assets/images/hero.png" alt="" />
+                    <img src="assets/images/hero.png" alt="PLN Icon Plus" />
                     <!--scroll top-->
                     <span class="custom_scroll-top" href=""><i class="bi bi-arrow-up-square-fill"></i></span>
                 </div>
@@ -43,7 +43,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 pt-5">
-                    <img class="img-fluid" src="assets/images/aboutUs.png" alt="" />
+                    <img class="img-fluid" src="assets/images/aboutUs.png" alt="About Icon Plus" />
                 </div>
                 <div class="col-lg-5 offset-lg-2 custom_about-text">
                     <h5 class="text-uppercase fw-semibold pt-5">About Us</h5>
@@ -83,7 +83,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100 card border-0 custom_card-section">
-                        <img src="assets/icons/connectivity.png" class="card-img-top" alt="" />
+                        <img src="assets/icons/connectivity.png" class="card-img-top" alt="Connectivity" />
                         <div class="card-body">
                             <h5 class="card-title text-center fw-semibold">Connectivity</h5>
                             <p class="card-text text-center">
@@ -95,7 +95,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 card border-0 custom_card-section">
-                        <img src="assets/icons/branding_tools.png" class="card-img-top" alt="" />
+                        <img src="assets/icons/branding_tools.png" class="card-img-top" alt="Branding & Tools" />
                         <div class="card-body">
                             <h5 class="card-title text-center fw-semibold">
                                 Branding & Tools
@@ -109,9 +109,9 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 card border-0 custom_card-section">
-                        <img src="assets/icons/tenaga_ahli.png" class="card-img-top" alt="" />
+                        <img src="assets/icons/tenaga_ahli.png" class="card-img-top" alt="Guest Teacher" />
                         <div class="card-body">
-                            <h5 class="card-title text-center fw-semibold">Guru Tamu</h5>
+                            <h5 class="card-title text-center fw-semibold">Guest Teacher</h5>
                             <p class="card-text text-center">
                                 PLN Icon Plus menyediakan Guru Tamu, Tenaga Penguji untuk Uji
                                 Kompetensi, Pendamping LKS dan Teaching Factory.
@@ -121,7 +121,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 card border-0 custom_card-section">
-                        <img src="assets/icons/digital_solution.png" class="card-img-top" alt="" />
+                        <img src="assets/icons/digital_solution.png" class="card-img-top" alt="Digital Solution" />
                         <div class="card-body">
                             <h5 class="card-title text-center fw-semibold">
                                 Digital Solution
@@ -135,7 +135,8 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 card border-0 custom_card-section">
-                        <img src="assets/icons/renew_energy_solution.png" class="card-img-top" alt="" />
+                        <img src="assets/icons/renew_energy_solution.png" class="card-img-top"
+                            alt="Renewable Energy Solution" />
                         <div class="card-body">
                             <h5 class="card-title text-center fw-semibold">
                                 Renewable Energy Solution
@@ -149,7 +150,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 card border-0 custom_card-section">
-                        <img src="assets/icons/education_trip.png" class="card-img-top" alt="" />
+                        <img src="assets/icons/education_trip.png" class="card-img-top" alt="Education Trip" />
                         <div class="card-body">
                             <h5 class="card-title text-center fw-semibold">
                                 Education Trip
@@ -252,7 +253,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 pt-5 offset-lg-2 custom_wcu-image">
-                    <img class="img-fluid" src="assets/images/wcu_image.png" alt="" />
+                    <img class="img-fluid" src="assets/images/wcu_image.png" alt="Kelas Industri" />
                 </div>
             </div>
         </div>
@@ -292,7 +293,7 @@
                                     data-description=" {{ $item->description }}">
                                     <a href="{{ asset('uploads/' . $image) }}" data-fancybox="gallery"
                                         data-caption="{{ $item->department }}">
-                                        <img src="{{ asset('uploads/' . $image) }}" alt="" />
+                                        <img src="{{ asset('uploads/' . $image) }}" alt="{{ $item->description }}" />
                                     </a>
                                 </div>
                             @endforeach
@@ -322,7 +323,7 @@
                         @foreach ($newsImage as $image)
                             <article class="card__article swiper-slide">
                                 <div class="card__image">
-                                    <img src="{{ asset('uploads/' . $image->picture) }}" alt=""
+                                    <img src="{{ asset('uploads/' . $image->picture) }}" alt="Berita Icon Plus"
                                         class="card__img">
                                     <div class="card__shadow"></div>
                                 </div>
