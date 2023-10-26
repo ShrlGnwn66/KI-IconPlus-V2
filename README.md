@@ -2,7 +2,7 @@
 
 ## Tentang Website
 
-[Website Kelas Industri PLN Icon Plus](ki-plniconplus.id) merupakan suatu sistem aplikasi berbasis website yang ditujukan untuk memudahkan kegiatan pelaksanaan Kelas Industri yang mencakup berbagai informasi dan juga value added dari Program Kelas Industri.
+[Website Kelas Industri PLN Icon Plus](http://ki-plniconplus.id/) merupakan suatu sistem aplikasi berbasis website yang ditujukan untuk memudahkan kegiatan pelaksanaan Kelas Industri yang mencakup berbagai informasi dan juga value added dari Program Kelas Industri.
 
 Beberapa value added yang ditawarkan Kelas Industri diantaranya adalah :
 
