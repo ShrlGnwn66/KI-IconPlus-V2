@@ -56,8 +56,7 @@
                                     <span class="ms-2 me-2"></span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-danger me-3" style="width: 120px;" name="reset"
-                                formnovalidate>Reset</button>
+                            <button type="submit" class="btn btn-danger me-3" style="width: 120px;" name="reset" formnovalidate>Reset</button>
                             <button type="submit" class="btn btn-primary" style="width: 120px;">Add</button>
                         </div>
                     </div>
@@ -94,4 +93,5 @@
             </div>
         </div>
     </section>
+
 @endsection

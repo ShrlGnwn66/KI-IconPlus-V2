@@ -220,3 +220,5 @@ function tampilData() {
           tanggalError.textContent = "";
         }
       });
+
+// Delete table form PKL
