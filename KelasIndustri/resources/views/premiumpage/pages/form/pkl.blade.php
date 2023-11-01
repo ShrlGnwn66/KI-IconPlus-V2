@@ -88,7 +88,7 @@
                     <!-- Tabel end -->
 
                     <div class="button d-flex justify-content-end">
-                        <a href="pkl2" class="">NEXT</a>
+                        <a href="pkl2" class="" id="next-button">NEXT</a>
                     </div>
                 </form>
             </div>
