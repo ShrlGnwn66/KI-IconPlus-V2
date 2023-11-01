@@ -13,6 +13,7 @@ class FormPkl extends Model
         'gender',
         'department',
         'nisnim',
+        'participant_contact',
         'agency_name',
         'placement',
         'start_intern_period',
