@@ -36,14 +36,16 @@ class FormController extends Controller
             'gender' => 'required',
             'department' => 'required',
             'nisnim' => 'required',
+            'participant_contact' => 'required',
         ]);
 
         // Data dari form pertama
         $data = [
             'participant_name' => $validatedData['participant_name'],
             'gender' => $validatedData['gender'],
-            'department' => $validatedData['department'],
+            'department' => $validatedData['department'],   
             'nisnim' => $validatedData['nisnim'],
+            'participant_contact' => $validatedData['participant_contact'],
         ];
 
         // Simpan data preview ke session
@@ -95,6 +97,7 @@ class FormController extends Controller
                     'apply_letter' => $link,
             ]);
         }
+
 
         // Simpan data ke model
         foreach ($combineData as $data) {

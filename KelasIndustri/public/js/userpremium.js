@@ -194,31 +194,44 @@ function tampilData() {
   });
 
   // JS Form Validation
-      const namaInstansiInput = document.getElementById("nama-instansi");
-      const namaInstansiError = document.getElementById("nama-instansi-error");
+  const namaInstansiInput = document.getElementById("nama-instansi");
+  const namaInstansiError = document.getElementById("nama-instansi-error");
 
-      namaInstansiInput.addEventListener("input", function () {
-        if (namaInstansiInput.validity.valueMissing) {
-          namaInstansiError.textContent = "Nama Instansi tidak boleh kosong";
-        } else {
-          namaInstansiError.textContent = "";
-        }
-      });
+  namaInstansiInput.addEventListener("input", function () {
+    if (namaInstansiInput.validity.valueMissing) {
+      namaInstansiError.textContent = "Nama Instansi tidak boleh kosong";
+    } else {
+      namaInstansiError.textContent = "";
+    }
+  });
 
-      const tanggalMulaiInput = document.getElementById("tanggal-mulai");
-      const tanggalSelesaiInput = document.getElementById("tanggal-selesai");
-      const tanggalError = document.getElementById("tanggal-error");
+const tanggalMulaiInput = document.getElementById("tanggal-mulai");
+const tanggalSelesaiInput = document.getElementById("tanggal-selesai");
+const tanggalError = document.getElementById("tanggal-error");
 
-      tanggalSelesaiInput.addEventListener("input", function () {
-        const tanggalMulai = new Date(tanggalMulaiInput.value);
-        const tanggalSelesai = new Date(this.value);
+// Dapatkan tanggal hari ini dalam format YYYY-MM-DD
+const today = new Date();
+const dd = String(today.getDate()).padStart(2, '0');
+const mm = String(today.getMonth() + 1).padStart(2, '0'); // Bulan dimulai dari 0
+const yyyy = today.getFullYear();
+const tanggalHariIni = yyyy + '-' + mm + '-' + dd;
 
-        if (tanggalSelesai < tanggalMulai) {
-          tanggalError.textContent =
-            "Tanggal Selesai harus setelah Tanggal Mulai";
-        } else {
-          tanggalError.textContent = "";
-        }
-      });
+// Setel atribut 'min' elemen input tanggal mulai ke tanggal hari ini
+tanggalMulaiInput.min = tanggalHariIni;
 
-// Delete table form PKL
+tanggalSelesaiInput.min = tanggalHariIni;
+
+function validateDateInputs() {
+    const tanggalMulai = new Date(tanggalMulaiInput.value);
+    const tanggalSelesai = new Date(tanggalSelesaiInput.value);
+
+    if (tanggalSelesai < tanggalMulai) {
+        tanggalError.textContent = "Tanggal Selesai harus setelah Tanggal Mulai";
+    } else if (tanggalSelesai.getTime() === tanggalMulai.getTime()) {
+        tanggalError.textContent = "Tanggal Selesai tidak boleh sama dengan Tanggal Mulai";
+    } else {
+        tanggalError.textContent = "";
+    }
+}
+tanggalMulaiInput.addEventListener("input", validateDateInputs);
+tanggalSelesaiInput.addEventListener("input", validateDateInputs);

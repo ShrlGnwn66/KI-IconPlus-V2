@@ -4,7 +4,7 @@
             <a class="navbar-brand pt-3" href="../index.html#news-section">
                 <img src="../assets/images/logo.png" alt="PLN Icon Plus" width="120" />
             </a>
-            <img class="logoCenter" src="http://ki-plniconplus.id/img/logo-ki.svg" alt="Kelas Industri" width="150" />
+            <img class="logoCenter" src="../assets/svg/logo-ki.svg" alt="Kelas Industri" width="150" />
             <a class="btn rounded-3 shadow button-back" href="/#news">Kembali</a>
         </div>
     </nav>
