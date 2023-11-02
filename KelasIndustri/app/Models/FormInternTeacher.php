@@ -14,6 +14,7 @@ class FormInternTeacher extends Model
         'gender',
         'department',
         'nip',
+        'participant_contact',
         'agency_name',
         'placement',
         'start_intern_period',

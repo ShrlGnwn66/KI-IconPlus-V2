@@ -181,6 +181,7 @@ class FormController extends Controller
             'gender' => 'required',
             'department' => 'required',
             'nip' => 'required',
+            'participant_contact' => 'required'
         ]);
 
         // Data dari form pertama
@@ -189,6 +190,7 @@ class FormController extends Controller
             'gender' => $validatedData['gender'],
             'department' => $validatedData['department'],
             'nip' => $validatedData['nip'],
+            'participant_contact' => $validatedData['participant_contact']
         ];
 
         // Simpan data preview ke session

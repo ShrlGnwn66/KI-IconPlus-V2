@@ -236,27 +236,3 @@ function validateDateInputs() {
 tanggalMulaiInput.addEventListener("input", validateDateInputs);
 tanggalSelesaiInput.addEventListener("input", validateDateInputs);
 
-
-// Delete data pada tabel
-
-$(document).ready(function() {
-    $(".delete-button").on("click", function() {
-        var index = $(this).data("index");
-        var url = "/pkl/delete/" + index;
-
-        $.ajax({
-            url: url,
-            type: "DELETE",
-            data: {
-                _token: "{{ csrf_token() }}"
-            },
-            success: function(response) {
-
-                $("#delete-form-" + index).closest("tr").remove();
-            },
-            error: function(xhr) {
-                console.log(xhr.responseText);
-            }
-        });
-    });
-});

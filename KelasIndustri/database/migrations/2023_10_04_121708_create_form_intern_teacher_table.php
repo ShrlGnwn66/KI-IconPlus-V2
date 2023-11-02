@@ -19,6 +19,7 @@ class CreateFormInternTeacherTable extends Migration
             $table->boolean('gender')->nullable();
             $table->string('department')->nullable();
             $table->string('nip')->nullable();
+            $table->string('participant_contact')->nullable();
             $table->string('agency_name')->nullable();
             $table->string('placement')->nullable();
             $table->date('start_intern_period')->nullable();
