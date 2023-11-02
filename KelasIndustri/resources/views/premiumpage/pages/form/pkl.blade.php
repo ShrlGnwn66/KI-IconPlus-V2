@@ -77,7 +77,7 @@
                         </tr>
                         @if (session('data_preview'))
                             @php $nomorUrut = 1; @endphp
-                            @foreach (session('data_preview') as $data)
+                            @foreach (session('data_preview') as $key => $data)
                                 <tr>
                                     <td>{{ $nomorUrut }}</td>
                                     <td>{{ $data['participant_name'] }}</td>
@@ -86,7 +86,7 @@
                                     <td>{{ $data['gender'] == '1' ? 'Laki-Laki' : 'Perempuan' }}</td>
                                     <td>{{ $data['department'] }}</td>
                                     <td>
-                                        <form action="/delete-data/{{ $loop->index }}" method="POST">
+                                        <form action="/delete-data/{{ $key }}" method="POST">
                                             @csrf
                                             <button type="submit" class="border border-0"><i class="bi bi-trash" style="color: red"></i></button>
                                         </form>
