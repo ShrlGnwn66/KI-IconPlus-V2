@@ -49,9 +49,11 @@
                     <h5 class="text-uppercase fw-semibold pt-5">About Us</h5>
                     <h2 class="fs-2 mb-2 fw-bolder">PLN Icon Plus</h2>
                     <p>
-                        Merupakan subholding dari Perusahaan PLN (Persero) yang bergerak di bidang
-                        jasa penyedia jaringan telekomunikasi serat
-                        optik sejak 21 September 2022.
+                        Pada tahun 2000, PLN Icon Plus memulai kegiatan komersialnya dengan Network Operation Centre
+                        yang berlokasi di Gandul, Cinere. Sebagai Entitas Anak PT PLN (Persero), pendirian PLN Icon Plus
+                        difokuskan untuk melayani kebutuhan PT PLN (Persero) terhadap jaringan telekomunikasi, Sejak 21
+                        September 2022 Merupakan subholding dari Perusahaan PLN (Persero) yang bergerak di bidang jasa penyedia
+                        jaringan telekomunikasi serat optik.
                         <br />
                         <br />
                         PLN Icon Plus secara konsisten melakukan inovasi produk dan
