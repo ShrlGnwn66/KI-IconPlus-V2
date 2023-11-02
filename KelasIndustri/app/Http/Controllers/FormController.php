@@ -43,7 +43,7 @@ class FormController extends Controller
         $data = [
             'participant_name' => $validatedData['participant_name'],
             'gender' => $validatedData['gender'],
-            'department' => $validatedData['department'],   
+            'department' => $validatedData['department'],
             'nisnim' => $validatedData['nisnim'],
             'participant_contact' => $validatedData['participant_contact'],
         ];
@@ -54,6 +54,18 @@ class FormController extends Controller
         // Redirect kembali ke form pertama atau form kedua
         return redirect('/pkl');
     }
+
+    public function deleteData($index) {
+        $dataPreview = session('data_preview', []);
+
+        if (isset($dataPreview[$index])) {
+            unset($dataPreview[$index]);
+            session(['data_preview' => array_values($dataPreview)]);
+        }
+
+        return redirect('/pkl');
+    }
+
 
     public function upFormKedua(Request $request) {
         // validasi data

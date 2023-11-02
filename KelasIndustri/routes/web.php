@@ -50,6 +50,7 @@ Route::get('pkl', [FormController::class, 'pkl'])->middleware('isLogin');
 Route::get('pkl2', [FormController::class, 'pkl2'])->middleware('isLogin');
 Route::post('/pkl', [FormController::class, 'Up']); //post ke session
 Route::post('/pkl2/form-kedua', [FormController::class, 'upFormKedua']);
+Route::post('/delete-data/{index}', [FormController::class, 'deleteData']);
 
 
 Route::get('guruTamu', [FormController::class, 'guruTamu'])->middleware('isLogin');

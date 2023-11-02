@@ -85,8 +85,11 @@
                                     <td>{{ $data['participant_contact'] }}</td>
                                     <td>{{ $data['gender'] == '1' ? 'Laki-Laki' : 'Perempuan' }}</td>
                                     <td>{{ $data['department'] }}</td>
-                                    <td><button class="border border-0"><i class="bi bi-trash"
-                                                style="color: red"></i></button>
+                                    <td>
+                                        <form action="/delete-data/{{ $loop->index }}" method="POST">
+                                            @csrf
+                                            <button type="submit" class="border border-0"><i class="bi bi-trash" style="color: red"></i></button>
+                                        </form>
                                     </td>
                                 </tr>
                                 @php $nomorUrut++; @endphp
