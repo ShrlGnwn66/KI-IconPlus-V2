@@ -36,14 +36,8 @@
 
                             <div class="input-box">
                                 <span class="details">Jurusan</span>
-                                <select class="form-select form-select-lg mb-3" aria-label="Large select example" required
-                                    name="department">
-                                    <option selected disabled>Pilih Jurusan</option>
-                                    <option value="DKV">DKV (Desain Komunikasi Visual)</option>
-                                    <option value="RPL">RPL (Rekayasa Perangkat Lunak)</option>
-                                    <option value="TITL">TITL (Teknik Instalasi Tenaga Listrik)</option>
-                                    <option value="TJKT">TJKT (Teknik Jaringan Komputer & Telekomunikasi)</option>
-                                </select>
+                                <input type="text" name="department" id="jurusan" placeholder="Masukkan Jurusan"
+                                    required />
                             </div>
                         </div>
 
@@ -54,9 +48,17 @@
                                 <input type="text" id="nip" name="nip" placeholder="Masukkan NIP"
                                     title="NIP harus terdiri dari deretan angka" required />
                             </div>
-                            <button type="submit" class="btn btn-danger me-3" style="width: 120px;" name="reset"
-                                formnovalidate>Reset</button>
-                            <button type="submit" class="btn btn-primary" style="width: 120px;">Add</button>
+
+                            <div class="input-box">
+                                <span class="details">Kontak Peserta</span>
+                                <input type="tel" id="phone" name="participant_contact" pattern="08[0-9]{10}"
+                                    placeholder="Masukkan Nomor Telepon"
+                                    title="Telp dimulai dengan 08 dan terdiri dari 12 digit" required />
+                            </div>
+
+                            <div class="button-pkl pt-3">
+                                <button type="submit" class="btn btn-primary" style="width: 120px;">Add</button>
+                            </div>
                         </div>
                     </div>
                     <!-- Tabel -->
@@ -64,9 +66,11 @@
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Nama </th>
-                            <th scope="col">NIS/NIM </th>
+                            <th scope="col">NIP</th>
+                            <th scope="col">Kontak</th>
                             <th scope="col">Jenis Kelamin </th>
                             <th scope="col">Jurusan </th>
+                            <th scope="col"></th>
                         </tr>
                         @if (session('data_preview'))
                             @php $nomorUrut = 1; @endphp
@@ -75,8 +79,12 @@
                                     <td>{{ $nomorUrut }}</td>
                                     <td>{{ $data['participant_name'] }}</td>
                                     <td>{{ $data['nip'] }}</td>
+                                    <td>{{ $data['participant_contact'] }}</td>
                                     <td>{{ $data['gender'] == '1' ? 'Laki-Laki' : 'Perempuan' }}</td>
                                     <td>{{ $data['department'] }}</td>
+                                    <td><button class="border border-0"><i class="bi bi-trash"
+                                                style="color: red"></i></button>
+                                    </td>
                                 </tr>
                                 @php $nomorUrut++; @endphp
                             @endforeach
@@ -85,6 +93,8 @@
                     <!-- Tabel end -->
 
                     <div class="button d-flex justify-content-end">
+                        <button type="submit" class="btn btn-danger me-3 fw-medium" style="width: 140px;" name="reset"
+                            formnovalidate>Reset</button>
                         <a href="guruMagang2" class="">NEXT</a>
                     </div>
                 </form>
