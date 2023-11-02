@@ -235,3 +235,5 @@ function validateDateInputs() {
 }
 tanggalMulaiInput.addEventListener("input", validateDateInputs);
 tanggalSelesaiInput.addEventListener("input", validateDateInputs);
+
+

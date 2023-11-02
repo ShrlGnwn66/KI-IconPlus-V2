@@ -98,7 +98,7 @@
                     <div class="button d-flex justify-content-end">
                         <button type="submit" class="btn btn-danger me-3 fw-medium" style="width: 140px;" name="reset"
                             formnovalidate>RESET</button>
-                        <a href="pkl2" class="" id="next-button" disabled>NEXT</a>
+                        <a href="pkl2" class="" id="next-button">NEXT</a>
                     </div>
                 </form>
             </div>
