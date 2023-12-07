@@ -42,7 +42,7 @@
     <section class="about_area-section pt-5 pb-5 mb-5" id="about">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 pt-5">
+                <div class="col-lg-4">
                     <img class="img-fluid" src="assets/images/aboutUs.png" alt="About Icon Plus" />
                 </div>
                 <div class="col-lg-5 offset-lg-2 custom_about-text">
@@ -56,14 +56,16 @@
                         jaringan telekomunikasi serat optik.
                         <br />
                         <br />
-                        PLN Icon Plus secara konsisten melakukan inovasi produk dan
-                        layanan dengan mengedepankan kualitas jaringan dan teknologi
-                        terkini sesuai dengan visi
-                        <span class="fw-semibold">"Menjadi Penyedia Solusi Teknologi Informasi dan Komunikasi
-                            (TIK) Terkemuka di Indonesia Berbasis Jaringan Melalui
-                            Pemanfaatan Aset Strategis".</span> PLN Icon Plus tak lagi hanya berperan sebagai IT Enabler
-                        PLN. Melainkan, akan menjadi ujung tombak PLN dalam membangun lini bisnis di luar kelistrikan atau
-                        Beyond kWh.
+                        <span class="paragraf_dua">
+                            PLN Icon Plus secara konsisten melakukan inovasi produk dan
+                            layanan dengan mengedepankan kualitas jaringan dan teknologi
+                            terkini sesuai dengan visi
+                            <span class="fw-semibold">"Menjadi Penyedia Solusi Teknologi Informasi dan Komunikasi
+                                (TIK) Terkemuka di Indonesia Berbasis Jaringan Melalui
+                                Pemanfaatan Aset Strategis".</span> PLN Icon Plus tak lagi hanya berperan sebagai IT Enabler
+                            PLN. Melainkan, akan menjadi ujung tombak PLN dalam membangun lini bisnis di luar kelistrikan atau
+                            Beyond kWh.
+                        </span>
                     </p>
                     <a href="https://plniconplus.co.id/about/" target="_blank" class="btn rounded-3 shadow">Read More</a>
                 </div>

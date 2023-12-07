@@ -1,4 +1,4 @@
-@extends('premiumpage.layouts')
+                        @extends('premiumpage.layouts')
 {{-- @include('premiumpage.navbar') --}}
 @section('home')
     <!--Main Content Section Start -->
